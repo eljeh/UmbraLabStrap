@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Blogpost>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Layout.cshtml";
+}
+
+@Html.Partial("~/views/partials/jumbotron.cshtml")
+
+@Html.Partial("~/views/partials/promo.cshtml")
+
+<section class="content">
+
+    <div class="container">
+
+        <a class="back-link blue" href="/our-stories/">Back to our stories</a>
+
+        <article>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+
+                    <time datetime="@Model.Content.CreateDate.ToShortDateString()" class="date-meta">
+                        <span class="month">Nov</span>
+                        <span class="day">12</span>
+                        <span class="year">2017</span>
+                    </time>
+
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-8 col-xl-9">
+
+                    <h2 class="secondary-heading">@Model.Content.Excerpt</h2>
+
+                    @Html.GetGridHtml(Model.Content, "bodyText", "bootstrap3-fluid")
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>

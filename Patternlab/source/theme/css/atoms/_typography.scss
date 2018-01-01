@@ -1,0 +1,117 @@
+// Typography Defaults
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, br {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.1rem;
+
+    &.white {
+        color: $white;
+    }
+}
+
+.heading,
+.secondary-heading,
+.tertiary-heading,
+.tertiary-subheading,
+.small-heading {
+    font-family: $futura;
+    font-weight: 700;
+    line-height: .9;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 3.5rem;
+    text-align: center;
+
+    &.small-heading {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .sub-heading {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &.white {
+        color: $white;
+    }
+}
+
+.secondary-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+    .sub-heading {
+        font-weight: 100;
+    }
+}
+
+.tertiary-heading {
+    font-size: 2.1875rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+
+    .sub-heading {
+        font-size: 1.5625rem;
+        font-weight: 300;
+        margin-top: 12px;
+        display: block;
+        font-family: $futura;
+    }
+}
+
+.small-heading {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+.sub-heading {
+    display: block;
+    font-family: $allura;
+    font-size: 55%;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.citation {
+  color: #41b6e6;
+  font-size: 90%;
+}
+
+@include if-min-width($L) {
+    .heading {
+        font-size: 4.3rem;
+        text-align: center;
+
+        &.small-heading {
+            font-size: 3rem;
+            margin-bottom: .5rem;
+        }
+
+        .sub-heading {
+            text-align: center;
+        }
+    }
+
+    .secondary-heading {
+        font-size: 3rem;
+    }
+}
+
+// Lists
+ul, ol {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}

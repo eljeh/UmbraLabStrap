@@ -1,0 +1,21 @@
+.filter-tabs {
+  padding: 1.6rem 1rem 2rem;
+  text-align: center;
+
+  .filter-heading {
+    font-weight: 400;
+    font-family: $futura;
+    line-height: .9;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  @include if-min-width($XM) {
+    display: flex;
+    align-items: center;
+
+    .filter-heading {
+      margin: .7rem 1.5rem 0 0;
+    }
+  }
+}

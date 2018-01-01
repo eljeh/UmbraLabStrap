@@ -1,0 +1,73 @@
+{
+  "paths" : {
+    "source" : {
+      "root": "./source/",
+      "patterns" : "./source/_patterns/",
+      "data" : "./source/_data/",
+      "meta": "./source/_meta/",
+      "annotations" : "./source/_annotations/",
+      "styleguide" : "./node_modules/styleguidekit-assets-default/dist/",
+      "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
+      "js" : "./source/theme/js",
+      "json" : "./source/theme/json",
+      "images" : "./source/theme/images/",
+      "fonts" : "./source/theme/fonts/",
+      "css" : "./source/theme/css/",
+      "vendor" : "./source/theme/vendor/"
+    },
+    "public" : {
+      "root" : "../UmbraLabStrap/",
+      "patterns" : "../UmbraLabStrap/patterns/",
+      "data" : "../UmbraLabStrap/styleguide/data/",
+      "annotations" : "../UmbraLabStrap/annotations/",
+      "styleguide" : "../UmbraLabStrap/styleguide/",
+      "js": "../UmbraLabStrap/theme/js/",
+      "json" : "../UmbraLabStrap/theme/json",
+      "images": "../UmbraLabStrap/theme/images/",
+      "fonts": "../UmbraLabStrap/theme/fonts/",
+      "css": "../UmbraLabStrap/theme/css/",
+      "vendor": "../UmbraLabStrap/theme/vendor/"
+    }
+  },
+  "styleGuideExcludes": [
+  ],
+  "defaultPattern": "all",
+  "defaultShowPatternInfo": false,
+  "cleanPublic" : true,
+  "patternExtension": "mustache",
+  "ignored-extensions" : ["scss", "DS_Store", "less"],
+  "ignored-directories" : ["scss"],
+  "debug": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": false,
+    "random": false,
+    "disco": false,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": false,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": false,
+    "tools-docs": false
+  },
+  "ishMinimum": "240",
+  "ishMaximum": "2600",
+  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternStates": {
+  },
+  "patternExportPatternPartials": [],
+  "patternExportDirectory": "./pattern_exports/",
+  "cacheBust": true,
+  "starterkitSubDir": "dist",
+  "outputFileSuffixes": {
+    "rendered": ".rendered",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  },
+  "cleanOutputHtml": true
+}

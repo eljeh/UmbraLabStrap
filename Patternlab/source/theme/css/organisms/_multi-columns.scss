@@ -1,0 +1,22 @@
+.multi-columns {
+  background: #eee;
+  padding: 3rem 0;
+  text-align: center;
+
+  .column-wrapper {
+    text-align: left;
+  }
+
+  .btn {
+    margin-top: 3rem;
+  }
+
+  @include if-min-width($XM) {
+
+    padding: 8rem 0;
+
+    .column-wrapper {
+      display: flex;
+    }
+  }
+}

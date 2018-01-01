@@ -1,0 +1,738 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\UmbracoCms.7.7.7\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.7.7\build\UmbracoCms.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E02AD183-59A7-46E6-BC9A-75266667CB92}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UmbraLabStrap</RootNamespace>
+    <AssemblyName>UmbraLabStrap</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="businesslogic, Version=1.0.6554.23593, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency.1.9.2\lib\net45\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core.Mvc, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency-Mvc5.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="cms, Version=1.0.6554.23593, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls, Version=1.0.6554.23595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Examine, Version=0.1.88.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Examine.0.1.88\lib\net45\Examine.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor, Version=2.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.5.6\lib\net45\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web, Version=4.8.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.Web.4.8.7\lib\net45\ImageProcessor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.6554.23582, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Log4Net.Async, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Log4Net.Async.2.0.4\lib\net40\Log4Net.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownSharp, Version=1.14.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdown.1.14.7\lib\net45\MarkdownSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1559.20655, Culture=neutral">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.2.2\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b44f9351044011a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.10\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLCE4Umbraco, Version=1.0.6554.23595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\SQLCE4Umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=1.0.21.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.7.0\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\TidyNet.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco, Version=1.0.6554.23596, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core, Version=1.0.6554.23584, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.DataLayer, Version=1.0.6554.23591, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\umbraco.DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.6554.23601, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\umbraco.editorControls.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.MacroEngines, Version=1.0.6554.23601, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\umbraco.MacroEngines.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Umbraco.ModelsBuilder.3.0.7\lib\Umbraco.ModelsBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.providers, Version=1.0.6554.23595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\umbraco.providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.UI, Version=1.0.6554.23602, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\Umbraco.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UmbracoExamine, Version=0.7.0.23594, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.7.7\lib\net45\UmbracoExamine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\imageprocessor\security.config" />
+    <Content Include="config\imageprocessor\processing.config" />
+    <Content Include="config\imageprocessor\cache.config" />
+    <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="Media\Web.config" />
+    <Content Include="config\umbracoSettings.config" />
+    <Content Include="config\trees.config" />
+    <Content Include="config\tinyMceConfig.config" />
+    <Content Include="config\scripting.config" />
+    <Content Include="config\metablogConfig.config" />
+    <Content Include="config\log4net.config" />
+    <Content Include="config\HealthChecks.config" />
+    <Content Include="config\FileSystemProviders.config" />
+    <Content Include="config\feedProxy.config" />
+    <Content Include="config\ExamineSettings.config" />
+    <Content Include="config\ExamineIndex.config" />
+    <Content Include="config\EmbeddedMedia.config" />
+    <Content Include="config\Dashboard.config" />
+    <Content Include="config\ClientDependency.config" />
+    <Content Include="config\BaseRestExtensions.config" />
+    <Content Include="config\applications.config" />
+    <Content Include="config\404handlers.config" />
+    <None Include="packages.config" />
+    <Content Include="patterns\00-atoms-01-global-00-colors\00-atoms-01-global-00-colors.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-00-colors\00-atoms-01-global-00-colors.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-01-fonts\00-atoms-01-global-01-fonts.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-01-fonts\00-atoms-01-global-01-fonts.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-02-animations\00-atoms-01-global-02-animations.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-02-animations\00-atoms-01-global-02-animations.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-03-visibility\00-atoms-01-global-03-visibility.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-03-visibility\00-atoms-01-global-03-visibility.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-communities\00-atoms-01-global-brand-colors-communities.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-communities\00-atoms-01-global-brand-colors-communities.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-lifestyle\00-atoms-01-global-brand-colors-lifestyle.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-lifestyle\00-atoms-01-global-brand-colors-lifestyle.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-living\00-atoms-01-global-brand-colors-living.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-living\00-atoms-01-global-brand-colors-living.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-date-meta\00-atoms-01-global-date-meta.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-date-meta\00-atoms-01-global-date-meta.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-fonts\00-atoms-01-global-fonts.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-fonts\00-atoms-01-global-fonts.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-hamburger\00-atoms-01-global-hamburger.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-hamburger\00-atoms-01-global-hamburger.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global-icons\00-atoms-01-global-icons.markup-only.html" />
+    <Content Include="patterns\00-atoms-01-global-icons\00-atoms-01-global-icons.rendered.html" />
+    <Content Include="patterns\00-atoms-01-global\index.html" />
+    <Content Include="patterns\00-atoms-02-text-00-headings\00-atoms-02-text-00-headings.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-00-headings\00-atoms-02-text-00-headings.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-01-paragraph\00-atoms-02-text-01-paragraph.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-01-paragraph\00-atoms-02-text-01-paragraph.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-02-blockquote\00-atoms-02-text-02-blockquote.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-02-blockquote\00-atoms-02-text-02-blockquote.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-03-inline-elements\00-atoms-02-text-03-inline-elements.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-03-inline-elements\00-atoms-02-text-03-inline-elements.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-04-time\00-atoms-02-text-04-time.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-04-time\00-atoms-02-text-04-time.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-05-preformatted-text\00-atoms-02-text-05-preformatted-text.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-05-preformatted-text\00-atoms-02-text-05-preformatted-text.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-06-hr\00-atoms-02-text-06-hr.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-06-hr\00-atoms-02-text-06-hr.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-chat-now\00-atoms-02-text-chat-now.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-chat-now\00-atoms-02-text-chat-now.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-copyright\00-atoms-02-text-copyright.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-copyright\00-atoms-02-text-copyright.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-feature-icon\00-atoms-02-text-feature-icon.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-feature-icon\00-atoms-02-text-feature-icon.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-filter-categories\00-atoms-02-text-filter-categories.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-filter-categories\00-atoms-02-text-filter-categories.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-heading\00-atoms-02-text-heading.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-heading\00-atoms-02-text-heading.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-hr\00-atoms-02-text-hr.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-hr\00-atoms-02-text-hr.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-paragraph\00-atoms-02-text-paragraph.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-paragraph\00-atoms-02-text-paragraph.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-secondary-heading\00-atoms-02-text-secondary-heading.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-secondary-heading\00-atoms-02-text-secondary-heading.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text-tertiary-heading\00-atoms-02-text-tertiary-heading.markup-only.html" />
+    <Content Include="patterns\00-atoms-02-text-tertiary-heading\00-atoms-02-text-tertiary-heading.rendered.html" />
+    <Content Include="patterns\00-atoms-02-text\index.html" />
+    <Content Include="patterns\00-atoms-03-images-hero\00-atoms-03-images-hero.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-hero\00-atoms-03-images-hero.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images-landscape\00-atoms-03-images-landscape.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-landscape\00-atoms-03-images-landscape.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images-logo-reversed\00-atoms-03-images-logo-reversed.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-logo-reversed\00-atoms-03-images-logo-reversed.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images-logo\00-atoms-03-images-logo.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-logo\00-atoms-03-images-logo.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images-property-logo\00-atoms-03-images-property-logo.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-property-logo\00-atoms-03-images-property-logo.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images-square\00-atoms-03-images-square.markup-only.html" />
+    <Content Include="patterns\00-atoms-03-images-square\00-atoms-03-images-square.rendered.html" />
+    <Content Include="patterns\00-atoms-03-images\index.html" />
+    <Content Include="patterns\00-atoms-04-buttons-arrow-link\00-atoms-04-buttons-arrow-link.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-arrow-link\00-atoms-04-buttons-arrow-link.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-back-link\00-atoms-04-buttons-back-link.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-back-link\00-atoms-04-buttons-back-link.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-close-button\00-atoms-04-buttons-close-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-close-button\00-atoms-04-buttons-close-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-download-button\00-atoms-04-buttons-download-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-download-button\00-atoms-04-buttons-download-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-icon-link\00-atoms-04-buttons-icon-link.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-icon-link\00-atoms-04-buttons-icon-link.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-login-link\00-atoms-04-buttons-login-link.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-login-link\00-atoms-04-buttons-login-link.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-outlined-button\00-atoms-04-buttons-outlined-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-outlined-button\00-atoms-04-buttons-outlined-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button-submit\00-atoms-04-buttons-primary-button-submit.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button-submit\00-atoms-04-buttons-primary-button-submit.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button\00-atoms-04-buttons-primary-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button\00-atoms-04-buttons-primary-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-icon-button\00-atoms-04-buttons-primary-icon-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-icon-button\00-atoms-04-buttons-primary-icon-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons-text-button\00-atoms-04-buttons-text-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-04-buttons-text-button\00-atoms-04-buttons-text-button.rendered.html" />
+    <Content Include="patterns\00-atoms-04-buttons\index.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-checkbox\00-atoms-05-form-fields-checkbox.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-checkbox\00-atoms-05-form-fields-checkbox.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-email\00-atoms-05-form-fields-input-email.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-email\00-atoms-05-form-fields-input-email.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-file\00-atoms-05-form-fields-input-file.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-file\00-atoms-05-form-fields-input-file.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-search\00-atoms-05-form-fields-input-search.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-search\00-atoms-05-form-fields-input-search.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-tel\00-atoms-05-form-fields-input-tel.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-tel\00-atoms-05-form-fields-input-tel.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-text\00-atoms-05-form-fields-input-text.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-text\00-atoms-05-form-fields-input-text.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-radio-button\00-atoms-05-form-fields-radio-button.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-radio-button\00-atoms-05-form-fields-radio-button.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-select\00-atoms-05-form-fields-select.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-select\00-atoms-05-form-fields-select.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-textarea\00-atoms-05-form-fields-textarea.markup-only.html" />
+    <Content Include="patterns\00-atoms-05-form-fields-textarea\00-atoms-05-form-fields-textarea.rendered.html" />
+    <Content Include="patterns\00-atoms-05-form-fields\index.html" />
+    <Content Include="patterns\00-atoms\index.html" />
+    <Content Include="patterns\01-molecules-01-blocks-active-filter-bar\01-molecules-01-blocks-active-filter-bar.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-active-filter-bar\01-molecules-01-blocks-active-filter-bar.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-brand-bar\01-molecules-01-blocks-brand-bar.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-brand-bar\01-molecules-01-blocks-brand-bar.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-centred-cta\01-molecules-01-blocks-centred-cta.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-centred-cta\01-molecules-01-blocks-centred-cta.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-columned-content\01-molecules-01-blocks-columned-content.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-columned-content\01-molecules-01-blocks-columned-content.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-contact-form\01-molecules-01-blocks-contact-form.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-contact-form\01-molecules-01-blocks-contact-form.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-content-w-aside\01-molecules-01-blocks-content-w-aside.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-content-w-aside\01-molecules-01-blocks-content-w-aside.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-cta-card\01-molecules-01-blocks-cta-card.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-cta-card\01-molecules-01-blocks-cta-card.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-excerpt-card\01-molecules-01-blocks-excerpt-card.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-excerpt-card\01-molecules-01-blocks-excerpt-card.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-experience-bucket\01-molecules-01-blocks-experience-bucket.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-experience-bucket\01-molecules-01-blocks-experience-bucket.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-filter-tabs\01-molecules-01-blocks-filter-tabs.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-filter-tabs\01-molecules-01-blocks-filter-tabs.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-half-and-half\01-molecules-01-blocks-half-and-half.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-half-and-half\01-molecules-01-blocks-half-and-half.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-hp-promo\01-molecules-01-blocks-hp-promo.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-hp-promo\01-molecules-01-blocks-hp-promo.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-image-carousel\01-molecules-01-blocks-image-carousel.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-image-carousel\01-molecules-01-blocks-image-carousel.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron-homepage\01-molecules-01-blocks-jumbotron-homepage.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron-homepage\01-molecules-01-blocks-jumbotron-homepage.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron\01-molecules-01-blocks-jumbotron.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron\01-molecules-01-blocks-jumbotron.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-offer-card\01-molecules-01-blocks-offer-card.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-offer-card\01-molecules-01-blocks-offer-card.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-promo\01-molecules-01-blocks-promo.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-promo\01-molecules-01-blocks-promo.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-property-list-item\01-molecules-01-blocks-property-list-item.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-property-list-item\01-molecules-01-blocks-property-list-item.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-related-items\01-molecules-01-blocks-related-items.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-related-items\01-molecules-01-blocks-related-items.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-search-container\01-molecules-01-blocks-search-container.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-search-container\01-molecules-01-blocks-search-container.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks-stories-block\01-molecules-01-blocks-stories-block.markup-only.html" />
+    <Content Include="patterns\01-molecules-01-blocks-stories-block\01-molecules-01-blocks-stories-block.rendered.html" />
+    <Content Include="patterns\01-molecules-01-blocks\index.html" />
+    <Content Include="patterns\01-molecules\index.html" />
+    <Content Include="patterns\02-organisms-01-regions-footer\02-organisms-01-regions-footer.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-footer\02-organisms-01-regions-footer.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-header\02-organisms-01-regions-header.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-header\02-organisms-01-regions-header.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-mobile-navigation\02-organisms-01-regions-mobile-navigation.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-mobile-navigation\02-organisms-01-regions-mobile-navigation.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-find-your-home\02-organisms-01-regions-panel-find-your-home.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-find-your-home\02-organisms-01-regions-panel-find-your-home.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-investors\02-organisms-01-regions-panel-investors.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-investors\02-organisms-01-regions-panel-investors.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-search\02-organisms-01-regions-panel-search.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-panel-search\02-organisms-01-regions-panel-search.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions-property-filters\02-organisms-01-regions-property-filters.markup-only.html" />
+    <Content Include="patterns\02-organisms-01-regions-property-filters\02-organisms-01-regions-property-filters.rendered.html" />
+    <Content Include="patterns\02-organisms-01-regions\index.html" />
+    <Content Include="patterns\02-organisms-02-components-cta-card-column-content\02-organisms-02-components-cta-card-column-content.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-cta-card-column-content\02-organisms-02-components-cta-card-column-content.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-excerpt-cards-column-content\02-organisms-02-components-excerpt-cards-column-content.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-excerpt-cards-column-content\02-organisms-02-components-excerpt-cards-column-content.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-experience-buckets\02-organisms-02-components-experience-buckets.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-experience-buckets\02-organisms-02-components-experience-buckets.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-hp-promos\02-organisms-02-components-hp-promos.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-hp-promos\02-organisms-02-components-hp-promos.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-icon-navigation\02-organisms-02-components-icon-navigation.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-icon-navigation\02-organisms-02-components-icon-navigation.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-investor-utility\02-organisms-02-components-investor-utility.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-investor-utility\02-organisms-02-components-investor-utility.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-multiple-offer-cards\02-organisms-02-components-multiple-offer-cards.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-multiple-offer-cards\02-organisms-02-components-multiple-offer-cards.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components-property-listings\02-organisms-02-components-property-listings.markup-only.html" />
+    <Content Include="patterns\02-organisms-02-components-property-listings\02-organisms-02-components-property-listings.rendered.html" />
+    <Content Include="patterns\02-organisms-02-components\index.html" />
+    <Content Include="patterns\02-organisms\index.html" />
+    <Content Include="patterns\03-templates-profile\03-templates-profile.markup-only.html" />
+    <Content Include="patterns\03-templates-profile\03-templates-profile.rendered.html" />
+    <Content Include="patterns\04-pages-home-page\04-pages-home-page.markup-only.html" />
+    <Content Include="patterns\04-pages-home-page\04-pages-home-page.rendered.html" />
+    <Content Include="patterns\04-pages-property-results\04-pages-property-results.markup-only.html" />
+    <Content Include="patterns\04-pages-property-results\04-pages-property-results.rendered.html" />
+    <Content Include="styleguide\bower_components\classList.min.js" />
+    <Content Include="styleguide\bower_components\EventEmitter.min.js" />
+    <Content Include="styleguide\bower_components\hogan-3.0.2.min.js" />
+    <Content Include="styleguide\bower_components\jquery.min.js" />
+    <Content Include="styleguide\bower_components\jwerty.min.js" />
+    <Content Include="styleguide\bower_components\prism.min.js" />
+    <Content Include="styleguide\bower_components\script.min.js" />
+    <Content Include="styleguide\bower_components\typeahead.bundle.min.js" />
+    <Content Include="styleguide\css\prism-typeahead.css" />
+    <Content Include="styleguide\css\prism-typeahead.min.css" />
+    <Content Include="styleguide\css\styleguide.css" />
+    <Content Include="styleguide\css\styleguide.min.css" />
+    <Content Include="styleguide\data\patternlab-data.js" />
+    <Content Include="styleguide\fonts\icomoon.svg" />
+    <Content Include="styleguide\html\styleguide.html" />
+    <Content Include="styleguide\js\patternlab-pattern.js" />
+    <Content Include="styleguide\js\patternlab-pattern.min.js" />
+    <Content Include="styleguide\js\patternlab-viewer.js" />
+    <Content Include="styleguide\js\patternlab-viewer.min.js" />
+    <Content Include="theme\css\bootstrap-select.min.css" />
+    <Content Include="theme\css\bootstrap.css" />
+    <Content Include="theme\css\bootstrap.min.css" />
+    <Content Include="theme\css\pattern-scaffolding.css" />
+    <Content Include="theme\images\hp-banner.jpg" />
+    <Content Include="theme\images\logo-boardwalk.png" />
+    <Content Include="theme\images\logos-mini\communities-mini.jpg" />
+    <Content Include="theme\images\logos-mini\lifestyle-mini.jpg" />
+    <Content Include="theme\images\logos-mini\living-mini.jpg" />
+    <Content Include="theme\images\svgs\communities_logo.svg" />
+    <Content Include="theme\images\svgs\corporate_logo.svg" />
+    <Content Include="theme\images\svgs\lifestyle_logo.svg" />
+    <Content Include="theme\images\svgs\living_logo.svg" />
+    <Content Include="theme\js\boardwalk.js" />
+    <Content Include="theme\js\bootstrap-select.min.js" />
+    <Content Include="theme\js\bootstrap.js" />
+    <Content Include="theme\js\bootstrap.min.js" />
+    <Content Include="theme\js\jquery-3.2.1.slim.min.js" />
+    <Content Include="theme\js\magnific-popup.js" />
+    <Content Include="theme\js\slick.js" />
+    <Content Include="theme\vendor\icomoon\demo-files\demo.css" />
+    <Content Include="theme\vendor\icomoon\demo-files\demo.js" />
+    <Content Include="theme\vendor\icomoon\demo.html" />
+    <Content Include="theme\vendor\icomoon\fonts\icomoon.svg" />
+    <Content Include="theme\vendor\icomoon\Read Me.txt" />
+    <Content Include="theme\vendor\icomoon\style.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\MacroPartials\FeaturedProducts.cshtml" />
+    <Content Include="Views\MacroPartials\LatestBlogposts.cshtml" />
+    <Content Include="Views\Partials\Navigation\SubNavigation.cshtml" />
+    <Content Include="Views\Partials\Navigation\TopNavigation.cshtml" />
+    <Content Include="Views\Partials\CategoryLinks.cshtml" />
+    <Content Include="Views\Partials\SectionHeader.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\Blogpost.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\Partials\Navigation\main-navigation.cshtml" />
+    <Content Include="Views\Partials\Navigation\mobile-navigation.cshtml" />
+    <Content Include="Views\Partials\Navigation\panel-find-your-home.cshtml" />
+    <Content Include="Views\Partials\Navigation\panel-investors.cshtml" />
+    <Content Include="Views\Partials\Navigation\panel-search.cshtml" />
+    <Content Include="Views\Partials\Navigation\utility-navigation.cshtml" />
+    <Content Include="Views\Partials\centred-cta.cshtml" />
+    <Content Include="Views\Partials\experience-buckets.cshtml" />
+    <Content Include="Views\Partials\footer.cshtml" />
+    <Content Include="Views\Partials\header.cshtml" />
+    <Content Include="Views\Partials\hp-promos.cshtml" />
+    <Content Include="Views\Partials\jumbotron-homepage.cshtml" />
+    <Content Include="Views\Partials\stories-block.cshtml" />
+    <Content Include="Views\Layout.cshtml" />
+    <Content Include="theme\vendor\icomoon\fonts\icomoon.eot" />
+    <Content Include="theme\vendor\icomoon\fonts\icomoon.ttf" />
+    <Content Include="theme\vendor\icomoon\fonts\icomoon.woff" />
+    <Content Include="theme\vendor\icomoon\selection.json" />
+    <Content Include="styleguide\fonts\icomoon.eot" />
+    <Content Include="styleguide\fonts\icomoon.ttf" />
+    <Content Include="styleguide\fonts\icomoon.woff" />
+    <Content Include="patterns\00-atoms-01-global-00-colors\00-atoms-01-global-00-colors.mustache" />
+    <Content Include="patterns\00-atoms-01-global-01-fonts\00-atoms-01-global-01-fonts.mustache" />
+    <Content Include="patterns\00-atoms-01-global-02-animations\00-atoms-01-global-02-animations.mustache" />
+    <Content Include="patterns\00-atoms-01-global-03-visibility\00-atoms-01-global-03-visibility.mustache" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-communities\00-atoms-01-global-brand-colors-communities.mustache" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-lifestyle\00-atoms-01-global-brand-colors-lifestyle.mustache" />
+    <Content Include="patterns\00-atoms-01-global-brand-colors-living\00-atoms-01-global-brand-colors-living.mustache" />
+    <Content Include="patterns\00-atoms-01-global-date-meta\00-atoms-01-global-date-meta.mustache" />
+    <Content Include="patterns\00-atoms-01-global-fonts\00-atoms-01-global-fonts.mustache" />
+    <Content Include="patterns\00-atoms-01-global-hamburger\00-atoms-01-global-hamburger.mustache" />
+    <Content Include="patterns\00-atoms-01-global-icons\00-atoms-01-global-icons.mustache" />
+    <Content Include="patterns\00-atoms-02-text-00-headings\00-atoms-02-text-00-headings.mustache" />
+    <Content Include="patterns\00-atoms-02-text-01-paragraph\00-atoms-02-text-01-paragraph.mustache" />
+    <Content Include="patterns\00-atoms-02-text-02-blockquote\00-atoms-02-text-02-blockquote.mustache" />
+    <Content Include="patterns\00-atoms-02-text-03-inline-elements\00-atoms-02-text-03-inline-elements.mustache" />
+    <Content Include="patterns\00-atoms-02-text-04-time\00-atoms-02-text-04-time.mustache" />
+    <Content Include="patterns\00-atoms-02-text-05-preformatted-text\00-atoms-02-text-05-preformatted-text.mustache" />
+    <Content Include="patterns\00-atoms-02-text-06-hr\00-atoms-02-text-06-hr.mustache" />
+    <Content Include="patterns\00-atoms-02-text-chat-now\00-atoms-02-text-chat-now.mustache" />
+    <Content Include="patterns\00-atoms-02-text-copyright\00-atoms-02-text-copyright.mustache" />
+    <Content Include="patterns\00-atoms-02-text-feature-icon\00-atoms-02-text-feature-icon.mustache" />
+    <Content Include="patterns\00-atoms-02-text-filter-categories\00-atoms-02-text-filter-categories.mustache" />
+    <Content Include="patterns\00-atoms-02-text-heading\00-atoms-02-text-heading.mustache" />
+    <Content Include="patterns\00-atoms-02-text-hr\00-atoms-02-text-hr.mustache" />
+    <Content Include="patterns\00-atoms-02-text-paragraph\00-atoms-02-text-paragraph.mustache" />
+    <Content Include="patterns\00-atoms-02-text-secondary-heading\00-atoms-02-text-secondary-heading.mustache" />
+    <Content Include="patterns\00-atoms-02-text-tertiary-heading\00-atoms-02-text-tertiary-heading.mustache" />
+    <Content Include="patterns\00-atoms-03-images-hero\00-atoms-03-images-hero.mustache" />
+    <Content Include="patterns\00-atoms-03-images-landscape\00-atoms-03-images-landscape.mustache" />
+    <Content Include="patterns\00-atoms-03-images-logo-reversed\00-atoms-03-images-logo-reversed.mustache" />
+    <Content Include="patterns\00-atoms-03-images-logo\00-atoms-03-images-logo.mustache" />
+    <Content Include="patterns\00-atoms-03-images-property-logo\00-atoms-03-images-property-logo.mustache" />
+    <Content Include="patterns\00-atoms-03-images-square\00-atoms-03-images-square.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-arrow-link\00-atoms-04-buttons-arrow-link.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-back-link\00-atoms-04-buttons-back-link.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-close-button\00-atoms-04-buttons-close-button.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-download-button\00-atoms-04-buttons-download-button.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-icon-link\00-atoms-04-buttons-icon-link.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-login-link\00-atoms-04-buttons-login-link.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-outlined-button\00-atoms-04-buttons-outlined-button.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button-submit\00-atoms-04-buttons-primary-button-submit.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-button\00-atoms-04-buttons-primary-button.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-primary-icon-button\00-atoms-04-buttons-primary-icon-button.mustache" />
+    <Content Include="patterns\00-atoms-04-buttons-text-button\00-atoms-04-buttons-text-button.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-checkbox\00-atoms-05-form-fields-checkbox.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-email\00-atoms-05-form-fields-input-email.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-file\00-atoms-05-form-fields-input-file.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-search\00-atoms-05-form-fields-input-search.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-tel\00-atoms-05-form-fields-input-tel.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-input-text\00-atoms-05-form-fields-input-text.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-radio-button\00-atoms-05-form-fields-radio-button.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-select\00-atoms-05-form-fields-select.mustache" />
+    <Content Include="patterns\00-atoms-05-form-fields-textarea\00-atoms-05-form-fields-textarea.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-active-filter-bar\01-molecules-01-blocks-active-filter-bar.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-brand-bar\01-molecules-01-blocks-brand-bar.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-centred-cta\01-molecules-01-blocks-centred-cta.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-columned-content\01-molecules-01-blocks-columned-content.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-contact-form\01-molecules-01-blocks-contact-form.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-content-w-aside\01-molecules-01-blocks-content-w-aside.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-cta-card\01-molecules-01-blocks-cta-card.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-excerpt-card\01-molecules-01-blocks-excerpt-card.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-experience-bucket\01-molecules-01-blocks-experience-bucket.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-filter-tabs\01-molecules-01-blocks-filter-tabs.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-half-and-half\01-molecules-01-blocks-half-and-half.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-hp-promo\01-molecules-01-blocks-hp-promo.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-image-carousel\01-molecules-01-blocks-image-carousel.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron-homepage\01-molecules-01-blocks-jumbotron-homepage.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-jumbotron\01-molecules-01-blocks-jumbotron.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-offer-card\01-molecules-01-blocks-offer-card.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-promo\01-molecules-01-blocks-promo.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-property-list-item\01-molecules-01-blocks-property-list-item.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-related-items\01-molecules-01-blocks-related-items.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-search-container\01-molecules-01-blocks-search-container.mustache" />
+    <Content Include="patterns\01-molecules-01-blocks-stories-block\01-molecules-01-blocks-stories-block.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-footer\02-organisms-01-regions-footer.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-header\02-organisms-01-regions-header.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-mobile-navigation\02-organisms-01-regions-mobile-navigation.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-panel-find-your-home\02-organisms-01-regions-panel-find-your-home.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-panel-investors\02-organisms-01-regions-panel-investors.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-panel-search\02-organisms-01-regions-panel-search.mustache" />
+    <Content Include="patterns\02-organisms-01-regions-property-filters\02-organisms-01-regions-property-filters.mustache" />
+    <Content Include="patterns\02-organisms-02-components-cta-card-column-content\02-organisms-02-components-cta-card-column-content.mustache" />
+    <Content Include="patterns\02-organisms-02-components-excerpt-cards-column-content\02-organisms-02-components-excerpt-cards-column-content.mustache" />
+    <Content Include="patterns\02-organisms-02-components-experience-buckets\02-organisms-02-components-experience-buckets.mustache" />
+    <Content Include="patterns\02-organisms-02-components-hp-promos\02-organisms-02-components-hp-promos.mustache" />
+    <Content Include="patterns\02-organisms-02-components-icon-navigation\02-organisms-02-components-icon-navigation.mustache" />
+    <Content Include="patterns\02-organisms-02-components-investor-utility\02-organisms-02-components-investor-utility.mustache" />
+    <Content Include="patterns\02-organisms-02-components-multiple-offer-cards\02-organisms-02-components-multiple-offer-cards.mustache" />
+    <Content Include="patterns\02-organisms-02-components-property-listings\02-organisms-02-components-property-listings.mustache" />
+    <Content Include="patterns\03-templates-profile\03-templates-profile.mustache" />
+    <Content Include="patterns\04-pages-home-page\04-pages-home-page.mustache" />
+    <Content Include="patterns\04-pages-property-results\04-pages-property-results.mustache" />
+    <Content Include="Views\Partials\property-listings.cshtml" />
+    <Content Include="Views\Partials\property-filters.cshtml" />
+    <Content Include="Views\Partials\jumbotron.cshtml" />
+    <Content Include="Views\Partials\promo.cshtml" />
+    <Content Include="Views\Partials\filter-tabs.cshtml" />
+    <Content Include="Views\Partials\half-and-half.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="config\grid.editors.config.js" />
+    <Content Include="config\Lang\cs-CZ.user.xml" />
+    <Content Include="config\Lang\da-DK.user.xml" />
+    <Content Include="config\Lang\de-DE.user.xml" />
+    <Content Include="config\Lang\en-GB.user.xml" />
+    <Content Include="config\Lang\en-US.user.xml" />
+    <Content Include="config\Lang\es-ES.user.xml" />
+    <Content Include="config\Lang\fr-FR.user.xml" />
+    <Content Include="config\Lang\he-IL.user.xml" />
+    <Content Include="config\Lang\it-IT.user.xml" />
+    <Content Include="config\Lang\ja-JP.user.xml" />
+    <Content Include="config\Lang\ko-KR.user.xml" />
+    <Content Include="config\Lang\nb-NO.user.xml" />
+    <Content Include="config\Lang\nl-NL.user.xml" />
+    <Content Include="config\Lang\pl-PL.user.xml" />
+    <Content Include="config\Lang\pt-BR.user.xml" />
+    <Content Include="config\Lang\ru-RU.user.xml" />
+    <Content Include="config\Lang\sv-SE.user.xml" />
+    <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65057</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65057/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.7.7\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.7.7\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.7.7\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.7.7\build\UmbracoCms.targets'))" />
+  </Target>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <Import Project="..\packages\UmbracoCms.7.7.7\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.7.7\build\UmbracoCms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

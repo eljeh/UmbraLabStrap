@@ -1,0 +1,24 @@
+// Contact Form molecule styles
+
+.contact-form {
+    background: $black;
+    padding-top: 95px;
+    padding-bottom: 100px;
+
+    // Spacing between rows
+    .row {
+        margin-bottom: 25px;
+    }
+
+    // Radio buttons
+    .form-check-inline {
+
+        .form-check-label {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

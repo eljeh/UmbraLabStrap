@@ -1,0 +1,33 @@
+.date-meta {
+  border: 1px solid #000;
+  display: block;
+  width: 7rem;
+  text-align: center;
+  font-family: $futura;
+
+  span {
+    display: block;
+  }
+
+  .month,
+  .day {
+    line-height: 1;
+  }
+
+  .month {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: .2rem .2rem 0 .2rem;
+  }
+
+  .day {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  .year {
+    background: #000;
+    color: #fff;
+    padding: .2rem;
+  }
+}

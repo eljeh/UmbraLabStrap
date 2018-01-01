@@ -1,0 +1,185 @@
+.advanced-filters {
+
+  &-toggle {
+    background: $white;
+    border-bottom: none;
+
+    a {
+      color: $blue;
+      font-size: 1rem;
+      font-weight: bolder;
+      display: block;
+      padding: 15px 0;
+      border-bottom: 1px solid $lighterblue;
+
+      &::after {
+        @include icomoon("\ea50");
+        color: $blue;
+        font-size: 20px;
+        font-weight: bolder;
+        display: inline-block;
+        position: relative;
+        left: 2px;
+        top: 8px;
+      }
+
+      &.collapsed {
+        border-bottom: 1px solid transparent;
+
+        &::after {
+          transform: rotate(180deg);
+          top: 0;
+        }
+      }
+    }
+  }
+
+  #advancedFilters {
+    a {
+      font-family: $futura;
+      text-transform: uppercase;
+    }
+  }
+
+  label {
+    padding-left: 25px;
+    padding-right: 5px;
+
+    input {
+      margin-right: 10px;
+    }
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+
+  select {
+    margin-bottom: 30px;
+  }
+
+  &-stock {
+
+  }
+
+  .hr-blue {
+    border-bottom: 1px solid $lighterblue;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 150px;
+      bottom: 100%;
+      width: 0;
+      height: 0;
+      border-bottom: 15px solid $lighterblue;
+      border-top: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 150px;
+      bottom: -1px;
+      width: 0;
+      height: 0;
+      z-index: 2;
+      border-bottom: 14.5px solid white;
+      border-top: 14.5px solid transparent;
+      border-left: 14.5px solid transparent;
+      border-right: 14.5px solid transparent;
+    }
+
+    // first option selected
+    &-col-1 {
+      &:after, &:before {
+        left: 12%;
+      }
+    }
+
+    // second option selected
+    &-col-2 {
+      &:after, &:before {
+        left: 38%;
+      }
+    }
+  }
+
+  .bordered-box {
+    padding: 25px 0 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+  }
+
+
+  &-incentives {
+    background: black;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+    label {
+      color: $white;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: block;
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-design {
+
+    &-divider {
+      border-top: 1px solid $lightgrey;
+      margin-bottom: 15px;
+    }
+  }
+
+  .secondary-heading {
+    font-size: 1.1rem;
+    padding-left: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .active-filters-bar {
+    border-bottom: 1px solid $lighterblue;
+    border-top: 1px solid $lighterblue;
+    padding: 15px 0;
+    margin-bottom: 1rem;
+
+    a {
+      text-transform: uppercase;
+      color: $text-color;
+      padding: 5px;
+      margin-right: 20px;
+    }
+
+
+    .active-filter-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+
+    .icon-close {
+      margin-left: 5px;
+    }
+  }
+}

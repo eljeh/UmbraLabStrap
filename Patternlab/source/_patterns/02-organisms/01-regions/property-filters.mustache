@@ -1,0 +1,163 @@
+<div class="advanced-filters">
+    <div id="filterAccordion" role="tablist" aria-multiselectable="true">
+        <div class="advanced-filters-container">
+            <div class="advanced-filters-toggle" role="tab" id="advancedFilters">
+                <h5 class="mb-0 text-center">
+                    <a data-toggle="collapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                        Filter
+                    </a>
+                </h5>
+            </div>
+
+            <div id="advancedFilterCollapse" class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+                <div class="card-block">
+                    <div class="container">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {{> atoms-input-text:form-control|form-control-lg(form-field-text-placeholder:"Choose Your City")}}
+                                </div>
+                                <div class="col-md-2">
+                                    {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Quadrant")}}
+                                </div>
+                                <div class="col-md-3">
+                                    {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Suite Type")}}
+                                </div>
+                                <div class="col-md-3">
+                                    {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Your Budget")}}
+                                </div>
+                            </div> <!--/.row-->
+
+                            <div class="row advanced-filters-stock">
+                                <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                                    <label>{{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"inStockOnly")}} Show Available Units Only</label>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                                    <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');">{{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"showPropertyFilters")}} Show the Full Boardwalk Range</label>
+                                    <a href="#"><i class="icon-info"></i></a>
+                                </div>
+                            </div> <!--/.row-->
+
+                            <!-- Property type options -->
+                            <div class="collapse" id="showFullPropertyTypeRange">
+                                <!-- blue horizontal rule -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="hr-blue hr-blue-col-2"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>
+                                            {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeLifestyle")}}
+                                            {{> atoms-property-logo(lifestyle:true)}}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>
+                                            {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeCommunities")}}
+                                            {{> atoms-property-logo(communities:true)}}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>
+                                            {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeLiving")}}
+                                            {{> atoms-property-logo(living:true)}}
+                                        </label>
+                                    </div>
+                                </div> <!--/.row-->
+                            </div>
+
+                            <div class="row bordered-box">
+                                <div class="col-12">
+                                    <h3 class="secondary-heading">Incentives</h3>
+                                    <div class="advanced-filters-incentives">
+                                        <label>
+                                            {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"incentive1")}}
+                                            Included TELUS High Speed Internet and TV for 1 Year
+                                        </label>
+                                        <label>
+                                            {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"incentive2")}}
+                                            1st Month Free with 1 Year Lease
+                                        </label>
+                                    </div>
+
+                                    <h3 class="secondary-heading">Amenities</h3>
+                                    <div class="row advanced-filters-amenities">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity1")}}
+                                                Heat
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity2")}}
+                                                Dishwasher
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity3")}}
+                                                Washer &amp; Dryer
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity4")}}
+                                                Allows Pets
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity5")}}
+                                                Parking
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <label>
+                                                {{> atoms-checkbox(form-field-checkbox-checked:"" form-field-checkbox-name:"amenity6")}}
+                                                Covered Parking
+                                            </label>
+                                        </div>
+                                        <div class="col-12 advanced-filters-design">
+                                            <div class="advanced-filters-design-divider"></div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                                    <label>
+                                                        {{> atoms-checkbox:form-control(form-field-checkbox-checked:"" form-field-checkbox-name:"amenityPlus1")}}
+                                                        Designed for Seniors
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                                    <label>
+                                                        {{> atoms-checkbox:form-control(form-field-checkbox-checked:"" form-field-checkbox-name:"amenityPlus2")}}
+                                                        Designed for Students
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!--/.row-->
+
+                            <div class="row advanced-filters-submit">
+                                <div class="col-12 text-center">
+                                    {{> atoms-primary-button(primary-button-text:"Update Filter")}}
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!--/.container-->
+
+
+
+
+                </div> <!--/.card-block-->
+            </div> <!-- /#advancedFilters accordion -->
+        </div>
+    </div>
+
+    {{> molecules-active-filter-bar}}
+
+</div>

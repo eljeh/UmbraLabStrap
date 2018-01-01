@@ -1,0 +1,25 @@
+<div id="m-nav-panel-find" class="container-fluid">
+  {{>atoms-close-button}}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        {{>molecules-search-container(form-field-search-placeholder:"Choose Your City")}}
+      </div>
+    </div>
+    <!--/.row-->
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>{{> atoms-arrow-link:blue|white(arrow-link-text:"Advanced Search")}}</p>
+        <p>Or, select your province instead:</p>
+        <div class="btn-group" role="group" aria-label="select your province">
+          {{> atoms-primary-button:blue(primary-button-text: "Alberta") }} {{> atoms-primary-button:blue(primary-button-text: "Ontario") }} {{> atoms-primary-button:blue(primary-button-text: "Quebec") }} {{> atoms-primary-button:blue(primary-button-text: "Saskatchewan")
+          }}
+        </div>
+      </div>
+    </div>
+    <!--/.row-->
+  </div>
+  <!--/.container-->
+</div>
+<!--/#m-nav-panel-find-->

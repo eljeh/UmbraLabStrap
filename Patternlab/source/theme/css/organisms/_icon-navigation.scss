@@ -1,0 +1,64 @@
+ul.icon-navigation {
+    padding: 50px 0 10px;
+
+    li {
+        text-align: center;
+        margin-bottom: 15px;
+
+        a {
+            color: $black;
+            font-size: 15px;
+            font-family: $futura;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            i {
+                display: block;
+                font-size: 40px;
+                padding-bottom: 8px;
+            }
+
+            &:hover {
+                color: $blue;
+
+                i {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    &.icon-navigation__stacked {
+        padding-top: 10px;
+
+        li {
+            text-align: left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+
+            a {
+                color: #ddd;
+                font-size: 14px;
+
+                i {
+                    display: inline-block;
+                    right: auto;
+                    font-size: 24px;
+                    position: static;
+                    margin-right: 20px;
+                    width: 25px;
+                    transform: none;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    color: $blue;
+
+                    i {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

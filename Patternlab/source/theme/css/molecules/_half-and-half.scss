@@ -1,0 +1,68 @@
+.half-and-half-block {
+  
+  & > .blue {
+    background: $blue;
+    color: #fff;
+  }
+
+  & > .darkblue {
+    background: $darkblue;
+    color: #fff;
+  }
+
+  & > .grey {
+    background: #e5e5e5;
+  }
+  .half-and-half-imagery {
+    text-align: center;
+
+    .carousel {
+      margin: 0 auto;
+    }
+  }
+
+  .half-and-half-content {
+    padding: 3rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @include if-min-width($XM) {
+    display: flex;
+    align-items: stretch;
+    
+    .left-half,
+    .right-half {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-half {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .half-and-half-content {
+      padding: 6rem 1rem;
+    }
+    
+    .half-and-half-imagery {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+  
+      .carousel,
+      .slick-list,
+      .slick-track,
+      img,
+      video,
+      figure {
+        object-fit: cover;
+        min-height: 100%;
+        height: 100%;
+        max-width: none;
+      }
+    }
+  }
+}

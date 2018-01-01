@@ -1,0 +1,38 @@
+.excerpt-card {
+  width: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  margin-bottom: .7rem;
+
+  .excerpt-card-text {
+    margin-bottom: 1rem;
+  }
+
+  .excerpt-card-subtitle,
+  .excerpt-card-title {
+    text-transform: uppercase;
+  }
+
+  .excerpt-card-subtitle {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: .7rem;
+  }
+
+  .excerpt-card-title {
+    font-size: 1.7rem;
+    font-family: $futura;
+    margin-bottom: 1rem;
+  }
+
+  @include if-min-width($S) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  @include if-min-width($XM) {
+    margin: .85rem;
+  }
+}

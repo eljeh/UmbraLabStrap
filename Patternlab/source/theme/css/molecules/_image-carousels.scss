@@ -1,0 +1,66 @@
+.image-carousel {
+  max-width: 500px;
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-item {
+    position: relative;
+  }
+
+  .slick-arrow {
+    font-size: 1.5rem;
+    color: #fff;
+    width: auto;
+    height: auto;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    bottom: 2rem;
+    top: auto;
+  }
+
+  .slick-prev {
+    right: 2.6em;
+    left: auto;
+    transform: rotate(-180deg) translate(-48%, 1px);
+  }
+
+  .slick-next {
+    right: .5rem;
+    transform: translateX(-50%);
+  }
+
+  .slick-disabled {
+    opacity: .5;
+  }
+
+  [class^="icon-"] {
+    display: block;
+  }
+
+  .image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 1.5rem 6rem 1.5rem 2rem;
+    text-align: center;
+
+    p {
+      font-size: .9rem;
+
+      &:only-child { margin: 0; }
+    }
+  }
+}

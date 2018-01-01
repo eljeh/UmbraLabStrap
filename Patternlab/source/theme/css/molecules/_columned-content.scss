@@ -1,0 +1,22 @@
+.columned-content {
+  padding: 3rem 0;
+  text-align: center;
+
+  .content-wrapper {
+    margin-top: 2rem;
+    text-align: left;
+    column-gap: 1.5rem;
+  }
+
+  @include if-min-width($M) {
+    padding: 8rem 0;
+
+    .content-wrapper.two-columns {
+      columns: 2;
+    }
+
+    .content-wrapper.three-columns {
+      columns: 3;
+    }
+  }
+}

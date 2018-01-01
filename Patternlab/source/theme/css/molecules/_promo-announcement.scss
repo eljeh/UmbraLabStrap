@@ -1,0 +1,34 @@
+.promo-announcement {
+  text-align:center;
+  padding: 1rem;
+  font-family: $futura;
+  font-weight: 700;
+
+  span {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  .arrow-link {
+    text-transform: none;
+    white-space: nowrap;
+    display: block;
+    margin-top:.7rem;
+  }
+
+  &.darkblue {
+    background: $darkblue;
+    color: #fff;
+  }
+
+  @include if-min-width($XS) {
+    span {
+      margin-right: 2rem;
+    }
+
+    .arrow-link {
+      display: inline-block;
+      margin-top: 0;
+    }
+  }
+}

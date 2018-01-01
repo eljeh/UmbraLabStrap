@@ -1,0 +1,160 @@
+// Build on Bootstrap buttons
+
+.btn {
+    margin-bottom: 1em;
+    line-height: 1;
+    white-space: normal;
+    display: block;
+    width: 100%;
+
+    .black &.btn,
+    .black-bg &.btn {
+      border-color: $blue;
+    }
+}
+
+.btn-group {
+
+    .btn {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.btn-primary {
+    @include twitter-bootstrap-button();
+    @include boardwalk-button($btn-bg, $btn-bottom, $btn-text);
+
+    &.red {
+        @include boardwalk-button($btn-red-bg, $btn-red-bottom, $btn-red-text);
+    }
+
+    &.white {
+        @include boardwalk-button($btn-white-bg, $btn-white-bottom, $btn-white-text);
+    }
+
+    &.blue {
+        @include boardwalk-button($btn-blue-bg, $btn-blue-bottom, $btn-blue-text);
+    }
+
+    // for icons
+    i {
+        font-size: 24px;
+    }
+}
+
+.btn-primary-outlined {
+    @include twitter-bootstrap-button();
+    border-color: $red;
+}
+
+// Resident Member Login
+.login-link {
+    color: $white;
+    font-family: $futura;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+
+        &:before {
+            color: $blue;
+        }
+    }
+
+    &:before {
+        @include icomoon("\e90d");
+        color: $white;
+        font-size: 24px;
+        margin-right: 5px;
+        position: relative;
+        top: 4px;
+    }
+
+}
+
+// Arrow Link + Back link - used throughout
+.arrow-link,
+.back-link {
+    color: $white;
+    font-family: $futura;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.9;
+        text-decoration: none;
+
+        &::after,
+        &::before {
+            opacity: 0.8;
+        }
+    }
+
+    &.blue {
+        color: $blue;
+
+        &::after,
+        &::before {
+            color: $blue;
+        }
+    }
+}
+
+// Arrow link
+
+.arrow-link {
+    &::after {
+        @include icomoon("\e913");
+        color: $white;
+        font-size: 17px;
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+// Back button styles
+
+.back-link {
+    &::before {
+        @include icomoon("\e913");
+        color: $white;
+        font-size: 17px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+        transform: rotate(180deg);
+    }
+}
+
+// Download button styles
+
+.btn-download {
+    border: 0;
+
+    .icon {
+      font-size: 120%;
+      vertical-align: middle;
+      padding-left: 1rem;
+      position: relative;
+      top: -2px;
+    }
+
+    &:hover {
+      border: 0;
+    }
+}
+
+
+@include if-min-width($M) {
+
+    .btn {
+        display: inline-block;
+        width: auto;
+    }
+}

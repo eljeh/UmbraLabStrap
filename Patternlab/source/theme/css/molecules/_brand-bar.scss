@@ -1,0 +1,53 @@
+.brand-bar {
+  background: #000;
+
+  .brand-bar-logo {
+    background: $blue;
+    border-right: 1.5rem solid $red;
+    min-height: 1.5rem;
+    flex-grow: 3;
+    margin-right: 20%;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  .view-map-btn {
+    display: block;
+    background: #fff;
+    padding: 1.5rem;
+    width: 100%;
+    min-width: 200px;
+    text-align: center;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-family: $futura;
+    font-weight: 900;
+
+    i {
+      margin-right: .5rem;
+      font-size: 180%;
+      vertical-align: middle;
+    }
+  }
+
+  @include if-min-width($S) {
+    display: flex;
+
+    .brand-bar-logo {
+      margin-right: 0;
+    }
+
+    .view-map-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      background: #000;
+      color: #fff;
+    }
+
+  }
+
+}

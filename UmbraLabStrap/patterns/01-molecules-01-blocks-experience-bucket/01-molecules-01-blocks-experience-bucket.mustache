@@ -1,0 +1,16 @@
+<div class="experience-bucket {{ borderColour }}-border">
+  <picture class="bucket-image">
+    <source srcset="http://via.placeholder.com/900x1020" media="(min-width: 80em)">
+    <source srcset="http://via.placeholder.com/600x720" media="(min-width: 45em)">
+    <img src="http://via.placeholder.com/300x420">
+  </picture>
+  <!-- /.bucket-image -->
+
+  <div class="bucket-content {{ styleModifier }}">
+    {{> atoms-secondary-heading }}
+    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    {{> atoms-primary-button:white(primary-button-text:"Experience Lifestyles") }}
+  </div>
+  <!-- /.bucket-content -->
+</div>
+<!-- /.experience-bucket -->

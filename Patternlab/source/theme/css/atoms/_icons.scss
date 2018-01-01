@@ -1,0 +1,16 @@
+.icon-list ul li{
+    margin: 20px;
+    font-size: 3em;
+    display: inline-block;
+}
+
+.icon-down-arrow {
+    &::after {
+        @include icomoon("\ea50");
+        color: $white;
+        font-size: 20px;
+        left: 2px;
+        top: 8px;
+        transform: rotate(180deg);
+    }
+}

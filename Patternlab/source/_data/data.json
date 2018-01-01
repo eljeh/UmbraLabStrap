@@ -1,0 +1,74 @@
+{
+    "title": "Boardwalk Pattern Lab",
+    "images": {
+        "logo": {
+            "src": "/theme/images/logo-boardwalk.png",
+            "alt": "Boardwalk Logo"
+        },
+        "avatar": {
+            "src": "http://placeimg.com/100/100/people",
+            "alt": "Avatar"
+        },
+        "square": {
+            "src": "http://placeimg.com/300/300/nature",
+            "alt": "Square"
+        },
+        "rectangle": {
+            "src": "http://placeimg.com/400/300/tech",
+            "alt": "Rectangle"
+        },
+        "landscape-4x3": {
+            "src": "http://placeimg.com/400/300/tech",
+            "alt": "4x3 Image"
+        },
+        "landscape-16x9": {
+            "src": "http://placeimg.com/640/360/tech",
+            "alt": "16x9 Image"
+        }
+    },
+    "banner": {
+        "background-image": "/theme/images/hp-banner.jpg",
+        "heading": "For A Life Well Lived",
+        "subheading": "Setting the Stage",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+    },
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis.",
+    "primary-button-text": "Button",
+    "primary-button-url": "#",
+    "primary-button-icon": "icon-search",
+    "download-button-text": "Download Now",
+    "download-button-url": "#",
+    "arrow-link-text": "Sign Up",
+    "arrow-link-url": "#",
+    "back-link-text": "Back to our stories",
+    "back-link-url": "#",
+    "login-link-text": "",
+    "login-link-url": "#",
+
+    "form-field-email-id": "find-home",
+    "form-field-email-placeholder": "email@example.com",
+
+    "form-field-search-id": "find-home",
+    "form-field-search-placeholder": "Choose Your City",
+
+    "form-field-select-id": "select",
+    "form-field-select-label": "select",
+    "form-field-select-placeholder": "Choose your...",
+
+    "form-field-text-id": "text",
+    "form-field-text-placeholder": "placeholder",
+
+    "form-field-textarea-id": "textarea",
+    "form-field-textarea-placeholder": "This is textarea.",
+
+    "form-field-tel-id": "",
+    "form-field-tel-placeholder": "(555) 123-4567",
+
+    "form-field-radio-id": "inlineRadio",
+    "form-field-radio-label": "form-check-label",
+    "form-field-radio-name": "inlineRadioOptions",
+    "form-field-radio-text": "Phone me",
+    "form-field-radio-value": "option1",
+    "form-field-radio-checked": "",
+    "form-field-radio-disabled": ""
+}

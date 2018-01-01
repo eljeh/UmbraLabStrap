@@ -1,0 +1,83 @@
+img {
+    margin: 1em 0;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Responsive Youtube videos in iframes */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Bootstrapy type stuff
+.no-padding {
+    padding: 0 !important;
+}
+.no-padding-left{
+    padding-left: 0 !important;
+}
+.no-padding-right{
+    padding-right: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+.padding {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    @include if-min-width($M){
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+// Style HRs
+hr {
+    position: relative;
+    border-top: 1px solid $hr-color;
+
+    &.white {
+        border-top-color: $white;
+    }
+
+    &.lightblue {
+        border-top-color: $lightblue;
+    }
+
+    &.caret {
+
+    }
+}
+
+// Font Classes
+.futura {
+    font-family: $futura;
+}
+
+.allura{
+    font-family: $allura;
+}
+
+.source-sans-pro {
+    font-family: $source-sans-pro;
+}
+
+// Text Classes
+
+.white {
+    color: $white;
+}

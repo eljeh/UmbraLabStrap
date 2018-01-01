@@ -1,0 +1,48 @@
+﻿@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Umbraco.Web;
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{ 
+    var startNodeId = Model.MacroParameters["startNodeId"] != null ? Model.MacroParameters["startNodeId"] : Model.Content.Id;
+    var numberOfPosts = 3;
+    if (Model.MacroParameters["numberOfPosts"] != null)
+    {
+        int.TryParse((string)Model.MacroParameters["numberOfPosts"], out numberOfPosts);
+    }
+ }
+@if (startNodeId != null)
+{
+    @* Get the starting page *@
+    var startNode = Umbraco.TypedContent(startNodeId);
+    var blogposts = startNode.Children.OrderByDescending(x => x.CreateDate).Take(numberOfPosts);
+
+    if (blogposts.Any())
+    {
+        <article class="half-and-half-block ">
+
+            @foreach (ContentModels.Blogpost post in blogposts)
+            {
+                <section>
+
+                    <div class="left-half grey">
+                        <div class="half-and-half-content">
+                            <h3 class="secondary-heading">@post.PageTitle</h3>
+                            <small>
+                                @Model.Content.CreateDate.ToShortDateString() - 
+                                @Html.Partial("~/Views/Partials/CategoryLinks.cshtml", post.Categories)
+                            </small>
+                            <p>
+                                @post.Excerpt
+                            </p>
+
+                            <a class="arrow-link blue" href="@post.Url">Learn More</a>
+
+                        </div>
+                        <!-- /.half-and-half-content -->
+                    </div>
+                    <!-- /.left-half -->
+
+                </section>
+            }
+        </article>
+    }
+}
