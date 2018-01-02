@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.OurStories>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Layout.cshtml";
+}
+
+@Html.Partial("~/views/partials/jumbotron.cshtml")
+
+<div class="container">
+    @Html.Partial("~/views/partials/filter-tabs.cshtml")
+</div>
+
+@Html.Partial("~/views/partials/half-and-half.cshtml")
+
+<section>
+
+    <div class="container">
+
+        @Umbraco.RenderMacro("LatestStories",
+                 new
+                 {
+                     numberOfPosts = Model.Content.HowManyPostsShouldBeShown,
+                     startNodeId = Model.Content.Id
+                 })
+    </div>
+
+</section>
