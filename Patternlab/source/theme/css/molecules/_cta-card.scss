@@ -1,5 +1,4 @@
 .cta-card {
-  width: 100%;
   padding: 1.5rem;
   background: #fff;
   margin-bottom: 1rem;
@@ -26,6 +25,7 @@
 
   @include if-min-width($S) {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem;

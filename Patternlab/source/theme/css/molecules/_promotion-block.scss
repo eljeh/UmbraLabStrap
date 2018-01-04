@@ -1,0 +1,39 @@
+.promotion-block {
+  border-top: 1px solid #eee;
+
+  .promo-heading {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    p {
+      display: inline-block;
+    }
+  }
+
+  .promo-offerings {
+    background: #000;
+    padding: 1.5rem 4rem;
+    line-height: 1.5;
+    color: #fff;
+
+    .promo-offerings-title {
+      margin: 0;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+}

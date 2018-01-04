@@ -727,6 +727,11 @@ Umbraco.Core.Persistence.Mappers.ServerRegistrationMapper, Umbraco.Core, Version
 Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.6554.23584, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.6554.23584, Culture=neutral, PublicKeyToken=null
 
+umbraco.cms.businesslogic.macro.IMacroEngine
+
+umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6554.23601, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
+
 Umbraco.Web.Trees.TreeController
 Umbraco.Web.Trees.TreeAttribute
 Umbraco.Web.Trees.UserTreeController, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
@@ -877,9 +882,4 @@ Umbraco.Web.HealthCheck.Checks.Config.TrySkipIisCustomErrorsCheck, umbraco, Vers
 Umbraco.Web.HealthCheck.Checks.Config.CustomErrorsCheck, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Config.TraceCheck, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.HealthCheck.Checks.Config.CompilationDebugCheck, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
-
-umbraco.cms.businesslogic.macro.IMacroEngine
-
-umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6554.23601, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.6554.23596, Culture=neutral, PublicKeyToken=null
 

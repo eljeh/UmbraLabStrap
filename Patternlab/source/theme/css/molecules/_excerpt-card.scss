@@ -1,5 +1,4 @@
 .excerpt-card {
-  width: 100%;
   padding: 1.5rem;
   background: #fff;
   margin-bottom: .7rem;
@@ -27,6 +26,8 @@
 
   @include if-min-width($S) {
     display: flex;
+    flex-grow: 1;
+    flex-basis: calc(33% - 1.6rem);
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem;

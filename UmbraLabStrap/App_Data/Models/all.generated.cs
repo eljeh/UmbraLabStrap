@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f6b8585fab50b99d")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "61787bcf3d1f0dd0")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -270,15 +270,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<OurStories, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-		}
-
-		///<summary>
-		/// Disqus Shortname: To use comments, you'll need to sign up for Disqus and enter your shortname here (more info: https://help.disqus.com/customer/portal/articles/472097-universal-embed-code)
-		///</summary>
-		[ImplementPropertyType("disqusShortname")]
-		public string DisqusShortname
-		{
-			get { return this.GetPropertyValue<string>("disqusShortname"); }
 		}
 
 		///<summary>

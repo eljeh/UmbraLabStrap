@@ -104,6 +104,10 @@ function fileUploadInit() {
     }
 }
 
+function initDatePicker() {
+    $( "#datepicker" ).datepicker();
+}
+
 // dom ready
 $(function() {
     // Adding functions here for now, clean up later
@@ -131,4 +135,6 @@ $(function() {
 
     // Test for file upload element, and apply some wizardry
     fileUploadInit();
+
+    initDatePicker();
 });

@@ -16,17 +16,17 @@
       "vendor" : "./source/theme/vendor/"
     },
     "public" : {
-      "root" : "../UmbraLabStrap/",
-      "patterns" : "../UmbraLabStrap/patterns/",
-      "data" : "../UmbraLabStrap/styleguide/data/",
-      "annotations" : "../UmbraLabStrap/annotations/",
-      "styleguide" : "../UmbraLabStrap/styleguide/",
-      "js": "../UmbraLabStrap/theme/js/",
-      "json" : "../UmbraLabStrap/theme/json",
-      "images": "../UmbraLabStrap/theme/images/",
-      "fonts": "../UmbraLabStrap/theme/fonts/",
-      "css": "../UmbraLabStrap/theme/css/",
-      "vendor": "../UmbraLabStrap/theme/vendor/"
+      "root" : "./public/",
+      "patterns" : "./public/patterns/",
+      "data" : "./public/styleguide/data/",
+      "annotations" : "./public/annotations/",
+      "styleguide" : "./public/styleguide/",
+      "js": "./public/theme/js/",
+      "json" : "./public/theme/json",
+      "images": "./public/theme/images/",
+      "fonts": "./public/theme/fonts/",
+      "css": "./public/theme/css/",
+      "vendor": "./public/theme/vendor/"
     }
   },
   "styleGuideExcludes": [

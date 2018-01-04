@@ -6,14 +6,14 @@
 var sass_config = {
  sass_paths: {
    src: './source/theme/css/**/*.{scss,sass}',
-   dest: '../UmbraLabStrap/theme/css/'
+   dest: './public/theme/css/'
  }
 };
 
 var js_config = {
   js_paths: {
     src: './source/theme/js/**/*.js',
-    dest: '../UmbraLabStrap/theme/js/'
+    dest: './public/theme/js/'
   }
 };
 

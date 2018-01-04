@@ -12,37 +12,34 @@
 @if (startNodeId != null)
 {
     @* Get the starting page *@
-    var startNode = Umbraco.TypedContent(startNodeId);
-    var blogposts = startNode.Children.OrderByDescending(x => x.CreateDate).Take(numberOfPosts);
+var startNode = Umbraco.TypedContent(startNodeId);
+var blogposts = startNode.Children.OrderByDescending(x => x.CreateDate).Take(numberOfPosts);
 
-    if (blogposts.Any())
-    {
-        <article class="half-and-half-block ">
+if (blogposts.Any())
+{
+        foreach (ContentModels.Blogpost post in blogposts)
+        {
+            <article itemscope="" itemtype="http://schema.org/Event">
 
-            @foreach (ContentModels.Blogpost post in blogposts)
-            {
-                <section>
+                <h4 class="secondary-heading" itemprop="name">@post.PageTitle</h4>
 
-                    <div class="left-half grey">
-                        <div class="half-and-half-content">
-                            <h3 class="secondary-heading">@post.PageTitle</h3>
-                            <small>
-                                @Model.Content.CreateDate.ToShortDateString() - 
-                                @Html.Partial("~/Views/Partials/CategoryLinks.cshtml", post.Categories)
-                            </small>
-                            <p>
-                                @post.Excerpt
-                            </p>
+                <small class="release-date" itemprop="startDate" content="@Model.Content.CreateDate.ToShortDateString()">
+                    @Model.Content.CreateDate.ToShortDateString()
+                </small>
+                <small>
+                    - @Html.Partial("~/Views/Partials/CategoryLinks.cshtml", post.Categories)
+                </small><br />
 
-                            <a class="arrow-link blue" href="@post.Url">Learn More</a>
+                <span itemprop="description">
+                    @post.Excerpt
+                </span>
 
-                        </div>
-                        <!-- /.half-and-half-content -->
-                    </div>
-                    <!-- /.left-half -->
+                <p>
+                    <a class="arrow-link blue" href="@post.Url" itemprop="url">Learn More</a>
+                </p>
 
-                </section>
-            }
-        </article>
+            </article>
+        }
+
     }
 }

@@ -12,16 +12,59 @@
 
 @Html.Partial("~/views/partials/half-and-half.cshtml")
 
-<section>
 
+
+<section class="multi-columns">
     <div class="container">
 
-        @Umbraco.RenderMacro("LatestStories",
+        <div class="column-wrapper">
+
+            @Html.Partial("~/views/partials/cta-card.cshtml")
+
+            @Html.Partial("~/views/partials/cta-card.cshtml")
+
+            @Html.Partial("~/views/partials/cta-card.cshtml")
+
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+</section>
+<!--/.multi-columns-->
+
+<section class="multi-columns">
+    <div class="container">
+
+        <div class="column-wrapper">
+
+            @Html.Partial("~/views/partials/excerpt-card.cshtml")
+
+            @Html.Partial("~/views/partials/excerpt-card.cshtml")
+
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+</section>
+<!--/.multi-columns-->
+
+<section class="multi-columns">
+    <div class="container">
+
+        <div class="column-wrapper">
+
+            @Umbraco.RenderMacro("LatestStories",
                  new
                  {
                      numberOfPosts = Model.Content.HowManyPostsShouldBeShown,
                      startNodeId = Model.Content.Id
                  })
-    </div>
+        </div>
 
+
+    </div>
+    <!-- /.container -->
 </section>
+<!--/.multi-columns-->

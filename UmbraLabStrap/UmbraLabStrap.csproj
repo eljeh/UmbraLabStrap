@@ -653,6 +653,9 @@
     <Content Include="Views\OurStories.cshtml" />
     <Content Include="Views\StoriesDetails.cshtml" />
     <Content Include="Views\propertyResults.cshtml" />
+    <Content Include="Views\Partials\related-items.cshtml" />
+    <Content Include="Views\Partials\cta-card.cshtml" />
+    <Content Include="Views\Partials\excerpt-card.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

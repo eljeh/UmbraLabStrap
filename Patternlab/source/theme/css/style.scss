@@ -7,6 +7,7 @@
 @import 'vendor/magnific-popup';
 @import 'vendor/slick';
 @import 'vendor/slick-theme';
+@import 'vendor/jquery-ui';
 
 // atoms
 @import 'atoms/buttons';
@@ -19,6 +20,7 @@
 @import 'atoms/chat-now-bubble';
 @import 'atoms/feature-icon';
 @import 'atoms/property-logos';
+@import 'atoms/terms-and-conditions';
 
 /*
 @import 'atoms/modals';
@@ -50,6 +52,7 @@
 @import 'molecules/offer-cards';
 @import 'molecules/brand-bar';
 @import 'molecules/contact-form';
+@import 'molecules/promotion-block';
 
 // organisms
 @import 'organisms/header';
