@@ -4,10 +4,10 @@
  * The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.
 ******************************************************/
 var sass_config = {
- sass_paths: {
-   src: './source/theme/css/**/*.{scss,sass}',
-   dest: './public/theme/css/'
- }
+  sass_paths: {
+    src: './source/theme/css/**/*.{scss,sass}',
+    dest: './public/theme/css/'
+  }
 };
 
 var js_config = {
@@ -49,19 +49,19 @@ function normalizePath() {
 ******************************************************/
 // JS copy
 gulp.task('pl-copy:js', function () {
-  return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)} )
+  return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)})
     .pipe(gulp.dest(normalizePath(paths().public.js)));
 });
 
 // Images copy
 gulp.task('pl-copy:img', function () {
-  return gulp.src('**/*.*',{cwd: normalizePath(paths().source.images)} )
+  return gulp.src('**/*.*', {cwd: normalizePath(paths().source.images)})
     .pipe(gulp.dest(normalizePath(paths().public.images)));
 });
 
 // Favicon copy
 gulp.task('pl-copy:favicon', function () {
-  return gulp.src('favicon.ico', {cwd: normalizePath(paths().source.root)} )
+  return gulp.src('favicon.ico', {cwd: normalizePath(paths().source.root)})
     .pipe(gulp.dest(normalizePath(paths().public.root)));
 });
 
@@ -72,8 +72,8 @@ gulp.task('pl-copy:font', function () {
 });
 
 // Vendor Copy
-gulp.task('pl-copy:vendor', function(){
-  return gulp.src('**/*.*',{cwd: normalizePath(paths().source.vendor)} )
+gulp.task('pl-copy:vendor', function () {
+  return gulp.src('**/*.*', {cwd: normalizePath(paths().source.vendor)})
     .pipe(gulp.dest(normalizePath(paths().public.vendor)));
 });
 
@@ -104,9 +104,9 @@ gulp.task('pl-copy:styleguide-css', function () {
 
 // NEW WORKING SASS Compiling
 gulp.task('sass', function () {
- return gulp.src(sass_config.sass_paths.src)
-   .pipe(sass().on('error', sass.logError))
-   .pipe(gulp.dest(sass_config.sass_paths.dest))
+  return gulp.src(sass_config.sass_paths.src)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(sass_config.sass_paths.dest))
 });
 
 
@@ -222,10 +222,10 @@ function reloadCSS(done) {
 function watch() {
   const watchers = [
     {
-        name: 'Sass',
-        paths: [normalizePath(paths().source.css, '**', '*.scss')],
-        config: { awaitWriteFinish: true },
-        tasks: gulp.series('sass', reloadCSS)
+      name: 'Sass',
+      paths: [normalizePath(paths().source.css, '**', '*.scss')],
+      config: { awaitWriteFinish: true },
+      tasks: gulp.series('sass', reloadCSS)
     },
     {
       name: 'CSS',
