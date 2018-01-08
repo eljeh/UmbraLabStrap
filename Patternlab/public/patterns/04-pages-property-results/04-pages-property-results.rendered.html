@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
   <link rel="stylesheet" href="/theme/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="/theme/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="/theme/css/style.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="/theme/css/style.css?1515336204353" media="all" />
 
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1515336204353" media="all" />
   <!-- never cache patterns -->
   <meta http-equiv="cache-control" content="max-age=0" />
   <meta http-equiv="cache-control" content="no-cache" />
@@ -26,8 +26,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1515103124304" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1515336204353" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1515336204353" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -164,8 +164,7 @@
 
   <div id="mobile-nav-container">
     <header class="mobile-header d-flex justify-content-between">
-      <div class="d-flex align-items-center mobile-header__logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" />
-      </div>
+      <div class="d-flex align-items-center mobile-header__logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" /></div>
       <div class="d-flex align-items-center"><a class="close"><i class="icon-close"></i></a>
       </div>
     </header>
@@ -290,9 +289,10 @@
 
   <div class="wrapper">
 
-    <header id="header" class="container-fluid">
+    <header id="header" class="container-fluid ">
       <div class="d-flex flex-row justify-content-between align-items-end">
-        <div class="p-2 logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid header-logo" alt="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" />
+        <div class="p-2 logo">
+          <img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid header-logo" alt="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" />
         </div>
         <div class="p-2">
           <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
@@ -326,7 +326,6 @@
         <h1 class="heading white">
           <span class="sub-heading">Setting the Stage</span> For A Life Well Lived
         </h1>
-
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis.</p>
       </div>
 
@@ -335,28 +334,49 @@
 
 
     <div class="advanced-filters">
-      <div id="filterAccordion" role="tablist" aria-multiselectable="true">
+
+      <h5 class="mb-0 text-center">
+        <a data-toggle="collapse" data-target="#advancedFilterCollapse" aria-expanded="true" class="hidden-md-up btn btn-primary advanced-filters-toggle-small">
+            Filters
+        </a>
+      </h5>
+
+      <div id="filterAccordion">
         <div class="advanced-filters-container">
-          <div class="advanced-filters-toggle" role="tab" id="advancedFilters">
+          <div class="advanced-filters-toggle hidden-sm-down" role="tab">
             <h5 class="mb-0 text-center">
-              <a data-toggle="collapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+              <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
                         Filter
                     </a>
             </h5>
           </div>
 
           <div id="advancedFilterCollapse" class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+            <div class="advanced-filters-toggle advanced-filters-toggle-header hidden-md-up" role="tab">
+              <div class="row">
+                <div class="col-10">
+                  <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                FIND YOUR HOME
+                            </a>
+                </div>
+                <div class="col-2 text-right">
+                  <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                <i class="icon icon-close"></i>
+                            </a>
+                </div>
+              </div>
+            </div>
             <div class="card-block">
               <div class="container">
                 <form>
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-3 col-lg-4">
                       <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
 
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3 col-lg-2">
                       <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Quadrant</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -365,9 +385,9 @@
 </label>
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3 col-lg-3">
                       <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Suite Type</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -376,9 +396,9 @@
 </label>
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3 col-lg-3">
                       <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Your Budget</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -400,7 +420,7 @@
  Show Available Units Only</label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                      <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');"><input
+                      <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');jQuery('#filterAccordion').toggleClass('active');"><input
     type="checkbox"
     
     class="" n
@@ -640,7 +660,6 @@
 
     </div>
 
-
     <div class="property-listings">
       <div class="container">
         <div class="row">
@@ -649,7 +668,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-communities ">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
                     <img src="/theme/images/logos-mini/communities-mini.jpg" alt="" />
@@ -668,16 +687,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails0" aria-expanded="true" aria-controls="propertyListItemDetails0" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
-                      <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                      <div class="row property-offerings" id="propertyListItemDetails0">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -688,7 +711,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -699,14 +722,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -717,7 +740,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-lifestyle ">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
                     <img src="/theme/images/logos-mini/lifestyle-mini.jpg" alt="" />
@@ -736,16 +759,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
                       <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -756,7 +783,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -767,14 +794,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -785,7 +812,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-living ">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
                     <img src="/theme/images/logos-mini/living-mini.jpg" alt="" />
@@ -804,16 +831,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails2" aria-expanded="true" aria-controls="propertyListItemDetails2" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
-                      <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                      <div class="row property-offerings" id="propertyListItemDetails2">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -824,7 +855,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -835,14 +866,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -853,7 +884,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-communities property-special-offer">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <div class="property-special-offer-flag hidden-md-up">Offer Ends Soon</div>
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
@@ -874,16 +905,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails3" aria-expanded="true" aria-controls="propertyListItemDetails3" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
-                      <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                      <div class="row property-offerings" id="propertyListItemDetails3">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -894,7 +929,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -905,14 +940,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -923,7 +958,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-lifestyle property-special-offer">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <div class="property-special-offer-flag hidden-md-up">Offer Ends Soon</div>
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
@@ -944,16 +979,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails4" aria-expanded="true" aria-controls="propertyListItemDetails4" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
-                      <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                      <div class="row property-offerings" id="propertyListItemDetails4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -964,7 +1003,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -975,14 +1014,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -993,7 +1032,7 @@
             <!-- single property list item -->
             <div class="row property-list-item property-type-living property-special-offer">
               <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+                <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
                   <div class="property-special-offer-flag hidden-md-up">Offer Ends Soon</div>
                   <i class="icon-pin hidden-md-down"></i>
                   <div class="property-list-img-flag">
@@ -1014,16 +1053,20 @@
                 </div>
                 <div class="property-list-item-details-bottom">
                   <div class="text-center hidden-md-up">
+                    <a href="#" class="btn btn-primary ">
+    Learn More
+</a>
+
                     <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                    <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                    <a data-toggle="collapse" href="#propertyListItemDetails5" aria-expanded="true" aria-controls="propertyListItemDetails5" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-lg-9">
                       <!-- the ID should change with the index of the property item being looped over -->
-                      <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                      <div class="row property-offerings" id="propertyListItemDetails5">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>1BR</span><span>1 Left</span>
                           </div>
@@ -1034,7 +1077,7 @@
                             <span>2BR</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>2BR Premium</span><span>1 Left</span>
                           </div>
@@ -1045,14 +1088,14 @@
                             <span>Bachelor</span><span>Waitlist</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                           <div class="property-offering">
                             <span>Bachelor Premium</span><span>1 Left</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                    <div class="col-lg-3 hidden-md-down">
                       <i class="icon-pet float-right"></i>
                     </div>
                   </div>
@@ -1272,10 +1315,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1515103124304">
+  <script id="pl-js-polyfill-insert-1515336204353">
     (function() {
       if (self != top) {
-        var cb = '1515103124304';
+        var cb = '1515336204353';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -1285,10 +1328,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1515103124304">
+  <script id="pl-js-insert-1515336204353">
     (function() {
       if (self != top) {
-        var cb = '1515103124304';
+        var cb = '1515336204353';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']

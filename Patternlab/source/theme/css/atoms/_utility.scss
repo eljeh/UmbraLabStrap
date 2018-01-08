@@ -81,3 +81,42 @@ hr {
 .white {
     color: $white;
 }
+
+
+// background color classes
+.bg {
+
+    &-white {
+        background: $white;
+    }
+
+    &-grey {
+        background: $lightgrey;
+    }
+
+    &-lightblue {
+        background: $lightblue;
+    }
+
+    &-blue {
+        background: $blue;
+    }
+
+    &-darkblue {
+        background: $darkblue;
+    }
+
+    &-black {
+        background: $black;
+    }
+
+    &-red {
+        background: $red;
+    }
+}
+
+
+
+
+
+

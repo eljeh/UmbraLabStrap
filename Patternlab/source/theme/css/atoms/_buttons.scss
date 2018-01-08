@@ -39,6 +39,10 @@
         @include boardwalk-button($btn-blue-bg, $btn-blue-bottom, $btn-blue-text);
     }
 
+    &.transparent {
+        @include boardwalk-button(transparent, transparent, $white);
+    }
+
     // for icons
     i {
         font-size: 24px;

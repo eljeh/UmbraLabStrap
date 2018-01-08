@@ -1,35 +1,75 @@
 .advanced-filters {
 
+  #filterAccordion {
+
+    // quite different version of small screens
+    @media (max-width: ($M - 1)) {
+      position: absolute;
+      z-index: 3;
+      background: #fff;
+      top: 0;
+      width: 100%;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
   &-toggle {
     background: $white;
     border-bottom: none;
 
-    a {
-      color: $blue;
-      font-size: 1rem;
-      font-weight: bolder;
-      display: block;
-      padding: 15px 0;
-      border-bottom: 1px solid $lighterblue;
-
-      &::after {
-        @include icomoon("\ea50");
+    &:not(.advanced-filters-toggle-header) {
+      a {
         color: $blue;
-        font-size: 20px;
+        font-size: 1rem;
         font-weight: bolder;
-        display: inline-block;
-        position: relative;
-        left: 2px;
-        top: 8px;
-      }
-
-      &.collapsed {
-        border-bottom: 1px solid transparent;
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid $lighterblue;
+        text-transform: uppercase;
+        font-family: $futura;
 
         &::after {
-          transform: rotate(180deg);
-          top: 0;
+          @include icomoon("\ea50");
+          color: $blue;
+          font-size: 20px;
+          font-weight: bolder;
+          display: inline-block;
+          position: relative;
+          left: 2px;
+          top: 8px;
         }
+
+        &.collapsed {
+          border-bottom: 1px solid transparent;
+
+          &::after {
+            transform: rotate(180deg);
+            top: 0;
+          }
+        }
+      }
+    }
+
+    &-small {
+      width: 85%;
+      margin-top: 1rem;
+      color: $white !important;
+    }
+
+    &-header {
+      background: $blue;
+      padding: 30px;
+
+      a {
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: none;
+        font-size: 2rem;
+        font-family: $futura;
       }
     }
   }
@@ -41,9 +81,13 @@
     }
   }
 
+  #advancedFilterCollapse {
+    @media (max-width: $M) {
+      border-bottom: 1px solid $footer-grey;
+    }
+  }
+
   label {
-    padding-left: 25px;
-    padding-right: 5px;
 
     input {
       margin-right: 10px;
@@ -55,7 +99,10 @@
   }
 
   input {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    @media (min-width: $M) {
+      margin-bottom: 20px;
+    }
   }
 
   select {
@@ -63,6 +110,11 @@
   }
 
   &-stock {
+
+    label {
+      padding-left: 25px;
+      padding-right: 5px;
+    }
 
   }
 
@@ -116,6 +168,11 @@
     padding: 25px 0 10px;
     border: 1px solid black;
     margin-bottom: 30px;
+
+    label {
+      padding-left: 25px;
+      padding-right: 5px;
+    }
   }
 
 

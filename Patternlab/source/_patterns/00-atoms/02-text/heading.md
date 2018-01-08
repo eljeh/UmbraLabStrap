@@ -2,4 +2,4 @@
 title: Heading
 ---
 
-Main heading set.
+Main heading.

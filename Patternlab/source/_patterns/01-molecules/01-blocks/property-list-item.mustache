@@ -2,7 +2,7 @@
 <!-- single property list item -->
 <div class="row property-list-item property-type-{{property-type}} {{#special-offer}}property-special-offer{{/special-offer}}">
     <div class="col-12 col-md-4 col-lg-4 col-xl-3 property-list-img-wrap">
-        <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) no-repeat; background-size: cover">
+        <div class="property-list-img" style="background: url(https://lorempixel.com/561/511/city) center no-repeat; background-size: cover">
             {{#special-offer}}
             <div class="property-special-offer-flag hidden-md-up">Offer Ends Soon</div>
             {{/special-offer}}
@@ -27,16 +27,17 @@
         </div>
         <div class="property-list-item-details-bottom">
             <div class="text-center hidden-md-up">
+                {{> atoms-primary-button(primary-button-text:"Learn More")}}
                 <!-- the href and aria-controls should change with the index of the property item being looped over -->
-                <a data-toggle="collapse" href="#propertyListItemDetails1" aria-expanded="true" aria-controls="propertyListItemDetails1">
+                <a data-toggle="collapse" href="#propertyListItemDetails{{loop-index}}" aria-expanded="true" aria-controls="propertyListItemDetails{{loop-index}}" class="property-detail-dropdown collapsed">
                     Availability
                 </a>
             </div>
             <div class="row">
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-lg-9">
                     <!-- the ID should change with the index of the property item being looped over -->
-                    <div class="row property-offerings" id="propertyListItemDetails1">
-                        <div class="col-12 col-md-4">
+                    <div class="row property-offerings" id="propertyListItemDetails{{loop-index}}">
+                        <div class="col-12 col-sm-6 col-xl-4">
                             <div class="property-offering">
                                 <span>1BR</span><span>1 Left</span>
                             </div>
@@ -47,7 +48,7 @@
                                 <span>2BR</span><span>Waitlist</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                             <div class="property-offering">
                                 <span>2BR Premium</span><span>1 Left</span>
                             </div>
@@ -58,14 +59,14 @@
                                 <span>Bachelor</span><span>Waitlist</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-6 col-xl-4">
                             <div class="property-offering">
                                 <span>Bachelor Premium</span><span>1 Left</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3 hidden-md-down">
+                <div class="col-lg-3 hidden-md-down">
                     <i class="icon-pet float-right"></i>
                 </div>
             </div>

@@ -1,8 +1,9 @@
 <div class="jumbotron jumbotron-fluid" style="background-image: url({{banner.background-image}});">
 
   <div class="container">
-    {{> atoms-heading:white}}
+    {{#banner.heading}} {{#banner.subheading}} {{> atoms-heading-subheading:white}} {{/banner.subheading}} {{^banner.subheading}} {{> atoms-heading:white}} {{/banner.subheading}} {{/banner.heading}} {{# banner.content }}
     <p>{{ banner.content }}</p>
+    {{/ banner.content }}
   </div>
 
 </div>

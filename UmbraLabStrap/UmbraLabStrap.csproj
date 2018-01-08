@@ -535,13 +535,13 @@
     <Content Include="Views\Partials\Navigation\panel-investors.cshtml" />
     <Content Include="Views\Partials\Navigation\panel-search.cshtml" />
     <Content Include="Views\Partials\Navigation\utility-navigation.cshtml" />
-    <Content Include="Views\Partials\centred-cta.cshtml" />
-    <Content Include="Views\Partials\experience-buckets.cshtml" />
+    <Content Include="Views\Partials\Structures\centred-cta.cshtml" />
+    <Content Include="Views\Partials\Structures\experience-buckets.cshtml" />
     <Content Include="Views\Partials\footer.cshtml" />
     <Content Include="Views\Partials\header.cshtml" />
-    <Content Include="Views\Partials\hp-promos.cshtml" />
-    <Content Include="Views\Partials\jumbotron-homepage.cshtml" />
-    <Content Include="Views\Partials\stories-block.cshtml" />
+    <Content Include="Views\Partials\Structures\hp-promos.cshtml" />
+    <Content Include="Views\Partials\Structures\jumbotron-homepage.cshtml" />
+    <Content Include="Views\Partials\Structures\stories-block.cshtml" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="theme\vendor\icomoon\fonts\icomoon.eot" />
     <Content Include="theme\vendor\icomoon\fonts\icomoon.ttf" />
@@ -642,20 +642,41 @@
     <Content Include="patterns\03-templates-profile\03-templates-profile.mustache" />
     <Content Include="patterns\04-pages-home-page\04-pages-home-page.mustache" />
     <Content Include="patterns\04-pages-property-results\04-pages-property-results.mustache" />
-    <Content Include="Views\Partials\property-listings.cshtml" />
-    <Content Include="Views\Partials\property-filters.cshtml" />
-    <Content Include="Views\Partials\jumbotron.cshtml" />
-    <Content Include="Views\Partials\promo.cshtml" />
-    <Content Include="Views\Partials\filter-tabs.cshtml" />
-    <Content Include="Views\Partials\half-and-half.cshtml" />
+    <Content Include="Views\Partials\Structures\property-listings.cshtml" />
+    <Content Include="Views\Partials\Structures\property-filters.cshtml" />
+    <Content Include="Views\Partials\Structures\jumbotron.cshtml" />
+    <Content Include="Views\Partials\Structures\promo.cshtml" />
+    <Content Include="Views\Partials\Structures\filter-tabs.cshtml" />
+    <Content Include="Views\Partials\Structures\half-half.cshtml" />
     <Content Include="Views\MacroPartials\LatestStories.cshtml" />
     <Content Include="Views\ContentPage.cshtml" />
     <Content Include="Views\OurStories.cshtml" />
     <Content Include="Views\StoriesDetails.cshtml" />
-    <Content Include="Views\propertyResults.cshtml" />
-    <Content Include="Views\Partials\related-items.cshtml" />
-    <Content Include="Views\Partials\cta-card.cshtml" />
-    <Content Include="Views\Partials\excerpt-card.cshtml" />
+    <Content Include="Views\PropertyResults.cshtml" />
+    <Content Include="Views\Partials\Structures\related-items.cshtml" />
+    <Content Include="Views\Partials\Widgets\cta-card.cshtml" />
+    <Content Include="Views\Partials\Widgets\excerpt-card.cshtml" />
+    <Content Include="Views\Partials\Widgets\image-carousel.cshtml" />
+    <Content Include="Views\Partials\Widgets\offer-card.cshtml" />
+    <Content Include="Views\Partials\Widgets\brand-bar.cshtml" />
+    <Content Include="Views\Partials\Widgets\community-block.cshtml" />
+    <Content Include="Views\Partials\Structures\contact-form.cshtml" />
+    <Content Include="Views\Partials\Widgets\property-card.cshtml" />
+    <Content Include="Views\Partials\Widgets\search-block.cshtml" />
+    <Content Include="Views\Partials\Structures\tabbed-content.cshtml" />
+    <Content Include="Views\Partials\Structures\advanced-filters.cshtml" />
+    <Content Include="Views\CareerListings.cshtml" />
+    <Content Include="Views\CommunityDetail.cshtml" />
+    <Content Include="Views\Investors.cshtml" />
+    <Content Include="Views\LifestyleExperienceDetails.cshtml" />
+    <Content Include="Views\LiveWthUs.cshtml" />
+    <Content Include="Views\OpportunityDetails.cshtml" />
+    <Content Include="Views\ProfileCommunities.cshtml" />
+    <Content Include="Views\WorkingWithUs.cshtml" />
+    <Content Include="Views\SearchResults.cshtml" />
+    <Content Include="Views\ProfileLifestyle.cshtml" />
+    <Content Include="Views\Partials\Structures\promotion.cshtml" />
+    <Content Include="Views\Partials\Structures\citation-list.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -696,6 +717,10 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Partials\Components\" />
+    <Folder Include="Views\Profiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

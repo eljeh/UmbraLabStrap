@@ -1,7 +1,10 @@
 .multi-columns {
   background: #eee;
-  padding: 3rem 0;
   text-align: center;
+
+  .container {
+    padding: 3rem 0;
+  }
 
   .column-wrapper {
     text-align: left;
@@ -13,11 +16,14 @@
 
   @include if-min-width($XM) {
 
-    padding: 8rem 0;
+    .container{
+      padding: 8rem 0;
+    }
 
     .column-wrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }

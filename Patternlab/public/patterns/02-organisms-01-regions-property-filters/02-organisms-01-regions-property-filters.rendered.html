@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
   <link rel="stylesheet" href="/theme/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="/theme/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="/theme/css/style.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="/theme/css/style.css?1515336204353" media="all" />
 
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1515336204353" media="all" />
   <!-- never cache patterns -->
   <meta http-equiv="cache-control" content="max-age=0" />
   <meta http-equiv="cache-control" content="no-cache" />
@@ -26,8 +26,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1515103124304" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1515103124304" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1515336204353" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1515336204353" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -35,28 +35,49 @@
 
 <body class="">
   <div class="advanced-filters">
-    <div id="filterAccordion" role="tablist" aria-multiselectable="true">
+
+    <h5 class="mb-0 text-center">
+      <a data-toggle="collapse" data-target="#advancedFilterCollapse" aria-expanded="true" class="hidden-md-up btn btn-primary advanced-filters-toggle-small">
+            Filters
+        </a>
+    </h5>
+
+    <div id="filterAccordion">
       <div class="advanced-filters-container">
-        <div class="advanced-filters-toggle" role="tab" id="advancedFilters">
+        <div class="advanced-filters-toggle hidden-sm-down" role="tab">
           <h5 class="mb-0 text-center">
-            <a data-toggle="collapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+            <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
                         Filter
                     </a>
           </h5>
         </div>
 
         <div id="advancedFilterCollapse" class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+          <div class="advanced-filters-toggle advanced-filters-toggle-header hidden-md-up" role="tab">
+            <div class="row">
+              <div class="col-10">
+                <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                FIND YOUR HOME
+                            </a>
+              </div>
+              <div class="col-2 text-right">
+                <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                <i class="icon icon-close"></i>
+                            </a>
+              </div>
+            </div>
+          </div>
           <div class="card-block">
             <div class="container">
               <form>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-12 col-md-3 col-lg-4">
                     <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
 
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-6 col-md-3 col-lg-2">
                     <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Quadrant</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -65,9 +86,9 @@
 </label>
 
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3 col-lg-3">
                     <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Suite Type</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -76,9 +97,9 @@
 </label>
 
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3 col-lg-3">
                     <label class="select__label" for="select">
-    <select id="select" class="form-control form-control-lg">
+    <select id="select" name="select" class="form-control form-control-lg">
         <option>Your Budget</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -100,7 +121,7 @@
  Show Available Units Only</label>
                   </div>
                   <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                    <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');"><input
+                    <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');jQuery('#filterAccordion').toggleClass('active');"><input
     type="checkbox"
     
     class="" n
@@ -339,7 +360,6 @@
     </div>
 
   </div>
-
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
     {
@@ -385,10 +405,16 @@
       }],
       "patternLineageRExists": true,
       "patternLineagesR": [{
+        "lineagePattern": "pages-live-with-us",
+        "lineagePath": "../../patterns/04-pages-live-with-us\\04-pages-live-with-us.rendered.html"
+      }, {
         "lineagePattern": "pages-property-results",
         "lineagePath": "../../patterns/04-pages-property-results\\04-pages-property-results.rendered.html"
       }],
       "lineageR": [{
+        "lineagePattern": "pages-live-with-us",
+        "lineagePath": "../../patterns/04-pages-live-with-us\\04-pages-live-with-us.rendered.html"
+      }, {
         "lineagePattern": "pages-property-results",
         "lineagePath": "../../patterns/04-pages-property-results\\04-pages-property-results.rendered.html"
       }],
@@ -440,10 +466,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1515103124304">
+  <script id="pl-js-polyfill-insert-1515336204353">
     (function() {
       if (self != top) {
-        var cb = '1515103124304';
+        var cb = '1515336204353';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -453,10 +479,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1515103124304">
+  <script id="pl-js-insert-1515336204353">
     (function() {
       if (self != top) {
-        var cb = '1515103124304';
+        var cb = '1515336204353';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']

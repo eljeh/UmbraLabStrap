@@ -1,10 +1,14 @@
-<div class="brand-bar bottom-arrow">
-  <div class="brand-bar-logo">
-    {{> atoms-property-logo(lifestyle: true)}}
+<div class="brand-bar">
+  <div class="brand-bar-logo bg-{{brandBar.first-color}}">
+    {{#brandBar.communities}} {{> atoms-property-logo(communities: true)}} {{/brandBar.communities}} {{#brandBar.lifestyle}} {{> atoms-property-logo(lifestyle: true)}} {{/brandBar.lifestyle}} {{#brandBar.living}} {{> atoms-property-logo(living: true)}} {{/brandBar.living}}
   </div>
   <!-- /.brand-bar-logo -->
 
-  <a class="view-map-btn" href="#"><i class="icon icon-pin"></i> View Map</a>
-
+  {{#brandBar.third-color}}
+  <a class="view-map-btn bg-{{brandBar.third-color}}" href="#">
+    {{#brandBar.view-map-button}}
+    <i class="icon icon-pin"></i> View Map
+    {{/brandBar.view-map-button}}
+  </a> {{/brandBar.third-color}}
 </div>
 <!-- /.brand-bar -->

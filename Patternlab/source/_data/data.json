@@ -70,5 +70,31 @@
     "form-field-radio-text": "Phone me",
     "form-field-radio-value": "option1",
     "form-field-radio-checked": "",
-    "form-field-radio-disabled": ""
+    "form-field-radio-disabled": "",
+    "typography": {
+        "heading-text": "For A Life Well Lived",
+        "heading-subheading-heading": "For A Life Well Lived",
+        "heading-subheading-subheading": "Setting the Stage"
+    },
+    "brandBar": {
+        "lifestyle": false,
+        "communities": true,
+        "living": false,
+        "first-color": "black",
+        "third-color": "blue",
+        "view-map-button": true
+    },
+    "propertyCard": {
+        "title": "Centre Pointe West",
+        "street": "1313 13 Ave. SW",
+        "city": "Calgary",
+        "province": "Alberta",
+        "background-image": "https://lorempixel.com/300/300/city/1",
+        "flag-image": "/theme/images/logos-mini/lifestyle-mini.jpg"
+    },
+    "brandCard": {
+        "image": "https://lorempixel.com/395/395/sports/1",
+        "title": "Brand Point 1",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit."
+    }
 }

@@ -1,29 +1,50 @@
 <div class="advanced-filters">
-  <div id="filterAccordion" role="tablist" aria-multiselectable="true">
+
+  <h5 class="mb-0 text-center">
+    <a data-toggle="collapse" data-target="#advancedFilterCollapse" aria-expanded="true" class="hidden-md-up btn btn-primary advanced-filters-toggle-small">
+            Filters
+        </a>
+  </h5>
+
+  <div id="filterAccordion">
     <div class="advanced-filters-container">
-      <div class="advanced-filters-toggle" role="tab" id="advancedFilters">
+      <div class="advanced-filters-toggle hidden-sm-down" role="tab">
         <h5 class="mb-0 text-center">
-          <a data-toggle="collapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+          <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
                         Filter
                     </a>
         </h5>
       </div>
 
       <div id="advancedFilterCollapse" class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+        <div class="advanced-filters-toggle advanced-filters-toggle-header hidden-md-up" role="tab">
+          <div class="row">
+            <div class="col-10">
+              <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                FIND YOUR HOME
+                            </a>
+            </div>
+            <div class="col-2 text-right">
+              <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
+                                <i class="icon icon-close"></i>
+                            </a>
+            </div>
+          </div>
+        </div>
         <div class="card-block">
           <div class="container">
             <form>
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-12 col-md-3 col-lg-4">
                   {{> atoms-input-text:form-control|form-control-lg(form-field-text-placeholder:"Choose Your City")}}
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-3 col-lg-2">
                   {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Quadrant")}}
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3 col-lg-3">
                   {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Suite Type")}}
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3 col-lg-3">
                   {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"Your Budget")}}
                 </div>
               </div>
@@ -34,7 +55,7 @@
                   <label>{{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"inStockOnly")}} Show Available Units Only</label>
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                  <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');">{{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"showPropertyFilters")}} Show the Full Boardwalk Range</label>
+                  <label onclick="jQuery('#showFullPropertyTypeRange').collapse('toggle');jQuery('#filterAccordion').toggleClass('active');">{{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"showPropertyFilters")}} Show the Full Boardwalk Range</label>
                   <a href="#"><i class="icon-info"></i></a>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 .filter-tabs {
-  padding: 1.6rem 1rem 2rem;
+  padding: 1.6rem 0 2rem;
   text-align: center;
 
   .filter-heading {
@@ -17,5 +17,10 @@
     .filter-heading {
       margin: .7rem 1.5rem 0 0;
     }
+  }
+
+  // variation
+  &-grey {
+    background: $listings-bg;
   }
 }

@@ -70,17 +70,11 @@ body {
 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
+    border-top: 20px solid #eee;
 
     top:100%;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .grey-bg,
-  .grey {
-      &::after {
-        border-top: 20px solid #eee;
-      }
   }
 
   .blue-bg,

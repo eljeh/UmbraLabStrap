@@ -105,7 +105,24 @@ function fileUploadInit() {
 }
 
 function initDatePicker() {
-    $( "#datepicker" ).datepicker();
+  $("#datepicker").datepicker();
+}
+
+function smallScreenAccordion() {
+  if(window.innerWidth < 768) {
+    // always start collapsed on small screens
+    jQuery('#advancedFilterCollapse').collapse();
+
+    // toggle the active class for the fixed position filters
+    jQuery('.advanced-filters-toggle-small').on('click', function(){
+        jQuery('#filterAccordion').addClass('active');
+    });
+
+    // remove the active class once the transition is complete
+    $('#advancedFilterCollapse').on('hidden.bs.collapse', function () {
+      jQuery('#filterAccordion').removeClass('active');
+    });
+  }
 }
 
 // dom ready
@@ -135,6 +152,7 @@ $(function() {
 
     // Test for file upload element, and apply some wizardry
     fileUploadInit();
-
     initDatePicker();
+    smallScreenAccordion();
 });
+

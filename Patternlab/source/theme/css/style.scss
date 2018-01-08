@@ -51,8 +51,13 @@
 @import 'molecules/related-items';
 @import 'molecules/offer-cards';
 @import 'molecules/brand-bar';
+@import 'molecules/brand-card';
+@import 'molecules/property-card';
 @import 'molecules/contact-form';
 @import 'molecules/promotion-block';
+@import 'molecules/search-block';
+@import 'molecules/tabbed-content';
+@import 'molecules/community-block-card';
 
 // organisms
 @import 'organisms/header';
@@ -63,6 +68,7 @@
 @import 'organisms/icon-navigation';
 @import 'organisms/advanced-filters';
 @import 'organisms/property-listings';
+@import 'organisms/featured-community';
 
 // templates
 
