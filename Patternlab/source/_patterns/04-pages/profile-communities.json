@@ -1,0 +1,16 @@
+{
+    "banner": {
+        "background-image": "/theme/images/hp-banner.jpg",
+        "heading": "Elbow Tower",
+        "subheading": "Community Living",
+        "content": "105 26th Ave. SW, Calgary"
+    },
+    "brandBar": {
+        "lifestyle": false,
+        "communities": false,
+        "living": false,
+        "first-color": "black",
+        "third-color": "blue",
+        "view-map-button": false
+    }
+}

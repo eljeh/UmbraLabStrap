@@ -1,0 +1,31 @@
+<!-- Panels for push down navigation from main nav -->
+        {{>organisms-panel-find-your-home}}
+        {{>organisms-panel-investors}}
+        {{>organisms-panel-search}}
+        {{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header}}
+
+    {{> molecules-jumbotron}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+                {{> atoms-heading:text-left(heading-text:"Heading")}}
+                {{> atoms-paragraph(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")}}
+            </div>
+        </div>
+    </div>
+
+    {{> molecules-image-carousel}}
+
+    {{> molecules-tabbed-content}}
+
+    {{> molecules-columned-content}}
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

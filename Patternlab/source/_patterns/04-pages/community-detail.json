@@ -1,0 +1,16 @@
+{
+    "banner": {
+        "background-image": "/theme/images/hp-banner.jpg",
+        "heading": "Community Detail",
+        "subheading": "",
+        "content": "Different Jumbotron entirely..."
+    },
+    "brandBar": {
+        "lifestyle": false,
+        "communities": false,
+        "living": false,
+        "first-color": "black",
+        "third-color": "blue",
+        "view-map-button": false
+    }
+}

@@ -1,0 +1,17 @@
+.tabbed-content-wrapper {
+  padding: 3rem 0;
+
+  .nav-tabs {
+    border: 0;
+  }
+
+  &.grey-bg {
+    background: #eee;
+  }
+
+  &.blue-bg {
+    background: $blue;
+    color: #fff;
+  }
+
+}

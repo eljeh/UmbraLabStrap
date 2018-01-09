@@ -1,0 +1,26 @@
+.search-block {
+  padding: 3rem;
+  background-size: cover;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+
+  .btn-primary.btn-primary {
+    margin: 0 0 2px 0;
+  }
+
+  .select__label {
+    display: inline-block;
+  }
+
+
+  @include if-min-width($XM) {
+    padding: 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

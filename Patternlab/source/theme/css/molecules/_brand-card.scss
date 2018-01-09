@@ -1,0 +1,28 @@
+.brand-cards {
+  margin-bottom: 6rem;
+}
+
+.brand-card {
+  color: $white;
+  border-right: 1px solid $lightgrey;
+  max-width: 395px;
+
+  &:last-of-type {
+    border-right: 0;
+  }
+
+  img {
+    margin: 0;
+    display: block;
+  }
+
+  &-text {
+    padding: 30px;
+    font-family: $futura;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+}

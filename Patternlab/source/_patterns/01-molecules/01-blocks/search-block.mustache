@@ -1,0 +1,11 @@
+<div class="search-block" style="background-image: url(http://via.placeholder.com/300x300);">
+  <div class="search-block-content">
+    {{> atoms-secondary-heading }}
+    <p>{{ block-content }}</p>
+  </div><!-- /.search-block-content -->
+  <form>
+      <fieldset>
+        {{> atoms-select(form-field-select-placeholder:"Choose City") }}{{> atoms-input-button(button-label:"Search")}}
+      </fieldset>
+    </form>
+</div><!-- /.search-block -->
