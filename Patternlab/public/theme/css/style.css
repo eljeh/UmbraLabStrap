@@ -3865,6 +3865,97 @@ hr {
   margin: 1.5rem 0 0;
   text-align: center; }
 
+.stories-item_news-block .news-block-media--video {
+  position: relative; }
+  .stories-item_news-block .news-block-media--video img {
+    margin: 0;
+    width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover; }
+  .stories-item_news-block .news-block-media--video::after {
+    content: "";
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #fff; }
+
+.stories-item_news-block .news-block-content {
+  padding: 1rem; }
+  .stories-item_news-block .news-block-content .news-block-title {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-transform: uppercase; }
+  .stories-item_news-block .news-block-content > * {
+    margin: 1rem; }
+  .stories-item_news-block .news-block-content .arrow-link {
+    display: inline-block;
+    margin-top: 1rem; }
+
+@media screen and (min-width: 640px) {
+  .stories-item_news-block {
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  .stories-item_news-block .news-block-content {
+    display: flex; }
+    .stories-item_news-block .news-block-content > * {
+      width: 50%; } }
+
+.stories-item_instagram-block {
+  position: relative; }
+  .stories-item_instagram-block [class^=instagram-block-media] {
+    position: relative; }
+    .stories-item_instagram-block [class^=instagram-block-media]::after {
+      content: "";
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 3.5rem;
+      color: #fff; }
+    .stories-item_instagram-block [class^=instagram-block-media] img {
+      margin: 0;
+      width: 100%;
+      max-height: 400px;
+      min-height: 400px; }
+  .stories-item_instagram-block .instagram-block-content {
+    text-align: center;
+    padding: 1rem; }
+    .stories-item_instagram-block .instagram-block-content .instagram-block-title {
+      font-family: "futura-pt", sans-serif;
+      font-weight: 300;
+      font-size: 2.2rem; }
+    .stories-item_instagram-block .instagram-block-content > * {
+      margin: 1rem; }
+  @media screen and (min-width: 640px) {
+    .stories-item_instagram-block {
+      width: 25%; } }
+
 /*
 @import 'atoms/modals';
 @import 'atoms/images';
@@ -4229,49 +4320,58 @@ body {
     .excerpt-card {
       margin: .85rem; } }
 
-.image-carousel {
-  max-width: 500px; }
-  .image-carousel img {
-    width: 100%;
-    margin: 0; }
-  .image-carousel .image-item {
-    position: relative; }
-  .image-carousel .slick-arrow {
-    font-size: 1.5rem;
-    color: #fff;
-    width: auto;
-    height: auto;
-    z-index: 2; }
-    .image-carousel .slick-arrow::before {
-      display: none; }
-  .image-carousel .slick-prev,
-  .image-carousel .slick-next {
-    bottom: 2rem;
-    top: auto; }
-  .image-carousel .slick-prev {
-    right: 2.6em;
-    left: auto;
-    transform: rotate(-180deg) translate(-48%, 1px); }
-  .image-carousel .slick-next {
-    right: .5rem;
-    transform: translateX(-50%); }
-  .image-carousel .slick-disabled {
-    opacity: .5; }
-  .image-carousel [class^="icon-"] {
-    display: block; }
-  .image-carousel .image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #000;
-    color: #fff;
-    padding: 1.5rem 6rem 1.5rem 2rem;
-    text-align: center; }
-    .image-carousel .image-caption p {
-      font-size: .9rem; }
-      .image-carousel .image-caption p:only-child {
-        margin: 0; }
+.image-carousel img {
+  width: 100%;
+  margin: 0; }
+
+.image-carousel .image-item {
+  position: relative; }
+
+.image-carousel .slick-arrow {
+  font-size: 1.5rem;
+  color: #fff;
+  width: auto;
+  height: auto;
+  z-index: 2; }
+  .image-carousel .slick-arrow::before {
+    display: none; }
+
+.image-carousel .slick-prev,
+.image-carousel .slick-next {
+  bottom: 1.5rem;
+  top: auto; }
+
+.image-carousel .slick-prev {
+  right: 2.6em;
+  left: auto;
+  transform: rotate(-180deg) translate(-48%, 1px); }
+
+.image-carousel .slick-next {
+  right: .5rem;
+  transform: translateX(-50%); }
+
+.image-carousel .slick-disabled {
+  opacity: .5; }
+
+.image-carousel [class^="icon-"] {
+  display: block; }
+
+.image-carousel .image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 1.5rem 6rem 1.5rem 2rem;
+  text-align: center; }
+  .image-carousel .image-caption p {
+    font-size: 1rem;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 100;
+    line-height: 1.5; }
+    .image-carousel .image-caption p:only-child {
+      margin: 0; }
 
 .content-w-aside {
   padding: 3rem 0; }
@@ -4438,7 +4538,7 @@ body {
     .related-items {
       /* one item */
       /* two items */ }
-      .related-items .container {
+      .related-items .container-fluid-full, .related-items .container {
         display: flex; }
       .related-items .related-item:first-child:nth-last-child(1) img,
       .related-items .related-item:first-child:nth-last-child(1) .item-content {
@@ -4645,7 +4745,9 @@ body {
       margin-right: 0; }
 
 .promotion-block {
-  border-top: 1px solid #eee; }
+  margin-bottom: 4.6rem; }
+  .promotion-block .container {
+    border-top: 1px solid #eee; }
   .promotion-block .promo-heading {
     text-align: center; }
     .promotion-block .promo-heading img {
@@ -5004,6 +5106,8 @@ footer {
 .multi-columns {
   background: #eee;
   text-align: center; }
+  .multi-columns.bg-white {
+    background: #fff; }
   .multi-columns .container {
     padding: 3rem 0; }
   .multi-columns .column-wrapper {
@@ -5167,6 +5271,10 @@ ul.icon-navigation {
           color: #0072bc; }
           ul.icon-navigation.icon-navigation__stacked li a:hover i {
             color: #0072bc; }
+  ul.icon-navigation.white li a {
+    color: #fff; }
+    ul.icon-navigation.white li a.active {
+      color: #f7be17; }
 
 @media (max-width: 767px) {
   .advanced-filters #filterAccordion {
@@ -5338,6 +5446,160 @@ ul.icon-navigation {
     margin-right: 5px; }
   .advanced-filters .active-filters-bar .icon-close {
     margin-left: 5px; }
+
+.investor-market-blocks {
+  display: flex;
+  font-family: "futura-pt", sans-serif;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 992px) {
+    .investor-market-blocks {
+      flex-wrap: nowrap; } }
+  .investor-market-blocks .investor-market-block {
+    width: 100%;
+    padding: 2.5rem 0 0 2.5rem; }
+    @media screen and (min-width: 992px) {
+      .investor-market-blocks .investor-market-block {
+        width: 50%;
+        padding: 5rem 0 5rem 5rem; } }
+    .investor-market-blocks .investor-market-block:first-of-type {
+      background: #0072bc;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap; }
+      .investor-market-blocks .investor-market-block:first-of-type a {
+        color: currentColor; }
+      .investor-market-blocks .investor-market-block:first-of-type .market-summary-heading {
+        width: 100%; }
+        @media screen and (min-width: 1340px) {
+          .investor-market-blocks .investor-market-block:first-of-type .market-summary-heading {
+            width: 40%; } }
+      .investor-market-blocks .investor-market-block:first-of-type .market-summary-tabs {
+        width: 90%; }
+        @media screen and (min-width: 1340px) {
+          .investor-market-blocks .investor-market-block:first-of-type .market-summary-tabs {
+            width: 45%; } }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-tabs .nav-tabs {
+          border-bottom: none; }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-tabs a {
+          font-size: 1.7rem; }
+      .investor-market-blocks .investor-market-block:first-of-type .market-summary-data {
+        padding: 2rem;
+        margin-top: 1rem;
+        background: #2687c6; }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-data h4 {
+          font-weight: 100;
+          font-size: 2.56rem; }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-data span {
+          color: #f7be17; }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-data-flex {
+          display: flex;
+          justify-content: center; }
+      .investor-market-blocks .investor-market-block:first-of-type .market-summary-arrow {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem; }
+        @media screen and (min-width: 1340px) {
+          .investor-market-blocks .investor-market-block:first-of-type .market-summary-arrow {
+            width: 15%; } }
+      .investor-market-blocks .investor-market-block:first-of-type .market-summary-links {
+        display: flex;
+        justify-content: space-between; }
+        .investor-market-blocks .investor-market-block:first-of-type .market-summary-links .nav-link {
+          border: none;
+          padding: 0;
+          opacity: 0.8; }
+          .investor-market-blocks .investor-market-block:first-of-type .market-summary-links .nav-link.active {
+            background: transparent;
+            opacity: 1; }
+    .investor-market-blocks .investor-market-block .market-summary-arrow {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem; }
+      .investor-market-blocks .investor-market-block .market-summary-arrow:hover {
+        cursor: pointer; }
+    .investor-market-blocks .investor-market-block.investor-downloads {
+      background: #e2e2e2;
+      padding: 5rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .investor-market-blocks .investor-market-block.investor-downloads > div {
+        width: 100%; }
+        @media screen and (min-width: 1340px) {
+          .investor-market-blocks .investor-market-block.investor-downloads > div {
+            width: 50%; } }
+        .investor-market-blocks .investor-market-block.investor-downloads > div:first-of-type {
+          padding-right: 2rem; }
+          .investor-market-blocks .investor-market-block.investor-downloads > div:first-of-type p {
+            padding-right: 7rem; }
+        .investor-market-blocks .investor-market-block.investor-downloads > div:last-of-type {
+          padding-top: 3rem; }
+          .investor-market-blocks .investor-market-block.investor-downloads > div:last-of-type .btn {
+            width: 100%;
+            text-align: left; }
+            @media screen and (min-width: 1600px) {
+              .investor-market-blocks .investor-market-block.investor-downloads > div:last-of-type .btn {
+                width: 80%; } }
+            .investor-market-blocks .investor-market-block.investor-downloads > div:last-of-type .btn i {
+              float: right;
+              top: 2px; }
+    .investor-market-blocks .investor-market-block.market-summary-expanded {
+      background: #0072bc;
+      color: #fff;
+      display: flex;
+      padding-left: 0;
+      padding-bottom: 2.5rem;
+      flex-wrap: wrap; }
+      @media screen and (min-width: 992px) {
+        .investor-market-blocks .investor-market-block.market-summary-expanded {
+          padding-bottom: 5rem; } }
+      @media screen and (min-width: 1340px) {
+        .investor-market-blocks .investor-market-block.market-summary-expanded {
+          flex-wrap: nowrap; } }
+      .investor-market-blocks .investor-market-block.market-summary-expanded > div:first-of-type {
+        width: 100%; }
+        @media screen and (min-width: 1600px) {
+          .investor-market-blocks .investor-market-block.market-summary-expanded > div:first-of-type {
+            width: auto; } }
+      .investor-market-blocks .investor-market-block.market-summary-expanded table {
+        width: auto;
+        font-size: 1.25rem;
+        margin: 0 auto; }
+        @media screen and (min-width: 1600px) {
+          .investor-market-blocks .investor-market-block.market-summary-expanded table {
+            margin-right: 2rem;
+            margin-bottom: 0;
+            width: 100%;
+            display: block; } }
+        .investor-market-blocks .investor-market-block.market-summary-expanded table tr td {
+          border-top: none;
+          white-space: nowrap;
+          padding: .3125rem;
+          text-align: right; }
+          .investor-market-blocks .investor-market-block.market-summary-expanded table tr td:first-of-type {
+            font-weight: 100; }
+          .investor-market-blocks .investor-market-block.market-summary-expanded table tr td:last-of-type {
+            font-weight: 500; }
+      .investor-market-blocks .investor-market-block.market-summary-expanded img {
+        margin: 0;
+        width: 100%;
+        height: auto; }
+      .investor-market-blocks .investor-market-block.market-summary-expanded .market-img {
+        padding-left: 5rem;
+        padding-right: 2.5rem;
+        position: relative; }
+        .investor-market-blocks .investor-market-block.market-summary-expanded .market-img P {
+          margin-bottom: 0;
+          position: absolute;
+          bottom: 0;
+          right: 2.5rem; }
+      .investor-market-blocks .investor-market-block.market-summary-expanded .market-summary-arrow {
+        width: 8%; }
+        .investor-market-blocks .investor-market-block.market-summary-expanded .market-summary-arrow i {
+          transform: rotate(-180deg); }
 
 .property-listings {
   background: #e5e5e5; }

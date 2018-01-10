@@ -1,0 +1,239 @@
+.investor-market-blocks {
+  display: flex;
+  font-family: $futura;
+  flex-wrap: wrap;
+  @include if-min-width($XM) {
+    flex-wrap: nowrap;
+  }
+
+  .investor-market-block {
+    width: 100%;
+    padding: 2.5rem 0 0 2.5rem;
+    @include if-min-width($XM) {
+      width: 50%;
+      padding: 5rem 0 5rem 5rem;
+    }
+
+    // market summary side
+    &:first-of-type {
+      background: $blue;
+      color: $white;
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        color: currentColor;
+      }
+
+      .market-summary {
+
+        &-heading {
+          width: 100%;
+          @include if-min-width($XL) {
+            width: 40%;
+          }
+        }
+
+        &-tabs {
+          width: 90%;
+          @include if-min-width($XL) {
+            width: 45%;
+          }
+
+          .nav-tabs {
+            border-bottom: none;
+          }
+
+          a {
+            font-size: 1.7rem;
+          }
+        }
+
+        &-data {
+          padding: 2rem;
+          margin-top: 1rem;
+          background: #2687c6;
+
+          h4 {
+            font-weight: 100;
+            font-size: 2.56rem;
+          }
+
+          span {
+            color: $yellow;
+          }
+
+          &-flex {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        &-arrow {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3rem;
+          @include if-min-width($XL) {
+            width: 15%;
+          }
+        }
+      }
+
+      .market-summary-links {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-link {
+          border: none;
+          padding: 0;
+          opacity: 0.8;
+
+          &.active {
+            background: transparent;
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+
+
+    .market-summary-arrow {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.investor-downloads {
+      background: $lightgrey;
+      padding: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      > div {
+        width: 100%;
+        @include if-min-width($XL) {
+          width: 50%;
+        }
+
+        &:first-of-type {
+          padding-right: 2rem;
+
+          p {
+            padding-right: 7rem;
+          }
+        }
+
+        &:last-of-type {
+          padding-top: 3rem;
+
+          .btn {
+            width: 100%;
+            text-align: left;
+            @include if-min-width($XXL) {
+              width: 80%;
+            }
+
+            i {
+              float: right;
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    &.market-summary-expanded {
+      background: $blue;
+      color: $white;
+      display: flex;
+      padding-left: 0;
+      padding-bottom: 2.5rem;
+      flex-wrap: wrap;
+      
+      @include if-min-width($XM) {
+        padding-bottom: 5rem;
+      }
+      @include if-min-width($XL) {
+        flex-wrap: nowrap;
+      }
+
+
+
+      > div {
+        &:first-of-type {
+          width: 100%;
+          @include if-min-width($XXL) {
+            width: auto;
+          }
+        }
+      }
+
+      table {
+        width: auto;
+        //font-family: $source-sans-pro;
+        font-size: 1.25rem;
+        margin: 0 auto;
+        @include if-min-width($XXL) {
+          margin-right: 2rem;
+          margin-bottom: 0;
+          width: 100%;
+          display: block;
+        }
+
+        tr {
+          td {
+            border-top: none;
+            white-space: nowrap;
+            padding: .3125rem;
+            text-align: right;
+
+            &:first-of-type {
+              font-weight: 100;
+            }
+            &:last-of-type {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .market-img {
+        padding-left: 5rem;
+        padding-right: 2.5rem;
+        position: relative;
+        P {
+          margin-bottom: 0;
+          position: absolute;
+          bottom: 0;
+          right: 2.5rem;
+        }
+      }
+
+      .market-summary-arrow {
+        width: 8%;
+
+        i {
+          transform: rotate(-180deg);
+        }
+      }
+
+    }
+
+  }
+
+}

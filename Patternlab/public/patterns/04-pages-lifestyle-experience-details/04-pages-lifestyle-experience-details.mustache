@@ -10,7 +10,16 @@
   </div>
 
 
-  {{> organisms-multiple-brand-cards}} {{> molecules-image-carousel}} {{> molecules-related-items}} {{> organisms-footer}}
+  {{> organisms-multiple-brand-cards}}
+
+  <h1 class="secondary-heading text-center">
+    Lifestyle Finishings
+  </h1>
+  <div class="container">
+    {{> molecules-image-carousel:mb-5}}
+  </div>
+
+  {{> molecules-related-items:container-fluid-full}} {{> organisms-footer}}
 
 </div>
 <!--/.wrapper-->

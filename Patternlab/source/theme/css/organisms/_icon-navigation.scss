@@ -61,4 +61,14 @@ ul.icon-navigation {
             }
         }
     }
+
+    &.white {
+        li a {
+            color: $white;
+
+            &.active {
+                color: $yellow;
+            }
+        }
+    }
 }

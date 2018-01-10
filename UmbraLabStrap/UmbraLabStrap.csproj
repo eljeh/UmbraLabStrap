@@ -669,7 +669,6 @@
     <Content Include="Views\CommunityDetail.cshtml" />
     <Content Include="Views\Investors.cshtml" />
     <Content Include="Views\LifestyleExperienceDetails.cshtml" />
-    <Content Include="Views\LiveWthUs.cshtml" />
     <Content Include="Views\OpportunityDetails.cshtml" />
     <Content Include="Views\ProfileCommunities.cshtml" />
     <Content Include="Views\WorkingWithUs.cshtml" />
@@ -677,6 +676,7 @@
     <Content Include="Views\ProfileLifestyle.cshtml" />
     <Content Include="Views\Partials\Structures\promotion.cshtml" />
     <Content Include="Views\Partials\Structures\citation-list.cshtml" />
+    <Content Include="Views\LiveWithUs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

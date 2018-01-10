@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "dbbd02248f0455c3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b2af8be88ab4e909")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 
 // FILE: models.generated.cs
@@ -247,7 +247,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static bool GetUmbracoNavihide(INavigationBase that) { return that.GetPropertyValue<bool>("umbracoNavihide"); }
 	}
 
-	/// <summary>Our-Stories</summary>
+	/// <summary>OurStories</summary>
 	[PublishedContentModel("OurStories")]
 	public partial class OurStories : PublishedContentModel, IContentBase, INavigationBase
 	{
@@ -327,7 +327,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 	}
 
-	/// <summary>Stories-Details</summary>
+	/// <summary>StoriesDetails</summary>
 	[PublishedContentModel("blogpost")]
 	public partial class Blogpost : PublishedContentModel, INavigationBase
 	{
@@ -416,7 +416,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 	}
 
-	/// <summary>Property-Results</summary>
+	/// <summary>PropertyResults</summary>
 	[PublishedContentModel("PropertyResults")]
 	public partial class PropertyResults : PublishedContentModel, INavigationBase
 	{
@@ -537,6 +537,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public bool UmbracoNavihide
 		{
 			get { return Umbraco.Web.PublishedContentModels.NavigationBase.GetUmbracoNavihide(this); }
+		}
+	}
+
+	/// <summary>CareerListings</summary>
+	[PublishedContentModel("careerListings")]
+	public partial class CareerListings : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "careerListings";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public CareerListings(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CareerListings, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

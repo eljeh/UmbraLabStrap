@@ -125,6 +125,19 @@ function smallScreenAccordion() {
   }
 }
 
+function investorBlockToggle() {
+    $('.market-summary-arrow-show').on('click', function(){
+        $('.market-summary-expanded').removeClass('hidden');
+        $('.investor-downloads').addClass('hidden');
+        $(this).addClass('hidden');
+    });
+    $('.market-summary-arrow-hide').on('click', function(){
+        $('.market-summary-expanded').addClass('hidden');
+        $('.investor-downloads').removeClass('hidden');
+        $('.market-summary-arrow-show').removeClass('hidden');
+    });
+}
+
 // dom ready
 $(function() {
     // Adding functions here for now, clean up later
@@ -154,5 +167,6 @@ $(function() {
     fileUploadInit();
     initDatePicker();
     smallScreenAccordion();
+    investorBlockToggle();
 });
 

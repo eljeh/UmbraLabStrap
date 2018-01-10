@@ -96,5 +96,11 @@
         "image": "https://lorempixel.com/395/395/sports/1",
         "title": "Brand Point 1",
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit."
+    },
+    "image-carousel": {
+        "img-width": "1170",
+        "img-height": "600",
+        "max-width": "1170px",
+        "img-caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
 }

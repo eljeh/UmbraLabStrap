@@ -1,21 +1,4 @@
-<div class="image-carousel carousel">
-  <div>
-    <img src="http://via.placeholder.com/480x320" alt="" title="" />
-    <div class="image-caption">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <div>
-    <img src="http://via.placeholder.com/481x321" alt="" title="" />
-  </div>
-  <div>
-    <img src="http://via.placeholder.com/482x322" alt="" title="" />
-  </div>
-  <div>
-    <img src="http://via.placeholder.com/483x323" alt="" title="" />
-  </div>
-  <div>
-    <img src="http://via.placeholder.com/484x324" alt="" title="" />
-  </div>
+<div class="image-carousel carousel {{ styleModifier }}" style="max-width:{{ image-carousel.max-width }}">
+  {{# listItems.three}} {{> atoms-image-slide}} {{/ listItems.three}}
 </div>
 <!-- /.content-carousel -->

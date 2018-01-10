@@ -46,7 +46,7 @@
 
     @include if-min-width($XM) {
 
-      .container {
+      .container-fluid-full, .container {
         display: flex;
       }
 

@@ -2,6 +2,10 @@
   background: #eee;
   text-align: center;
 
+  &.bg-white {
+    background: $white;
+  }
+
   .container {
     padding: 3rem 0;
   }

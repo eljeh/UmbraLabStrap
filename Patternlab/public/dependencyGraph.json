@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1515336209090,
+  "timestamp": 1515558046505,
   "graph": {
     "options": {
       "directed": true,
@@ -135,6 +135,14 @@
         }
       },
       {
+        "v": "00-atoms\\03-images\\image-slide.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-01-blocks-image-carousel\\01-molecules-01-blocks-image-carousel.rendered.html",
+          "lineagePattern": "molecules-image-carousel"
+        }
+      },
+      {
         "v": "00-atoms\\03-images\\landscape.mustache",
         "value": {
           "compileState": "clean"
@@ -195,7 +203,9 @@
       {
         "v": "00-atoms\\04-buttons\\download-button.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-investor-market-block\\02-organisms-02-components-investor-market-block.rendered.html",
+          "lineagePattern": "organisms-investor-market-block"
         }
       },
       {
@@ -330,6 +340,24 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-01-blocks-contact-form\\01-molecules-01-blocks-contact-form.rendered.html",
           "lineagePattern": "molecules-contact-form"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\events-block.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\instagram-block.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\news-block.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -646,8 +674,16 @@
         "v": "02-organisms\\02-components\\icon-navigation.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-01-regions-panel-investors\\02-organisms-01-regions-panel-investors.rendered.html",
-          "lineagePattern": "organisms-panel-investors"
+          "lineagePath": "../../patterns/04-pages-investors\\04-pages-investors.rendered.html",
+          "lineagePattern": "pages-investors"
+        }
+      },
+      {
+        "v": "02-organisms\\02-components\\investor-market-block.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-investors\\04-pages-investors.rendered.html",
+          "lineagePattern": "pages-investors"
         }
       },
       {
@@ -835,6 +871,21 @@
     ],
     "edges": [
       {
+        "v": "00-atoms\\06-social-blocks\\events-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\instagram-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\news-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules\\01-blocks\\brand-bar.mustache",
         "w": "00-atoms\\03-images\\property-logo.mustache",
         "value": {}
@@ -932,6 +983,11 @@
       {
         "v": "01-molecules\\01-blocks\\filter-tabs.mustache",
         "w": "00-atoms\\02-text\\filter-categories.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\image-carousel.mustache",
+        "w": "00-atoms\\03-images\\image-slide.mustache",
         "value": {}
       },
       {
@@ -1232,6 +1288,11 @@
       {
         "v": "02-organisms\\02-components\\hp-promos.mustache",
         "w": "01-molecules\\01-blocks\\hp-promo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\investor-market-block.mustache",
+        "w": "00-atoms\\04-buttons\\download-button.mustache",
         "value": {}
       },
       {
@@ -1552,6 +1613,16 @@
       {
         "v": "04-pages\\investors.mustache",
         "w": "01-molecules\\01-blocks\\jumbotron.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\investors.mustache",
+        "w": "02-organisms\\02-components\\icon-navigation.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\investors.mustache",
+        "w": "02-organisms\\02-components\\investor-market-block.mustache",
         "value": {}
       },
       {
@@ -1976,12 +2047,12 @@
       },
       {
         "v": "04-pages\\profile-lifestyle.mustache",
-        "w": "01-molecules\\01-blocks\\related-items.mustache",
+        "w": "01-molecules\\01-blocks\\half-and-half.mustache",
         "value": {}
       },
       {
         "v": "04-pages\\profile-lifestyle.mustache",
-        "w": "01-molecules\\01-blocks\\half-and-half.mustache",
+        "w": "01-molecules\\01-blocks\\related-items.mustache",
         "value": {}
       },
       {
