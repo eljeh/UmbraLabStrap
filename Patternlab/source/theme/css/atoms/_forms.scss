@@ -5,6 +5,13 @@ textarea {
     color: $darkblue;
     font-family: $futura;
     border: 1px solid $black;
+
+    &.borderless {
+        border: none;
+        border-radius: 0;
+        font-size: 1.25rem;
+        padding: 1.526rem;
+    }
 }
 
 // Type: Email

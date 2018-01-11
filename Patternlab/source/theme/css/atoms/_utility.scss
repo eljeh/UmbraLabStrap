@@ -88,6 +88,7 @@ hr {
 
     &-white {
         background: $white;
+        color: $black !important;
     }
 
     &-grey {
@@ -113,6 +114,11 @@ hr {
     &-red {
         background: $red;
     }
+}
+
+// for the instances where margin bottom is needed SOME of the time...
+.mb-10 {
+    margin-bottom: 4.5rem !important;
 }
 
 

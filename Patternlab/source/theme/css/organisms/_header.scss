@@ -32,6 +32,10 @@
 
     &.header-black {
         background: $black;
+
+        + *{
+            padding-top: 100px;
+        }
     }
 }
 

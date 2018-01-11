@@ -102,5 +102,41 @@
         "img-height": "600",
         "max-width": "1170px",
         "img-caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "excerptCard": {
+        "subheading": "Press Release",
+        "title": "Dec. 22, 2017",
+        "copy": "Boardwalk REIT announces third quarter financial results lorem ipsum dolor amet sit elut.",
+        "buttonText": "Learn More",
+        "buttonUrl": "/learn-more"
+    },
+    "multipleExcerptCards": {
+        "heading": "News",
+        "subheading": "",
+        "buttonText": "Read More",
+        "buttonUrl": "/investors"
+    },
+    "featureCarouselTile": {
+        "bg-color": "blue",
+        "heading": "Fitness",
+        "copy": "Take advantage of our bright, exclusive, fully-equipped fitness centre just a few steps out your door.",
+        "uniqueCarouselId": "featureCarousel0",
+        "images": [
+            {"src": "http://via.placeholder.com/640/cccccc", "alt": "Alt text 1" },
+            {"src": "http://via.placeholder.com/640/e5e5e5", "alt": "Alt text 2" },
+            {"src": "http://via.placeholder.com/640/dddddd", "alt": "Alt text 3" }
+        ]
+    },
+    "halfAndHalf": {
+        "heading": "Work with Boardwalk",
+        "copy": "At Boardwalk Rental Communities, we believe in providing our Associates with a workplace they can call home; a place where coming to work isn’t a chore. We continually look for new and innovative ways to engage our Associates in their day-to-day work. We are proud to be an equal opportunity employer with a commitment to respecting the dignity and worth of every individual in our organization.",
+        "linkText": "Learn More",
+        "linkUrl": "/careers",
+        "linkColor": "blue",
+        "reversed" : false
+    },
+    "columnedContent" :{
+        "heading": "Heading",
+        "subheading": "Subheading"
     }
 }

@@ -1,0 +1,39 @@
+.site-search {
+  padding: 4.68rem 0;
+
+  &-results {
+    font-size: 1.25rem;
+    margin-bottom: 6.25rem;
+
+    h5 {
+      margin-bottom: .5rem;
+    }
+
+
+    // handle change of load more/view less button without JS
+    #loadMoreSearchToggle {
+      .viewLess {
+        display: none;
+      }
+      .loadMore {
+        display: block;
+      }
+      &[aria-expanded="true"] {
+        .viewLess {
+          display: block;
+        }
+        .loadMore {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-list {
+    padding-bottom: 6.25rem;
+
+    &-item {
+
+    }
+  }
+}

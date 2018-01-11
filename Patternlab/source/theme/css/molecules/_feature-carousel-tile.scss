@@ -1,0 +1,68 @@
+.feature-carousel-tiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-carousel-tile {
+  color: $white;
+  width: 100%;
+  @include if-min-width($M) {
+    width: 33.33%;
+  }
+
+  &-text {
+    padding: 2.5rem;
+    @include if-min-width($S) {
+      padding: 2.5rem 5.9rem;
+    }
+    @include if-min-width($M) {
+      padding: 2.5rem;
+    }
+    @include if-min-width($XL) {
+      padding: 5.9rem;
+    }
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .slick-arrow {
+    font-size: 2.75rem;
+    color: #fff;
+    width: auto;
+    height: auto;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    bottom: 2.5rem;
+    top: auto;
+  }
+
+  .slick-prev {
+    right: 2.6em;
+    left: auto;
+    transform: rotate(-180deg) translate(-48%, 1px);
+  }
+
+  .slick-next {
+    right: .9rem;
+    transform: translateX(-50%);
+  }
+
+  .slick-disabled {
+    opacity: .5;
+  }
+
+  [class^="icon-"] {
+    display: block;
+  }
+
+}

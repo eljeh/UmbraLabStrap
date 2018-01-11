@@ -8,19 +8,23 @@
 
     {{> organisms-header}}
 
-    {{> molecules-jumbotron}}
+    {{> molecules-jumbotron:vertical-center|jumbotron-medium|mb-10}}
 
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="mb-3">
+                    {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+                </div>
                 {{> atoms-heading:text-left(heading-text:"Heading")}}
-                {{> atoms-paragraph(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")}}
+                {{> atoms-paragraph:mb-5(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")}}
             </div>
         </div>
     </div>
 
-    {{> molecules-image-carousel}}
+    <div class="container mb-10">
+        {{> molecules-image-carousel}}
+    </div>
 
     {{> molecules-tabbed-content}}
 

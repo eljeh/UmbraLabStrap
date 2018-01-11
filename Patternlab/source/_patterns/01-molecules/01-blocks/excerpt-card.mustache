@@ -1,9 +1,16 @@
 <div class="excerpt-card">
     <div class="excerpt-card-text">
-        <h3 class="excerpt-card-subtitle">Sub heading</h3>
-        <h4 class="excerpt-card-title">Dec 11, 2017</h4>
-        <p>Boardwalk REIT announces third quarter financial results lorem ipsum dolor amet sit elut </p>
+        {{# excerptCard.subheading }}
+        <h3 class="excerpt-card-subtitle">{{ excerptCard.subheading }}</h3>
+        {{/ excerptCard.subheading }}
+        {{# excerptCard.title }}
+        <h4 class="excerpt-card-title">{{ excerptCard.title }}</h4>
+        {{/ excerptCard.title }}
+        {{# excerptCard.copy }}
+        <p>{{ excerptCard.copy }}</p>
+        {{/ excerptCard.copy }}
     </div><!-- /.excerpt-card-text -->
-
-    {{> atoms-arrow-link:blue(arrow-link-url: "#", arrow-link-text: "Learn More") }}
+    {{# excerptCard.buttonText }}
+    <a class="arrow-link blue" href="{{ excerptCard.buttonUrl }}">{{ excerptCard.buttonText }}</a>
+    {{/ excerptCard.buttonText }}
 </div><!-- /.excerpt-card -->

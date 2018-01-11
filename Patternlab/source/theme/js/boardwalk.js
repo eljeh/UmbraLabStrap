@@ -125,18 +125,60 @@ function smallScreenAccordion() {
   }
 }
 
+/*
+    Add click listeners for the content toggle on the investors page
+ */
 function investorBlockToggle() {
-    $('.market-summary-arrow-show').on('click', function(){
+    if(window.innerWidth > 991) {
+      $('.market-summary-arrow-show').on('click', function(){
         $('.market-summary-expanded').removeClass('hidden');
         $('.investor-downloads').addClass('hidden');
         $(this).addClass('hidden');
-    });
-    $('.market-summary-arrow-hide').on('click', function(){
+      });
+      $('.market-summary-arrow-hide').on('click', function(){
         $('.market-summary-expanded').addClass('hidden');
         $('.investor-downloads').removeClass('hidden');
         $('.market-summary-arrow-show').removeClass('hidden');
-    });
+      });
+    }
+    else {
+      $('.market-summary-expanded').removeClass('hidden');
+      $('.market-summary-arrow-show').addClass('hidden');
+      $('.market-summary-arrow-hide').addClass('hidden');
+    }
 }
+
+/*
+  Set up feature carousel tile carousels if they exist
+ */
+
+function initFeatureCarouselTile() {
+  var featureCarousels = $('.feature-carousel-tile-carousel');
+  var slickOptions = {
+    cssEase: 'linear',
+    infinite: true,
+    prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-cta"></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-cta"></span></button>',
+    fade: true
+  };
+
+  if(featureCarousels.length){
+    var idArr = [];
+    // use the element ID's to keep the carousel controls working properly
+    $(featureCarousels).each(function(){
+      idArr.push($(this).attr('id'));
+    });
+    if(idArr.length) {
+      idArr.forEach(function(id){
+        // only initiate a slider if there's more than one image
+        if($('#' + id + ' img').length > 1) {
+          $('#' + id).slick(slickOptions);
+        }
+      });
+    }
+  }
+}
+
 
 // dom ready
 $(function() {
@@ -168,5 +210,6 @@ $(function() {
     initDatePicker();
     smallScreenAccordion();
     investorBlockToggle();
+    initFeatureCarouselTile();
 });
 

@@ -7,10 +7,18 @@
     },
     "brandBar": {
         "lifestyle": false,
-        "communities": false,
+        "communities": true,
         "living": false,
-        "first-color": "black",
-        "third-color": "blue",
-        "view-map-button": false
+        "first-color": "blue",
+        "third-color": "black",
+        "view-map-button": true
+    },
+    "halfAndHalf": {
+        "heading": "Living in Mission",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat. Aenean ac ligula eget magna eleifend pulvinar nec in velit. Morbi egestas nisi at purus rhoncus gravida sed ut dui.",
+        "linkText": "",
+        "linkUrl": "",
+        "linkColor": "",
+        "reversed" : false
     }
 }
