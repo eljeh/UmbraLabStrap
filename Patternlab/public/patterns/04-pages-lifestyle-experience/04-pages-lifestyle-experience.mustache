@@ -3,7 +3,8 @@
 
 <div class="wrapper">
 
-  {{> organisms-header}} {{> molecules-jumbotron}} {{> organisms-footer}}
+  {{> organisms-header(background-color:"black")}} {{> molecules-jumbotron:vertical-center|jumbotron-small|bg-white|black}} {{> organisms-multiple-community-blocks:bg-white}} {{> organisms-feature-community}} {{> molecules-half-and-half}} {{> molecules-half-and-half}}
+  {{> organisms-footer}}
 
 </div>
 <!--/.wrapper-->

@@ -1,6 +1,13 @@
 <div class="columned-content">
   <div class="container">
-    {{> atoms-heading-subheading:small-heading }}
+
+    {{# columnedContent.heading }}
+    <h1 class="heading small-heading mb-3">
+      {{# columnedContent.subheading }}
+      <span class="sub-heading">{{columnedContent.subheading}}</span> {{/ columnedContent.subheading }} {{ columnedContent.heading }}
+    </h1>
+    {{/ columnedContent.heading }}
+
 
     <div class="content-wrapper two-columns">
       <h3 class="small-heading">eiusmod tempor</h3>

@@ -720,7 +720,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Partials\Components\" />
-    <Folder Include="Views\Profiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
