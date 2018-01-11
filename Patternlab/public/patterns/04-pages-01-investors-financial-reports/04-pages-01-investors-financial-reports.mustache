@@ -14,114 +14,333 @@
     <!--/.row-->
   </div>
 
+  <style>
+    ul.icon-file-list {
+      padding: 0;
+    }
+
+    ul.icon-file-list li {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    ul.icon-file-list li a {
+      color: #000;
+      font-size: 15px;
+      font-family: "futura-pt", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    ul.icon-file-list li a i {
+      display: block;
+      font-size: 40px;
+      padding-bottom: 8px;
+    }
+  </style>
+
   <main>
+
+
     <section class="multi-columns">
       <div class="container">
-        <div class="column-wrapper">
-
-          <div class="investor-market-block investor-downloads">
-            <div>
-              <h2 class="secondary-heading">Financial Reports</h2>
-
-            </div>
-            <div>
-              <h3>2017</h3>
-
-              <div class="row">
-                <div class="col-md-12">
-
-                  <ul class="icon-navigation d-flex flex-row justify-content-between align-items-start flex-wrap">
-                    <li>
-                      <h3>Q1</h3>
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
-                    </li>
-
-                  </ul>
-                  <ul class="icon-navigation d-flex flex-row justify-content-between align-items-start flex-wrap">
-                    <li>
-                      <h3>Q2</h3>
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
-                    </li>
-                    <li class="p2">
-                      {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-              <!--/.row-->
-            </div>
-          </div>
-    </section>
-
-    <section class="">
-
-      <div class="">
+        <h2 class="secondary-heading">
+          Financial Reports
+        </h2>
 
         <div class="column-wrapper">
 
-          <div class="investor-downloads">
+          <div class="excerpt-card">
+            <div class="excerpt-card-text">
 
-            <h2 class="secondary-heading">Financial Reports</h2>
+              <h3 class="excerpt-card-subtitle">2017</h3>
 
-            <h3>2017</h3>
+              <h4 class="excerpt-card-title">Q4</h4>
 
-            <div class="row">
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
 
-              <div class="col-md-3">
-                <h4>Q4</h4>
-                {{> atoms-download-button(download-button-text:"Financial Press Release")}} {{> atoms-download-button(download-button-text:"Supplemental Notes")}} {{> atoms-download-button(download-button-text:"Webcast Presentation")}} {{> atoms-download-button(download-button-text:"Quarterly
-                Report")}}
-              </div>
+              </ul>
 
-              <div class="col-md-3">
-                <h4>Q3</h4>
-                {{> atoms-download-button(download-button-text:"Financial Press Release")}} {{> atoms-download-button(download-button-text:"Supplemental Notes")}} {{> atoms-download-button(download-button-text:"Webcast Presentation")}} {{> atoms-download-button(download-button-text:"Quarterly
-                Report")}}
-              </div>
+              <hr>
 
-              <div class="col-md-3">
-                <h4>Q4</h4>
-                {{> atoms-download-button(download-button-text:"Financial Press Release")}} {{> atoms-download-button(download-button-text:"Supplemental Notes")}} {{> atoms-download-button(download-button-text:"Webcast Presentation")}} {{> atoms-download-button(download-button-text:"Quarterly
-                Report")}}
-              </div>
+              <h4 class="excerpt-card-title">Q3</h4>
 
-              <div class="col-md-3">
-                <h4>Q3</h4>
-                {{> atoms-download-button(download-button-text:"Financial Press Release")}} {{> atoms-download-button(download-button-text:"Supplemental Notes")}} {{> atoms-download-button(download-button-text:"Webcast Presentation")}} {{> atoms-download-button(download-button-text:"Quarterly
-                Report")}}
-              </div>
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q2</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q1</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
 
             </div>
-
           </div>
+          <!-- /.excerpt-card -->
 
         </div>
+
+        <div class="column-wrapper">
+
+          <div class="excerpt-card">
+            <div class="excerpt-card-text">
+
+              <h3 class="excerpt-card-subtitle">2016</h3>
+
+              <h4 class="excerpt-card-title">Q4</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q3</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q2</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q1</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+          <!-- /.excerpt-card -->
+
+        </div>
+
+
+        <div class="column-wrapper">
+
+          <div class="excerpt-card">
+            <div class="excerpt-card-text">
+
+              <h3 class="excerpt-card-subtitle">Archived</h3>
+              <form>
+                <fieldset>
+                  {{> atoms-select(form-field-select-placeholder:"Select a Year") }}
+                </fieldset>
+              </form>
+              <h4 class="excerpt-card-title">Q4</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q3</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q2</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <h4 class="excerpt-card-title">Q1</h4>
+
+              <ul class="icon-file-list d-flex flex-row justify-content-between align-items-start flex-wrap">
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-financials-and-releases", icon-link-text:"Financials Press Release")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Supplemental Notes")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Webcast Presentations")}}
+                </li>
+                <li>
+                  {{>atoms-icon-link(icon-link-url:"#", icon-link-icon-class:"icon-presentations", icon-link-text:"Quarterly Report")}}
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+          <!-- /.excerpt-card -->
+
+        </div>
+
+
+      </div>
+      <!-- /.container -->
+    </section>
+
+
+
+
+
+
+
+
+
+
 
   </main>
 
   {{> organisms-footer}}
-
-  </div>
-  <!--/.wrapper-->
