@@ -1,15 +1,20 @@
 .stories-item_instagram-block {
   position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   [class^=instagram-block-media] {
     position: relative;
 
     &::after {
-      @include icomoon("\e900");
+      @include icomoon("\e920");
+
       position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 3.5rem;
+      top: 2rem;
+      left: 2rem;
+      font-size: 2.2rem;
       color: #fff;
     }
 
@@ -23,7 +28,7 @@
 
   .instagram-block-content {
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
 
     .instagram-block-title {
       font-family: $futura;
@@ -38,6 +43,10 @@
   }
 
   @include if-min-width($S) {
+    width: 50%;
+  }
+
+  @include if-min-width($XM) {
     width: 25%;
   }
 }

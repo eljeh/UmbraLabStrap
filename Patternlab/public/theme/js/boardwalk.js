@@ -60,12 +60,18 @@ function mobileCarousel(slideOption) {
 }
 
 function imageCarousel() {
-    $('.image-carousel').slick({
-        cssEase: 'linear',
-        infinite: false,
-        prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-cta"></span></button>',
-        nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-cta"></span></button>',
-        fade: true
+    var imgCarousels = $('.image-carousel');
+    $(imgCarousels).each(function(){
+      // make sure not to turn these into carousels with only 1 image
+      if($(this).children().length > 1) {
+        $(this).slick({
+          cssEase: 'linear',
+          infinite: false,
+          prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-cta"></span></button>',
+          nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-cta"></span></button>',
+          fade: true
+        });
+      }
     });
 }
 
@@ -108,6 +114,9 @@ function initDatePicker() {
   $("#datepicker").datepicker();
 }
 
+/*
+  Deal with the open and close states of the advanced filters component
+ */
 function smallScreenAccordion() {
   if(window.innerWidth < 768) {
     // always start collapsed on small screens

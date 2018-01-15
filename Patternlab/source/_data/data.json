@@ -138,5 +138,53 @@
     "columnedContent" :{
         "heading": "Heading",
         "subheading": "Subheading"
+    },
+    "ctaCard": {
+        "heading": "Non-Resident Customer Service Representative: Level 2",
+        "subheading": "London, ON",
+        "linkText": "Learn More",
+        "linkUrl": "/learn-more"
+    },
+    "ctaCards": {
+        "heading": "Current Opportunities",
+        "subheading": "",
+        "buttonText": "Experience Lifestyles",
+        "buttonUrl": "/lifestyles",
+        "buttonColor": "blue"
+    },
+    "communityBlockCard": {
+        "backgroundImg": "http://via.placeholder.com/600x720",
+        "backgroundColor": "black",
+        "lifestyle": true,
+        "living": false,
+        "communities": false,
+        "heading": "Lifestyle",
+        "copy": "The ultimate living experience you deserve."
+    },
+    "propertyFilters": {
+        "submitButtonText": "Update Filters",
+        "showAccordion": true
+    },
+    "iconNav": {
+        "classes": "d-flex flex-row justify-content-between align-items-start flex-wrap"
+    },
+    "contentWithAside": {
+        "hasBackToLink": false,
+        "linkText": "",
+        "linkUrl": "",
+        "linkColor": "",
+        "leftRailHasDateMeta": false,
+        "leftRailContent": "<p>Posted  <time datetime='2017-08-28'>September 28, 2017</time><br/><em>Boardwalk Edmonton</em></p><p>Please submit your resume to:<br/>Human Resources<br/>200, 8930 Jasper Avenue , Edmonton AB, T5H 4E9<br/>Fax: 1-866-686-0982</p><p>We would like to thank you in advance for your inquiry. Only those candidates who are being considered will be contacted. Offers of employment will be conting ent on satisfactory security background checks, reference checks, and pre-employment medical exams, where applicable.</p>"
+    },
+    "dateMeta": {
+        "month": "Nov",
+        "day": "12",
+        "year": "2017"
+    },
+    "promoAnnouncement": {
+        "background": "blue",
+        "text": "New Limited Time Promotions",
+        "linkText": "Learn More",
+        "linkUrl": "/learn-more"
     }
 }

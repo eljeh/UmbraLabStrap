@@ -1,12 +1,19 @@
 <section class="multi-columns">
   <div class="container">
-    {{> atoms-secondary-heading }}
+
+    <h2 class="secondary-heading {{ styleModifier }}">
+      {{# ctaCards.subheading }}
+      <span class="sub-heading">{{ ctaCards.subheading }}</span> {{/ ctaCards.subheading }} {{# ctaCards.heading }} {{ ctaCards.heading }} {{/ ctaCards.heading }}
+    </h2>
 
     <div class="column-wrapper">
-      {{> molecules-cta-card }} {{> molecules-cta-card }} {{> molecules-cta-card }}
+      {{# listItems.three }} {{> molecules-cta-card }} {{/ listItems.three }}
     </div>
 
-    {{> atoms-primary-button:blue(primary-button-text:"Experience Lifestyles") }}
+    {{# ctaCards.buttonText }}
+    <a href="{{ ctaCards.buttonUrl }}" class="btn btn-primary {{ ctaCards.buttonColor }}">
+            {{ctaCards.buttonText}}
+        </a> {{/ ctaCards.buttonText }}
   </div>
   <!-- /.container -->
 </section>

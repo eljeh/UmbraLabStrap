@@ -3,5 +3,9 @@
     "heading": "Live with us",
     "subheading": "Bringing you home",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+  },
+  "propertyFilters": {
+    "submitButtonText": "Search",
+    "showAccordion": false
   }
 }

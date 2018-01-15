@@ -1,10 +1,18 @@
-<div class="community-block-card black-bg">
-  <div class="brand-wrapper" style="background-image: url({{ community-block-brand-bg }}http://via.placeholder.com/600x720);">
-    {{> atoms-property-logo(lifestyle: true)}}
+<div class="community-block-card {{ communityBlockCard.backgroundColor }}-bg">
+  <div class="brand-wrapper" style="background-image: url({{ communityBlockCard.backgroundImg }});">
+    {{# communityBlockCard.communities }}
+      {{> atoms-property-logo-communities }}
+    {{/ communityBlockCard.communities }}
+    {{# communityBlockCard.lifestyle }}
+      {{> atoms-property-logo-lifestyle }}
+    {{/ communityBlockCard.lifestyle }}
+    {{# communityBlockCard.living }}
+      {{> atoms-property-logo-living }}
+    {{/ communityBlockCard.living }}
   </div><!-- /.brand-wrapper -->
 
   <div class="block-content-wrapper">
-    <h3 class="block-heading">{{ block-title }}Lifestyle</h3>
-    <p>{{ block-content }}The ultimate living experience you deserve.</p>
+    <h3 class="block-heading">{{ communityBlockCard.heading }}</h3>
+    <p>{{ communityBlockCard.copy }}</p>
   </div><!-- /.block-content-wrapper -->
 </div><!-- /.community-block-card -->

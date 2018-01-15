@@ -1,5 +1,15 @@
 .half-and-half-block {
-  
+
+  &.bg-blue, &.bg-darkblue, &.bg-black, &.bg-red {
+    .arrow-link {
+      color: $white;
+
+      &:after {
+        color: $white;
+      }
+    }
+  }
+
   & > .blue {
     background: $blue;
     color: #fff;
@@ -76,5 +86,14 @@
   .arrow-link {
     display: block;
     margin-top:1rem;
+  }
+
+  &.half-and-half-reversed {
+    .left-half {
+      order: 2;
+    }
+    .right-half {
+      order: 1;
+    }
   }
 }

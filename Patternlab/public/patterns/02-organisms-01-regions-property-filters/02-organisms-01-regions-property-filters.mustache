@@ -1,13 +1,16 @@
 <div class="advanced-filters">
 
+  {{# propertyFilters.showAccordion }}
   <h5 class="mb-0 text-center">
     <a data-toggle="collapse" data-target="#advancedFilterCollapse" aria-expanded="true" class="hidden-md-up btn btn-primary advanced-filters-toggle-small">
             Filters
         </a>
   </h5>
+  {{/ propertyFilters.showAccordion }}
 
-  <div id="filterAccordion">
+  <div {{# propertyFilters.showAccordion }}id="filterAccordion" {{/ propertyFilters.showAccordion }}>
     <div class="advanced-filters-container">
+      {{# propertyFilters.showAccordion }}
       <div class="advanced-filters-toggle hidden-sm-down" role="tab">
         <h5 class="mb-0 text-center">
           <a data-toggle="collapse" data-target="#advancedFilterCollapse" data-parent="#filterAccordion" href="#advancedFilterCollapse" aria-expanded="true" aria-controls="advancedFilterCollapse">
@@ -15,8 +18,10 @@
                     </a>
         </h5>
       </div>
+      {{/ propertyFilters.showAccordion }}
 
-      <div id="advancedFilterCollapse" class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+      <div {{# propertyFilters.showAccordion }}id="advancedFilterCollapse" {{/ propertyFilters.showAccordion }} class="collapse show" role="tabpanel" aria-labelledby="advancedFilters">
+        {{# propertyFilters.showAccordion }}
         <div class="advanced-filters-toggle advanced-filters-toggle-header hidden-md-up" role="tab">
           <div class="row">
             <div class="col-10">
@@ -31,6 +36,7 @@
             </div>
           </div>
         </div>
+        {{/ propertyFilters.showAccordion }}
         <div class="card-block">
           <div class="container">
             <form>
@@ -74,19 +80,19 @@
                   <div class="col-md-3">
                     <label>
                                             {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeLifestyle")}}
-                                            {{> atoms-property-logo(lifestyle:true)}}
+                                            {{> atoms-property-logo-lifestyle}}
                                         </label>
                   </div>
                   <div class="col-md-3">
                     <label>
                                             {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeCommunities")}}
-                                            {{> atoms-property-logo(communities:true)}}
+                                            {{> atoms-property-logo-communities}}
                                         </label>
                   </div>
                   <div class="col-md-3">
                     <label>
                                             {{> atoms-checkbox(form-field-checkbox-checked:"", form-field-checkbox-name:"propertyTypeLiving")}}
-                                            {{> atoms-property-logo(living:true)}}
+                                            {{> atoms-property-logo-living}}
                                         </label>
                   </div>
                 </div>
@@ -167,9 +173,11 @@
               </div>
               <!--/.row-->
 
-              <div class="row advanced-filters-submit">
+              <div class="row advanced-filters-submit mb-5">
                 <div class="col-12 text-center">
-                  {{> atoms-primary-button(primary-button-text:"Update Filter")}}
+                  <button class="btn btn-primary" type="submit" value="{{ propertyFilters.submitButtonText }}">
+                                        {{ propertyFilters.submitButtonText }}
+                                    </button>
                 </div>
               </div>
             </form>
@@ -185,7 +193,5 @@
       <!-- /#advancedFilters accordion -->
     </div>
   </div>
-
-  {{> molecules-active-filter-bar}}
 
 </div>

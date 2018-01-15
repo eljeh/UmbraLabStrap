@@ -4,12 +4,20 @@
   .container {
     display: flex;
     flex-direction: column;
+    @include if-min-width($XXL) {
+      width: 970px;
+    }
   }
 
   .left-rail {
-    min-width: 250px;
-    flex-basis: 250px;
+    min-width: 150px;
+    flex-basis: 150px;
     order: 2;
+
+    &-copy {
+      min-width: 250px;
+      flex-basis: 250px;
+    }
 
     p {
       font-size: .9rem;
@@ -23,8 +31,12 @@
     }
   }
 
-  @include if-min-width($M) {
-    padding: 8rem 0;
+  @include if-min-width($L) {
+    padding: 3rem 0;
+  }
+
+  @include if-min-width($XXL) {
+    padding: 3rem 0 8rem;
 
     .container {
       flex-direction: row;
@@ -35,5 +47,21 @@
       text-align: right;
       padding-right: 1.5rem;
     }
+  }
+
+  .left-rail-content {
+    padding-top: 3.4rem;
+  }
+
+  .right-rail-content {
+    padding-top: 3rem;
+  }
+
+  .back-link-container {
+    width: 970px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

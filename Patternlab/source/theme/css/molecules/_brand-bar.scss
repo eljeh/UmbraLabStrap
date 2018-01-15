@@ -6,7 +6,9 @@
     border-right: 1.5rem solid $red;
     min-height: 1.5rem;
     flex-grow: 3;
-    margin-right: 20%;
+    @include if-min-width($S) {
+      margin-right: 20%;
+    }
 
     svg {
       fill: #fff;
@@ -48,4 +50,7 @@
 
   }
 
+  svg {
+    fill: $white;
+  }
 }

@@ -31,6 +31,10 @@
 
   .featured-community-content {
     padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
     @include if-min-width($XM) {
@@ -44,4 +48,8 @@
         background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgba(0, 0, 0, 0) 100%);
       }
     }
+
+  svg {
+    fill: $white;
+  }
 }

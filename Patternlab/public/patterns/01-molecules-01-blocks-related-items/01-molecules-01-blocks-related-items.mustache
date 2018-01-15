@@ -1,26 +1,59 @@
 <section class="related-items">
-  <div class="{{# styleModifier }}{{ styleModifier }}{{/ styleModifier }}{{^ styleModifier }}container-fluid-full{{/ styleModifier }}">
-    <div class="related-item darkblue">
-      <img src="http://via.placeholder.com/480x480" alt="" title="" />
+  <div class="{{# relatedItems.fullScreenWidth }}container-fluid-full{{/ relatedItems.fullScreenWidth }}{{^ relatedItems.fullScreenWidth }}container{{/ relatedItems.fullScreenWidth }}">
+
+
+    {{# listItems.two }}
+
+    <div class="related-item bg-{{ relatedItem.background }}">
+
+      {{# relatedItem.imgTileFirst }}
+      <img src="{{ relatedItem.imgSrc }}" alt="" title="" />
       <div class="item-content">
-        <h4 class="related-title">DECORATING YOUR PORCH FOR FALL</h4>
-        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
-        {{> atoms-arrow-link:white(arrow-link-url: "#", arrow-link-text: "Learn More") }}
+
+        {{# relatedItem.subheading }}
+        <h5 class="related-subtitle">{{ relatedItem.subheading }}</h5>
+        {{/ relatedItem.subheading }}
+
+        <h4 class="related-title">{{ relatedItem.heading }}</h4>
+
+        {{# relatedItem.copy }}
+        <p>{{ relatedItem.copy }}</p>
+        {{/ relatedItem.copy }} {{# relatedItem.textLinkText }}
+        <a class="arrow-link {{ relatedItem.linkColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.textLinkText }}</a> {{/ relatedItem.textLinkText }} {{# relatedItem.buttonText }}
+        <div>
+          <a class="btn btn-primary {{ relatedItem.buttonColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.buttonText }}</a>
+        </div>
+        {{/ relatedItem.buttonText }}
+
       </div>
       <!-- /.item-content -->
+      {{/ relatedItem.imgTileFirst }} {{^ relatedItem.imgTileFirst }}
+      <div class="item-content">
+
+        {{# relatedItem.subheading }}
+        <h5 class="related-subtitle">{{ relatedItem.subheading }}</h5>
+        {{/ relatedItem.subheading }}
+
+        <h4 class="related-title">{{ relatedItem.heading }}</h4>
+
+        {{# relatedItem.copy }}
+        <p>{{ relatedItem.copy }}</p>
+        {{/ relatedItem.copy }} {{# relatedItem.textLinkText }}
+        <a class="arrow-link {{ relatedItem.linkColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.textLinkText }}</a> {{/ relatedItem.textLinkText }} {{# relatedItem.buttonText }}
+        <div>
+          <a class="btn btn-primary {{ relatedItem.buttonColor }}" href="{{ relatedItem.linkUrl }}">{{ relatedItem.buttonText }}</a>
+        </div>
+        {{/ relatedItem.buttonText }}
+
+      </div>
+      <!-- /.item-content -->
+      <img src="{{ relatedItem.imgSrc }}" alt="" title="" /> {{/ relatedItem.imgTileFirst }}
+
     </div>
     <!-- /.related-item -->
 
-    <div class="related-item darkblue">
-      <img src="http://via.placeholder.com/480x480" alt="" title="" />
-      <div class="item-content">
-        <h4 class="related-title">DECORATING YOUR PORCH FOR FALL</h4>
-        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
-        {{> atoms-arrow-link:white(arrow-link-url: "#", arrow-link-text: "Learn More") }}
-      </div>
-      <!-- /.item-content -->
-    </div>
-    <!-- /.related-item -->
+
+    {{/ listItems.two }}
 
   </div>
 </section>

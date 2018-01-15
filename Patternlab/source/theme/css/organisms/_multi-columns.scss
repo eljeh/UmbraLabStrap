@@ -21,7 +21,7 @@
   @include if-min-width($XM) {
 
     .container{
-      padding: 8rem 0;
+      padding: 4rem 0 8rem;
     }
 
     .column-wrapper {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1515781085682,
+  "timestamp": 1515941534684,
   "graph": {
     "options": {
       "directed": true,
@@ -29,7 +29,9 @@
       {
         "v": "00-atoms\\01-global\\date-meta.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-01-blocks-content-w-aside\\01-molecules-01-blocks-content-w-aside.rendered.html",
+          "lineagePattern": "molecules-content-w-aside"
         }
       },
       {
@@ -160,6 +162,30 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-01-regions-mobile-navigation\\02-organisms-01-regions-mobile-navigation.rendered.html",
           "lineagePattern": "organisms-mobile-navigation"
+        }
+      },
+      {
+        "v": "00-atoms\\03-images\\property-logo-communities.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-01-regions-property-filters\\02-organisms-01-regions-property-filters.rendered.html",
+          "lineagePattern": "organisms-property-filters"
+        }
+      },
+      {
+        "v": "00-atoms\\03-images\\property-logo-lifestyle.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-01-regions-property-filters\\02-organisms-01-regions-property-filters.rendered.html",
+          "lineagePattern": "organisms-property-filters"
+        }
+      },
+      {
+        "v": "00-atoms\\03-images\\property-logo-living.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-01-regions-property-filters\\02-organisms-01-regions-property-filters.rendered.html",
+          "lineagePattern": "organisms-property-filters"
         }
       },
       {
@@ -345,27 +371,57 @@
       {
         "v": "00-atoms\\06-social-blocks\\events-block.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\financials-block.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
         }
       },
       {
         "v": "00-atoms\\06-social-blocks\\instagram-block.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
         }
       },
       {
         "v": "00-atoms\\06-social-blocks\\news-block.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\social-promo-block.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
+        }
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\twitter-block.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-02-components-social-grid\\02-organisms-02-components-social-grid.rendered.html",
+          "lineagePattern": "organisms-social-grid"
         }
       },
       {
         "v": "01-molecules\\01-blocks\\active-filter-bar.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-01-regions-property-filters\\02-organisms-01-regions-property-filters.rendered.html",
-          "lineagePattern": "organisms-property-filters"
+          "lineagePath": "../../patterns/04-pages-property-results\\04-pages-property-results.rendered.html",
+          "lineagePattern": "pages-property-results"
         }
       },
       {
@@ -787,6 +843,12 @@
         }
       },
       {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "03-templates\\profile.mustache",
         "value": {
           "compileState": "clean"
@@ -836,6 +898,18 @@
       },
       {
         "v": "04-pages\\01-investors\\webcasts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -937,13 +1011,13 @@
         }
       },
       {
-        "v": "C:\\SourceFiles\\UmbraLabStrap\\patternlab\\source\\_meta\\_00-head.mustache",
+        "v": "D:\\WebProjects\\UmbraLabStrap\\Patternlab\\source\\_meta\\_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "C:\\SourceFiles\\UmbraLabStrap\\patternlab\\source\\_meta\\_01-foot.mustache",
+        "v": "D:\\WebProjects\\UmbraLabStrap\\Patternlab\\source\\_meta\\_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -952,6 +1026,11 @@
     "edges": [
       {
         "v": "00-atoms\\06-social-blocks\\events-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\financials-block.mustache",
         "w": "00-atoms\\04-buttons\\arrow-link.mustache",
         "value": {}
       },
@@ -966,8 +1045,28 @@
         "value": {}
       },
       {
+        "v": "00-atoms\\06-social-blocks\\social-promo-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms\\06-social-blocks\\twitter-block.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules\\01-blocks\\brand-bar.mustache",
-        "w": "00-atoms\\03-images\\property-logo.mustache",
+        "w": "00-atoms\\03-images\\property-logo-communities.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\brand-bar.mustache",
+        "w": "00-atoms\\03-images\\property-logo-lifestyle.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\brand-bar.mustache",
+        "w": "00-atoms\\03-images\\property-logo-living.mustache",
         "value": {}
       },
       {
@@ -987,7 +1086,17 @@
       },
       {
         "v": "01-molecules\\01-blocks\\community-block.mustache",
-        "w": "00-atoms\\03-images\\property-logo.mustache",
+        "w": "00-atoms\\03-images\\property-logo-communities.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\community-block.mustache",
+        "w": "00-atoms\\03-images\\property-logo-lifestyle.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\community-block.mustache",
+        "w": "00-atoms\\03-images\\property-logo-living.mustache",
         "value": {}
       },
       {
@@ -1032,11 +1141,11 @@
       },
       {
         "v": "01-molecules\\01-blocks\\content-w-aside.mustache",
-        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "w": "00-atoms\\01-global\\date-meta.mustache",
         "value": {}
       },
       {
-        "v": "01-molecules\\01-blocks\\cta-card.mustache",
+        "v": "01-molecules\\01-blocks\\content-w-aside.mustache",
         "w": "00-atoms\\04-buttons\\arrow-link.mustache",
         "value": {}
       },
@@ -1156,18 +1265,8 @@
         "value": {}
       },
       {
-        "v": "01-molecules\\01-blocks\\promo.mustache",
-        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
-        "value": {}
-      },
-      {
         "v": "01-molecules\\01-blocks\\property-list-item.mustache",
         "w": "00-atoms\\04-buttons\\primary-button.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules\\01-blocks\\related-items.mustache",
-        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
         "value": {}
       },
       {
@@ -1322,32 +1421,22 @@
       },
       {
         "v": "02-organisms\\01-regions\\property-filters.mustache",
-        "w": "00-atoms\\03-images\\property-logo.mustache",
+        "w": "00-atoms\\03-images\\property-logo-lifestyle.mustache",
         "value": {}
       },
       {
         "v": "02-organisms\\01-regions\\property-filters.mustache",
-        "w": "00-atoms\\04-buttons\\primary-button.mustache",
+        "w": "00-atoms\\03-images\\property-logo-communities.mustache",
         "value": {}
       },
       {
         "v": "02-organisms\\01-regions\\property-filters.mustache",
-        "w": "01-molecules\\01-blocks\\active-filter-bar.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms\\02-components\\cta-card-column-content.mustache",
-        "w": "00-atoms\\02-text\\secondary-heading.mustache",
+        "w": "00-atoms\\03-images\\property-logo-living.mustache",
         "value": {}
       },
       {
         "v": "02-organisms\\02-components\\cta-card-column-content.mustache",
         "w": "01-molecules\\01-blocks\\cta-card.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms\\02-components\\cta-card-column-content.mustache",
-        "w": "00-atoms\\04-buttons\\primary-button.mustache",
         "value": {}
       },
       {
@@ -1448,6 +1537,36 @@
       {
         "v": "02-organisms\\02-components\\property-search-block.mustache",
         "w": "00-atoms\\04-buttons\\primary-button-submit.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\events-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\twitter-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\news-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\instagram-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\social-promo-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\02-components\\social-grid.mustache",
+        "w": "00-atoms\\06-social-blocks\\financials-block.mustache",
         "value": {}
       },
       {
@@ -1837,6 +1956,86 @@
       },
       {
         "v": "04-pages\\01-investors\\webcasts.mustache",
+        "w": "02-organisms\\01-regions\\footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\panel-investors.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\panel-search.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\mobile-navigation.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "01-molecules\\01-blocks\\jumbotron.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "01-molecules\\01-blocks\\content-w-aside.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\News-Releases.mustache",
+        "w": "02-organisms\\01-regions\\footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\panel-investors.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\panel-search.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\mobile-navigation.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "01-molecules\\01-blocks\\jumbotron.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
+        "w": "01-molecules\\01-blocks\\content-w-aside.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\02-events\\Upcoming-Events.mustache",
         "w": "02-organisms\\01-regions\\footer.mustache",
         "value": {}
       },
@@ -2272,12 +2471,12 @@
       },
       {
         "v": "04-pages\\opportunity-details.mustache",
-        "w": "01-molecules\\01-blocks\\half-and-half.mustache",
+        "w": "01-molecules\\01-blocks\\columned-content.mustache",
         "value": {}
       },
       {
         "v": "04-pages\\opportunity-details.mustache",
-        "w": "01-molecules\\01-blocks\\columned-content.mustache",
+        "w": "01-molecules\\01-blocks\\half-and-half.mustache",
         "value": {}
       },
       {
@@ -2318,11 +2517,6 @@
       {
         "v": "04-pages\\our-stories-details.mustache",
         "w": "01-molecules\\01-blocks\\promo.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages\\our-stories-details.mustache",
-        "w": "00-atoms\\04-buttons\\back-link.mustache",
         "value": {}
       },
       {
@@ -2572,6 +2766,11 @@
       },
       {
         "v": "04-pages\\property-results.mustache",
+        "w": "01-molecules\\01-blocks\\active-filter-bar.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages\\property-results.mustache",
         "w": "02-organisms\\02-components\\property-listings.mustache",
         "value": {}
       },
@@ -2672,12 +2871,12 @@
       },
       {
         "v": "04-pages\\working-with-us.mustache",
-        "w": "01-molecules\\01-blocks\\tabbed-content.mustache",
+        "w": "01-molecules\\01-blocks\\columned-content.mustache",
         "value": {}
       },
       {
         "v": "04-pages\\working-with-us.mustache",
-        "w": "01-molecules\\01-blocks\\columned-content.mustache",
+        "w": "01-molecules\\01-blocks\\tabbed-content.mustache",
         "value": {}
       },
       {

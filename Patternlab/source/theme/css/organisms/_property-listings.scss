@@ -1,243 +1,244 @@
 .property-listings {
   background: $listings-bg;
+}
 
-  .property-list {
 
-    &-item {
-      margin-bottom: 1rem;
-      padding: 10px;
+.property-offerings {
 
-      &-details {
+  .property-offering {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      width: 86%;
+      height: 0;
+      line-height: 0;
+      border-bottom: 2px dotted #ddd;
+    }
+
+    span {
+
+      &:first-of-type {
         background: $white;
-        padding: 2.1875rem 1.875rem 1.875rem;
-        @media (min-width: $M) {
-          box-shadow: 6px 6px 0 0 $box-shadow-grey;
-        }
-
-        &-top {
-          margin-bottom: 15px;
-          @media (min-width: $M) {
-            align-self: flex-end;
-            display: flex;
-            justify-content: space-between;
-          }
-          @media (max-width: $M) {
-            border-bottom-width: 0 !important;
-          }
-        }
+        display: inline;
+        z-index: 1;
+        position: relative;
+        padding-right: .2rem;
       }
 
-      &-price {
-        @media (min-width: $M) {
-          align-self: flex-end;
-        }
-
-        .price-align {
-          display: flex;
-          align-items: flex-end;
-          position: relative;
-
-          sup {
-            font-size: 55%;
-          }
-        }
-        span {
-          &:first-of-type {
-
-          }
-          &:last-of-type {
-            margin-left: 5px;
-            font-family: $futura;
-            font-weight: 400;
-            font-size: 0.8125rem;
-            text-transform: lowercase;
-          }
-        }
-
-        i {
-          position: absolute;
-          bottom: 0; right: 0;
-          font-size: 3rem !important;
-        }
+      &:last-of-type {
+        background: $white;
+        font-weight: bolder;
+        position: relative;
+        float: right;
+        padding-left: .2rem;
+        text-align: right;
+        z-index: 2;
       }
+    }
+  }
+}
 
-      i {
-        font-size: 1.75rem;
-      }
+.property-list-item {
+  margin-bottom: 1rem;
+  padding: 10px;
 
+  &-details {
+    background: $white;
+    padding: 2.1875rem 1.875rem 1.875rem;
+    @media (min-width: $M) {
+      box-shadow: 6px 6px 0 0 $box-shadow-grey;
     }
 
-    &-img {
-      max-width: 100%;
-      position: relative;
-      height: 511px;
-      max-height: 511px;
+    &-top {
+      margin-bottom: 15px;
       @media (min-width: $M) {
-        width: 250px;
-        height: 235px;
-        box-shadow: 6px 6px 0 0 $box-shadow-grey;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
       }
-
-      &-wrap {
-        @media (max-width: $M) {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-
-      i {
-        position: absolute;
-        top: 15px; right: 15px;
-        color: $white;
-      }
-
-      &-flag {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        img {
-          margin: 0;
-          max-width: 72%;
-          float: right;
-          @media (min-width: $M) {
-            max-width: 170px;
-          }
-        }
-      }
-
-    }
-  }
-
-
-  // styles specific to property type...
-  .property-type {
-    &-communities {
-
-      .property-special-offer-flag {
-        background: $black;
-      }
-
-      .property-list-item-details-top {
-        border-bottom: 3px solid $blue;
-      }
-    }
-
-    &-living {
-
-      .property-special-offer-flag {
-        background: $footer-bg;
-      }
-
-      .property-list-item-details-top {
-        border-bottom: 3px solid $darkblue;
-      }
-    }
-
-    &-lifestyle {
-
-      &.property-special-offer {
-        background: $black;
-
-        // box shadow looks dumb on top a background
-        .property-list-img, .property-list-item-details {
-          box-shadow: none;
-        }
-      }
-
-      .property-special-offer-flag {
-        background: $black;
-      }
-
-      .property-list-item-details-top {
-        border-bottom: 3px solid $black;
+      @media (max-width: $M) {
+        border-bottom-width: 0 !important;
       }
     }
   }
 
-  .property-special-offer-flag {
-    color: $white;
-    display: inline-block;
-    position: absolute;
-    font-size: 1.5rem;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    font-family: $futura;
-    font-weight: 300;
-    text-transform: uppercase;
-    @media (min-width: $M){
-      max-width: 272px;
-      font-size: .875rem;
+  &-price {
+    @media (min-width: $M) {
+      align-self: flex-end;
+    }
+
+    .price-align {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+
+      sup {
+        font-size: 55%;
+      }
+    }
+    span {
+      &:first-of-type {
+
+      }
+      &:last-of-type {
+        margin-left: 5px;
+        font-family: $futura;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        text-transform: lowercase;
+      }
+    }
+
+    i {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 3rem !important;
     }
   }
 
-
-  .property-detail-dropdown {
-    text-transform: uppercase;
-    font-weight: 700;
+  i {
     font-size: 1.75rem;
-    font-family: $futura;
-    margin-top: 10px;
-    display: block;
+  }
+}
+
+.property-list {
+
+  &-img {
+    max-width: 100%;
+    position: relative;
+    height: 511px;
+    max-height: 511px;
+    @media (min-width: $M) {
+      width: 250px;
+      height: 235px;
+      box-shadow: 6px 6px 0 0 $box-shadow-grey;
+    }
+
+    &-wrap {
+      @media (max-width: $M) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: $white;
+    }
+
+    &-flag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      img {
+        margin: 0;
+        max-width: 72%;
+        float: right;
+        @media (min-width: $M) {
+          max-width: 170px;
+        }
+      }
+    }
+
+  }
+}
+
+// styles specific to property type...
+.property-type {
+  &-communities {
+
+    .property-special-offer-flag {
+      background: $black;
+    }
+
+    .property-list-item-details-top {
+      border-bottom: 3px solid $blue;
+    }
+  }
+
+  &-living {
+
+    .property-special-offer-flag {
+      background: $footer-bg;
+    }
+
+    .property-list-item-details-top {
+      border-bottom: 3px solid $darkblue;
+    }
+  }
+
+  &-lifestyle {
+
+    &.property-special-offer {
+      background: $black;
+
+      // box shadow looks dumb on top a background
+      .property-list-img, .property-list-item-details {
+        box-shadow: none;
+      }
+    }
+
+    .property-special-offer-flag {
+      background: $black;
+    }
+
+    .property-list-item-details-top {
+      border-bottom: 3px solid $black;
+    }
+  }
+}
+
+
+.property-special-offer-flag {
+  color: $white;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  font-family: $futura;
+  font-weight: 300;
+  text-transform: uppercase;
+  @media (min-width: $M) {
+    max-width: 272px;
+    font-size: .875rem;
+  }
+}
+
+.property-detail-dropdown {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-family: $futura;
+  margin-top: 10px;
+  display: block;
+
+  &::after {
+    @include icomoon("\ea50");
+    color: $blue;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    top: 4px;
+  }
+
+  &.collapsed {
 
     &::after {
-      @include icomoon("\ea50");
-      color: $blue;
-      font-size: 20px;
-      font-weight: bolder;
-      display: inline-block;
-      position: relative;
-      left: 2px;
-      top: 4px;
-    }
-
-    &.collapsed {
-
-      &::after {
-        transform: rotate(180deg);
-        top: -4px;
-      }
-    }
-  }
-
-  .property-offerings {
-
-    .property-offering {
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 3px;
-        width: 86%;
-        height: 0;
-        line-height: 0;
-        border-bottom: 2px dotted #ddd;
-      }
-
-      span {
-
-        &:first-of-type {
-          background: $white;
-          display: inline;
-          z-index: 1;
-          position: relative;
-          padding-right: .2rem;
-        }
-
-        &:last-of-type {
-          background: $white;
-          font-weight: bolder;
-          position: relative;
-          float: right;
-          padding-left: .2rem;
-          text-align: right;
-          z-index: 2;
-        }
-      }
+      transform: rotate(180deg);
+      top: -4px;
     }
   }
 }

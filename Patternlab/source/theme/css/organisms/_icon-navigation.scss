@@ -72,3 +72,66 @@ ul.icon-navigation {
         }
     }
 }
+
+
+// on the investor page
+.investor-icon-navigation {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include if-min-width($XL) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icon-navigation {
+        margin-bottom: 0;
+        @media (max-width: $XM) {
+            justify-content: flex-start !important;
+        }
+    }
+    // <li>
+    // have to get a little grainy to make this work...
+    .p2 {
+        width: 50%;
+        margin-bottom: 30px;
+
+        @include if-min-width($S) {
+            width: 33.33%;
+        }
+
+        @include if-min-width($M) {
+            width: 25%;
+        }
+
+        @include if-min-width($XM) {
+            padding: 0 1rem;
+            border-right: 1px solid $lightgrey;
+            width: 14.28%;
+            margin-bottom: 15px;
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+
+        @include if-min-width($XL) {
+            padding: 0 1rem;
+        }
+
+        @include if-min-width($XXL) {
+            padding: 0 2rem;
+        }
+
+        a {
+            display: block;
+
+            &:hover {
+                color: lighten($btn-white-text, 20%);
+
+                i {
+                    color: lighten($btn-white-text, 20%);
+                }
+            }
+        }
+    }
+}

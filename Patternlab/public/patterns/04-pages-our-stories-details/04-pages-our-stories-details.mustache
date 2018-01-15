@@ -3,9 +3,9 @@
 
 <div class="wrapper">
 
-  {{> organisms-header}} {{> molecules-jumbotron}} {{> molecules-promo}} {{> atoms-back-link:blue(back-link-text:"Back To Our Stories",back-link-href:"/stories")}} {{> molecules-content-w-aside}} {{> molecules-related-items}}
+  {{> organisms-header}} {{> molecules-jumbotron:vertical-center|jumbotron-small}} {{> molecules-promo:blue}} {{> molecules-content-w-aside}} {{> molecules-related-items}}
 
-  <div class="text-center mt-5">
+  <div class="text-center mt-5 mb-10">
     {{> atoms-primary-button(primary-button-text:"View All Our Stories")}}
   </div>
 

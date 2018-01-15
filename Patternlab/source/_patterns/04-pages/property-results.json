@@ -1,0 +1,12 @@
+{
+  "banner": {
+    "background-image": "/theme/images/hp-banner.jpg",
+    "heading": "",
+    "subheading": "",
+    "content": ""
+  },
+  "propertyFilters": {
+    "submitButtonText": "Update Filters",
+    "showAccordion": true
+  }
+}

@@ -1,0 +1,27 @@
+.active-filters-bar {
+  border-bottom: 1px solid $lighterblue;
+  border-top: 1px solid $lighterblue;
+  padding: 15px 0;
+  margin-bottom: 1rem;
+
+  a {
+    text-transform: uppercase;
+    color: $text-color;
+    padding: 5px;
+    margin-right: 20px;
+  }
+
+
+  .active-filter-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  .icon-close {
+    margin-left: 5px;
+  }
+}

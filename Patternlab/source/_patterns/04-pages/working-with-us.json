@@ -1,8 +1,12 @@
 {
   "banner": {
-    "background-image": "/theme/images/jumbotron/investor-banner.jpg",
+    "background-image": "/theme/images/jumbotron/careers-banner.jpg",
     "heading": "Work with Boardwalk",
     "subheading": "",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque ultricies tellus felis."
+  },
+  "columnedContent" :{
+    "heading": "Our Why",
+    "subheading": ""
   }
 }
