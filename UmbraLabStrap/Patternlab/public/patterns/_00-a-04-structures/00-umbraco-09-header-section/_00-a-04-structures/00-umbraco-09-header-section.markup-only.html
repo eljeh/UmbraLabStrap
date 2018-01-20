@@ -1,0 +1,20 @@
+<div class="coverImage" style="background-image: url(https://auburnlanding.bwalk.com/media/1073/exterior_small.jpg)">
+
+</div>
+
+<video id="video-js" class="coverVideo" poster="https://auburnlanding.bwalk.com/media/1073/exterior_small.jpg" preload="none" loop="loop" muted="muted" volume="0">
+        <source src="https://auburnlanding.bwalk.com/media/1071/shortwebm.webm" type="video/webm">
+        <source src="https://auburnlanding.bwalk.com/media/1070/shortmp4.mp4" type="video/mp4">
+    </video>
+
+<script>
+  function isMobile() {
+    return (navigator.appVersion.indexOf("Mobile") > -1);
+  }
+  if (isMobile()) {
+    var video = document.getElementById("video-js");
+    video.parentNode.removeChild(video);
+  } else {
+    document.getElementById("video-js").play();
+  }
+</script>

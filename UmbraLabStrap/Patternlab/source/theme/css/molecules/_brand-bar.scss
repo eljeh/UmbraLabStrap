@@ -1,0 +1,88 @@
+.brand-bar {
+  //background: #000;
+  min-height: 3.75rem;
+
+  .brand-bar-logo {
+    border-right: 1.5rem solid $red;
+    min-height: 1.5rem;
+    flex-grow: 3;
+    @include if-min-width($S) {
+      margin-right: 20%;
+    }
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  .back-btn,
+  .view-map-btn {
+    display: block;
+    padding: 1.5rem;
+    width: 100%;
+    min-width: 200px;
+    text-align: center;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-family: $futura;
+    font-weight: 900;
+
+    i {
+      margin-right: .5rem;
+      font-size: 180%;
+      vertical-align: middle;
+    }
+  }
+
+  @include if-min-width($S) {
+    display: flex;
+
+    .brand-bar-logo {
+      margin-right: 0;
+    }
+
+    .back-btn,
+    .view-map-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      color: #fff;
+    }
+
+  }
+
+  svg {
+    fill: $white;
+  }
+
+  &.brand-bar-details {
+      .back-btn {
+          width: 75%;
+          border-right: 1.5rem solid $red;
+
+          p {
+              display: inline-table;
+              font-size: 24px;
+              line-height: 20px;
+              margin-bottom: 0;
+          }
+
+          span {
+              display: block;
+              font-size: 14px;
+              line-height: 14px;
+          }
+
+          &:hover {
+              color: #ccc;
+          }
+      }
+
+      .brand-bar-logo {
+          padding-left: 10px;
+          padding-right: 10px;
+        border-right: 0;
+      }
+  }
+}

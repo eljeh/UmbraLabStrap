@@ -1,0 +1,179 @@
+
+.jumbotron-carousel {
+    //overflow: hidden;
+    //position: relative;
+    width: 100%;
+    /* 16:9 Aspect Ratio */
+    //padding-top: 56.25%;
+    padding-top: calc(778 / 1920 * 100%);
+
+    // SET MAX HEIGHT
+    @media screen and (min-width:1024px) {
+        //padding-top: 0;
+        //height:650px;
+    }
+
+    .jumbotron-carousel_bg {
+        display: table;
+    }
+
+    .jumbotron-carousel_container {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 20px;
+
+        .heading {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width:767px) {
+            padding-top: 50px;
+
+            p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .heading {
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .slick-list {
+        height:100%;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+    }
+
+    .slick-track {
+        height: 100%;
+    }
+
+    .slick-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .slick-arrow {
+      font-size: 40px;
+      color: #fff;
+      width: auto;
+      height: auto;
+      z-index: 2;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      //bottom: 1.5rem;
+      top: 50%;
+    }
+
+    .slick-prev {
+      right: 2.6em;
+      left: 0;
+      transform: rotate(-180deg) translate(-48%, 1px);
+    }
+
+    .slick-next {
+      right: .5rem;
+      transform: translateX(-50%);
+    }
+
+    .slick-disabled {
+      opacity: .5;
+    }
+
+    &.slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .slick-dots {
+        bottom: 15px;
+
+        li  {
+            margin: 0 1px;
+
+            button::before {
+                font-size: 30px;
+                color: $white;
+                opacity: 1;
+            }
+
+            &.slick-active {
+                button::before {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    [class^="icon-"] {
+      display: block;
+    }
+
+    &.white {
+        .heading,
+        .subheading,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.jumbotron-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    .jumbotron-offer-card {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 100%;
+        margin-top: 4.9rem;
+
+        @media screen and (max-width:960px) {
+            width: 60%;
+        }
+
+        .offer-card {
+            width: 100%;
+            max-width: 100%;
+            height: 95.4%;
+            margin-top: 2.3rem;
+
+            .offer-card-content {
+                padding: 40px;
+            }
+        }
+    }
+
+    &.details-card-container {
+        .slick-prev {
+          left: 41% !important;
+        }
+
+        // Hide content on Details page
+        .jumbotron-carousel_container {
+            display: none;
+        }
+    }
+}

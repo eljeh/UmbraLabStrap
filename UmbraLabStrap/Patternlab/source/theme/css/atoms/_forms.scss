@@ -1,0 +1,215 @@
+/* Global Form Styling - custom form styling should live inside of theme/css/template/ folder */
+input,
+select,
+textarea {
+    color: $darkblue;
+    font-family: $futura;
+    border: 1px solid $black;
+
+    &.borderless {
+        border: none;
+        border-radius: 0;
+        font-size: 1.25rem;
+        padding: 1.526rem;
+    }
+}
+
+// Type: File
+.input-file {
+    position: relative;
+    font-size: 42px;
+    color: $darkblue;
+    cursor: pointer;
+
+    input[type=file] {
+        position: absolute;
+        top: -9999999;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        width:0;
+        height:0;
+        outline: none;
+        cursor: inherit;
+    }
+
+    .input-file__name {
+        font-family: $futura;
+        font-size: 20px;
+    }
+}
+
+// Type: Search
+.input-group__search {
+    margin: 0 auto 25px;
+
+    input[type=search] {
+        border: 1px solid $darkblue;
+        border-radius: 4px;
+        padding: 0 65px 0 18px;
+        font-size: 24px;
+        color: $darkblue;
+    }
+
+    // overrides a bootstrap setting
+    &.input-group .form-control:not(:last-child) {
+        border-radius: 4px;
+    }
+
+    .input-group-btn {
+        right: 63px;
+        top: 10px;
+        z-index: 3;
+    }
+
+    button {
+        border: 0;
+        color: $darkblue;
+        font-size: 30px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.input-search {
+    border: 1px solid $darkblue;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: $futura;
+    font-weight: 300;
+    padding: 10px 30px;
+
+    input[type=search] {
+        border: 0;
+        color: $darkblue;
+        font-size: 30px;
+        outline: 0;
+        padding-left: 10px;
+    }
+}
+
+.input-search-container {
+    border: 1px solid $darkblue;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: relative;
+    margin-bottom: 25px;
+
+    input[type=search] {
+        border: 0;
+        color: $darkblue;
+        font-size: 24px;
+        width: 90%;
+    }
+
+    button {
+        background: transparent;
+        border: 0;
+        color: $darkblue;
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &.no-border {
+        border: 0;
+        margin-top: 40px;
+    }
+}
+
+
+// Type: Select
+.dropdown__label {
+    position: relative;
+    display: block;
+
+    &:after {
+        color: $blue;
+        content: '\ea50'; // icon-ctrl
+        font-family: 'icomoon';
+        font-size: 24px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: rotate(180deg) translateY(65%);
+        pointer-events: none;
+        line-height: 1;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .7rem 4rem .7rem 1rem;
+    border-radius: 3px;
+    width: 100%;
+
+    .form-control-lg {
+        margin-bottom: 0;
+    }
+
+    &:-moz-focusing {
+        outline: none !important;
+    }
+}
+
+// Type: Radio
+.radio-input {
+    input {
+        display: none;
+    }
+
+    label {
+        padding: 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            position: relative;
+            top: -1px;
+            margin-right: .5rem;
+        }
+    }
+
+    input:checked ~ label::before {
+        background: radial-gradient(ellipse at center, currentColor 0%,currentColor 51%,rgba(255,255,255,0) 52%,rgba(255,255,255,0) 100%);
+    }
+
+    & {
+        margin-right: 2rem;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+// Type: Datepicker
+
+.hasDatepicker {
+  background: url();
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url('/theme/images/ui-icons_444444_256x240.png');
+}
+
+
+// Form Control overrides
+
+.form-control {
+  border-color: currentColor;
+}

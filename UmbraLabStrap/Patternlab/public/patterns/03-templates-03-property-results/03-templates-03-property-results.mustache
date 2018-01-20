@@ -1,0 +1,22 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}} {{>organisms-panel-investors}} {{>organisms-panel-search}} {{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+  {{> organisms-header}} {{> molecules-jumbotron:vertical-center|jumbotron-xsmall}} {{> organisms-property-filters}} {{> molecules-active-filter-bar}}
+
+  <section class="map-holder grey-bg">
+    <iframe src="https://snazzymaps.com/embed/41923" width="100%" height="600px" style="border:none;"></iframe>
+    <ul class="map-legend">
+      <li>Boardwalk Lifestyle</li>
+      <li>Boardwalk Community</li>
+      <li>Boardwalk Living</li>
+    </ul>
+    <!-- /.map-legend -->
+  </section>
+  <!-- /.map-holder -->
+
+  {{> organisms-property-listings}} {{> organisms-footer}}
+
+</div>
+<!--/.wrapper-->

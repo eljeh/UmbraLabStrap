@@ -1,0 +1,35 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}}
+{{>organisms-panel-investors}}
+{{>organisms-panel-search}}
+{{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+    {{> organisms-header}}
+
+    <div class="jumbotron-wrapper white">
+        <div class="jumbotron-carousel">
+            {{# listItems.two}}
+                {{> atoms-jumbotron-slide}}
+            {{/ listItems.two}}
+        </div>
+    </div>
+
+    {{> molecules-brand-bar}}
+
+    {{> organisms-multiple-offer-cards}}
+
+    {{> organisms-multiple-key-features:bg-white}}
+
+    {{> molecules-promotion-block}}
+
+    {{> molecules-half-and-half:bg-blue|white|text-center}}
+
+    {{> molecules-related-items }}
+
+    {{> molecules-contact-form}}
+
+    {{> organisms-footer}}
+
+</div> <!--/.wrapper-->

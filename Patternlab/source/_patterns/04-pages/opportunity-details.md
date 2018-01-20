@@ -1,5 +1,0 @@
----
-title: Opportunity Details Page
----
-
-

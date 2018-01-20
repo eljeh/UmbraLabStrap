@@ -1,0 +1,12 @@
+<div class="jumbotron-wrapper {{ styleModifier }} {{# details }}details-card-container{{/ details }}">
+    {{# details }}
+    <div class="jumbotron-offer-card">
+        {{> molecules-offer-card}}
+    </div>
+    {{/ details }}
+    <div class="jumbotron-carousel">
+        {{# listItems.two}}
+            {{> atoms-jumbotron-slide}}
+        {{/ listItems.two}}
+    </div>
+</div>

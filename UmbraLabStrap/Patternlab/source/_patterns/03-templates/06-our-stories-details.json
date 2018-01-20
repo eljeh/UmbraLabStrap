@@ -1,0 +1,24 @@
+{
+    "banner": {
+        "heading": "Related Stories",
+        "subheading": "",
+        "content": ""
+    },
+    "contentWithAside": {
+        "hasBackToLink": true,
+        "linkText": "Back to our stories",
+        "linkUrl": "/our-stories",
+        "linkColor": "blue",
+        "leftRailHasDateMeta": true,
+        "leftRailContent": ""
+    },
+    "dateMeta": {
+        "month": "Nov",
+        "day": "18",
+        "year": "2017"
+    },
+    "relatedItems": {
+        "fullScreenWidth": false
+    }
+
+}

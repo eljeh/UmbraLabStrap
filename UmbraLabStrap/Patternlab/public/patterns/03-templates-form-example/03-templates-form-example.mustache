@@ -1,0 +1,83 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}} {{>organisms-panel-investors}} {{>organisms-panel-search}} {{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+  {{> organisms-header(background-color:"blue")}} {{> molecules-jumbotron:vertical-center|jumbotron-small|bg-white|black}}
+
+
+  <section class="form">
+    <div class="container">
+      <form>
+        <div class="row">
+
+          <div class="col-sm-12 col-md-9 col-lg-6">
+            <!-- Name -->
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="cf-date">Date</label> {{> atoms-datepicker:form-control|form-control-lg(form-field-date-id:"cf-date",form-field-date-placeholder:"mm/dd/yyyy")}}
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="cf-time">Time</label> {{> atoms-select:form-control|form-control-lg|(form-field-select-placeholder:"hh:mm") }}
+              </div>
+            </div>
+            <!--/.row -->
+
+            <!-- Email -->
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <label for="cf-email">Email</label> {{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"cf-email",form-field-email-placeholder:"eg. jsmith@bwalk.ca")}}
+              </div>
+            </div>
+            <!--/.row -->
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="cf-firstname">First Name</label> {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"cf-firstname",form-field-text-placeholder:"First Name", inputRequired: true)}}
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="cf-time">Last Name</label> {{> atoms-select:form-control|form-control-lg|(form-field-select-placeholder:"hh:mm") }}
+              </div>
+            </div>
+            <!--/.row -->
+
+            <!-- Message -->
+            <label for="cf-message">Message</label>
+            <div class="row">
+              <div class="col-12">
+                {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-id:"cf-message",form-field-textarea-placeholder:"foo")}}
+              </div>
+            </div>
+            <!--/.row -->
+
+            <!-- Contact by -->
+            <div class="row">
+              <div class="col-12">
+                <div class="form-check form-check-inline">
+                  {{> atoms-radio-button:(form-field-radio-id:"inline-radio-phone",form-field-radio-name:"contactBy",form-field-radio-value:"phone")}} {{> atoms-radio-button:(form-field-radio-id:"inline-radio-email",form-field-radio-name:"contactBy",form-field-radio-value:"email",form-field-radio-text:"Email
+                  me")}}
+                </div>
+              </div>
+            </div>
+            <!--/.row -->
+
+            <!-- Upload image -->
+            <p>Add an image</p>
+            {{> atoms-input-file:icon-camera}}
+            <hr/> {{> atoms-primary-button(primary-button-text:"Submit Inquiry")}}
+          </div>
+          <!--/.col -->
+
+        </div>
+        <!--/.row -->
+      </form>
+    </div>
+    <!--/.container -->
+  </section>
+  <!--/.contact-form-->
+
+
+  {{> organisms-footer}}
+
+</div>
+<!--/.wrapper-->

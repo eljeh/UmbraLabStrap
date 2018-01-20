@@ -1,0 +1,115 @@
+html {
+    font-size: 100%; /* 16px */
+
+    @include if-min-width($XS) {
+    // font-size: 87.5%; /* 14px */
+    }
+    @include if-min-width($M) {
+        font-size: 100%; /* 16px */
+    }
+}
+
+body {
+    background-color: $base-bg;
+    font-family: $base-font-family;
+    color: $text-color;
+    font-weight: $base-font-weight;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+}
+
+// This is used for push panels in main nav since nav is absolute over the banner.
+.wrapper {
+    position: relative;
+}
+
+/* Bootstrap Grid Overrides */
+.container {
+  // might need to adjust padding to match comps, leaving as default for now
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include if-min-width($M) {
+    width: 750px;
+  }
+  @include if-min-width($XM) {
+    width: 970px;
+  }
+  @include if-min-width($L) {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  // might need to adjust padding to match comps, leaving as default for now
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include if-min-width($M){
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.content-wrapper {
+
+  &.with-padding {
+    padding: 3rem 0;
+  }
+
+  &.blue-bg {
+    background: $blue;
+    color: #fff;
+  }
+
+  &.grey-bg {
+    background: #eee;
+  }
+
+  &.black-bg {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.bottom-arrow {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #eee;
+
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .blue-bg,
+  .blue {
+      &::after {
+        border-top: 20px solid $blue;
+      }
+  }
+
+  .black-bg,
+  .black {
+    &::after {
+      border-top: 20px solid #000;
+    }
+  }
+
+}

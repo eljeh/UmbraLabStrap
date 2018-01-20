@@ -1,0 +1,18 @@
+<div class="brand-bar brand-bar-details">
+
+  {{#brandBarDetails.third-color}}
+  <a class="back-btn bg-{{brandBarDetails.first-color}}" href="#">
+    {{#brandBarDetails.view-map-button}}
+        <p>Centre Pointe West
+        <span>1313 13 Ave. SW, Calgary</span>
+        </p>
+    {{/brandBarDetails.view-map-button}}
+  </a> {{/brandBarDetails.third-color}}
+
+  <div class="brand-bar-logo bg-{{brandBarDetails.third-color}}">
+    {{#brandBarDetails.communities}} {{> atoms-property-logo-communities }} {{/brandBarDetails.communities}} {{#brandBarDetails.lifestyle}} {{> atoms-property-logo-lifestyle }} {{/brandBarDetails.lifestyle}} {{#brandBarDetails.living}} {{> atoms-property-logo-living
+    }} {{/brandBarDetails.living}}
+  </div>
+  <!-- /.brand-bar-logo -->
+</div>
+<!-- /.brand-bar -->

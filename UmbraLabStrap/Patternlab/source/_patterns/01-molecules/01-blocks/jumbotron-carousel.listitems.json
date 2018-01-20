@@ -1,0 +1,26 @@
+{
+    "1": {
+        "jumbotron-carousel": {
+            "img-src": "/theme/images/jumbotron/profile-commmunity-banner.jpg",
+            "heading": "Elbow Tower",
+            "subheading": "Community Living",
+            "paragraph": "105 26 Ave. SW, Calgary"
+        }
+    },
+    "2": {
+        "jumbotron-carousel": {
+            "img-src": "/theme/images/jumbotron/profile-commmunity-banner.jpg",
+            "heading": "Elbow Tower",
+            "subheading": "Community Living",
+            "paragraph": "105 26 Ave. SW, Calgary"
+        }
+    },
+    "3": {
+        "jumbotron-carousel": {
+            "img-src": "/theme/images/jumbotron/profile-commmunity-banner.jpg",
+            "heading": "Elbow Tower",
+            "subheading": "Community Living",
+            "paragraph": "105 26 Ave. SW, Calgary"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<!-- Panels for push down navigation from main nav -->
+{{>organisms-panel-find-your-home}} {{>organisms-panel-investors}} {{>organisms-panel-search}} {{>organisms-mobile-navigation}}
+
+<div class="wrapper">
+
+  {{> organisms-header}} {{> molecules-jumbotron:vertical-center|jumbotron-medium}}
+
+  <section class="content-wrapper grey-bg">
+    {{> molecules-filter-tabs:filter-tabs-grey|centered-items}} {{> organisms-social-grid }}
+
+    <div class="text-center mt-5 pb-5">
+      {{> atoms-primary-button(primary-button-text:"Load More")}}
+    </div>
+  </section>
+  <!-- /.content-wrapper -->
+
+  {{> organisms-footer}}
+
+</div>
+<!--/.wrapper-->

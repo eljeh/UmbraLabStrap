@@ -1,0 +1,62 @@
+<script>
+  $(function() {
+
+    // Reorder the menu list items so that the first one (the little icon) is in the middle of the list
+    $("#mainNav li:nth-child(" + Math.ceil($("#mainNav li").length / 2) + ")").after($("#mainNav li:eq(0)").detach());
+
+  });
+</script>
+
+<nav id="pageNav" class="navbar affix-top">
+
+  <div class="collapse navbar-collapse">
+
+    <ul id="mainNav" class="nav navbar-nav">
+
+
+
+      <li class="hidden-xs">
+
+        <a href="#Suites" class="scroll-link">Suites</a>
+
+        <div class="nav-item-underline"></div>
+
+      </li>
+      <li class="hidden-xs">
+
+        <a href="#3DTour" class="scroll-link">3D Tour</a>
+
+        <div class="nav-item-underline"></div>
+
+      </li>
+      <li class="BackToTop active">
+
+        <a href="#CoverPanel" class="scroll-link">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x text-bwalkRed"></i>
+                        <i class="fa fa-circle-thin  fa-stack-2x"></i>
+                        <i class="fa fa-chevron-down fa-stack-1x"></i>
+                    </span>
+
+                </a>
+
+      </li>
+      <li class="hidden-xs">
+
+        <a href="#Incentives" class="scroll-link">Incentives</a>
+
+        <div class="nav-item-underline"></div>
+
+      </li>
+      <li class="hidden-xs">
+
+        <a href="#Community" class="scroll-link">Community</a>
+
+        <div class="nav-item-underline"></div>
+
+      </li>
+    </ul>
+
+  </div>
+
+</nav>
