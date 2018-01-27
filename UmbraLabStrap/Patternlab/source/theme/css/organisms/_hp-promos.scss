@@ -4,6 +4,7 @@
   background: $blue;
   color: #fff;
   position: relative;
+  margin-bottom: .7rem;
 
   .hp-promo+.hp-promo {
     border-top: 1px solid rgba(255, 255, 255, .5);
@@ -22,6 +23,10 @@
     &::before {
       display: none;
     }
+  }
+
+  .slick-dots {
+    display: none;
   }
 
   .slick-prev {

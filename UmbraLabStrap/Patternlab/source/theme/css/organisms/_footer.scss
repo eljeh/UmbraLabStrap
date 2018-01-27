@@ -51,7 +51,7 @@ footer {
     .social-feeds {
         text-align: center;
         margin-bottom: 0;
-        
+
         @include if-min-width($M) {
             text-align: left;
         }
@@ -66,10 +66,11 @@ footer {
             a {
                 color: $white;
                 font-size: 34px;
+                text-decoration: none;
 
-                &:hover {
-                    color: $orange;
-                    text-decoration: none;
+                &:hover,
+                .icon:hover {
+                  color: $blue;
                 }
             }
         }

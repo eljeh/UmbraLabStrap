@@ -1,7 +1,8 @@
 <div id="mobile-nav-container">
   <header class="mobile-header d-flex justify-content-between">
-    <div class="d-flex align-items-center mobile-header__logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></div>
-    <div class="d-flex align-items-center"><a class="close"><i class="icon-close"></i></a>
+    <div class="d-flex align-items-center mobile-header__logo"><a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+    </div>
+    <div class="d-flex align-items-center"><a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
     </div>
   </header>
   <!--/.mobile-header-->
@@ -12,7 +13,7 @@
       <form>
         <div class="input-search-container ">
           <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
-          <button type="submit" class="icon-search"></button>
+          <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
     </li>
@@ -21,7 +22,7 @@
         <form>
           <div class="input-search-container ">
             <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
-            <button type="submit" class="icon-search"></button>
+            <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
 

@@ -181,7 +181,7 @@
   border-radius: 4px;
 }
 
-@mixin boardwalk-button($bg, $bottom, $text, $texthover: $text, $padding: 10px 20px 8px) {
+@mixin boardwalk-button($bg, $bottom, $text, $texthover: $text, $padding: 15px 25px 13px) {
 
     background-color: $bg;
     border: 1px solid $black;

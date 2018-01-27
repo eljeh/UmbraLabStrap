@@ -1,40 +1,41 @@
 // Functions
 
-function pushPanels() {
-    // Push down nav panels/items
-    $('.m-nav-investors a').on("click touch", function(){
-        $('#m-nav-panel-find, #m-nav-panel-search').removeClass('panel-open');
-        $('#m-nav-panel-investors').toggleClass('panel-open');
-    });
+// Push down nav panels/items
+$('.m-nav-investors a').on("click touch", function(){
+    $('#m-nav-panel-find, #m-nav-panel-search').removeClass('panel-open');
+    $('#m-nav-panel-investors').toggleClass('panel-open');
+    $('#m-nav-panel-investors a').first().focus();
+});
 
-    $('.m-nav-find a').on("click touch", function(){
-        $('#m-nav-panel-investors, #m-nav-panel-search').removeClass('panel-open');
-        $('#m-nav-panel-find').toggleClass('panel-open');
-        $('#m-nav-panel-find input[type=search]').focus();
-    });
+$('.m-nav-find a').on("click touch", function(){
+    $('#m-nav-panel-investors, #m-nav-panel-search').removeClass('panel-open');
+    $('#m-nav-panel-find').toggleClass('panel-open');
+    $('#m-nav-panel-find input[type=search]').focus();
+});
 
-    $('.u-nav-search a').on("click touch", function(){
-        $('#m-nav-panel-investors, #m-nav-panel-find').removeClass('panel-open');
-        $('#m-nav-panel-search').toggleClass('panel-open');
-        $('#m-nav-panel-search input[type=search]').focus();
-    });
+$('.u-nav-search a').on("click touch", function(){
+    $('#m-nav-panel-investors, #m-nav-panel-find').removeClass('panel-open');
+    $('#m-nav-panel-search').toggleClass('panel-open');
+    $('#m-nav-panel-search input[type=search]').focus();
+});
 
-    $('#m-nav-panel-find .close, #m-nav-panel-investors .close, #m-nav-panel-search .close').on("click touch", function(){
-        $('#m-nav-panel-find, #m-nav-panel-investors, #m-nav-panel-search').removeClass('panel-open');
-        $('ul#main-navigation li a').removeClass("active");
-    });
-}
+$('#m-nav-panel-find .close, #m-nav-panel-investors .close, #m-nav-panel-search .close').on("click touch", function(){
+    $('#m-nav-panel-find, #m-nav-panel-investors, #m-nav-panel-search').removeClass('panel-open');
+    $('ul#main-navigation li a').removeClass("active");
+});
 
-// Apply active to main navigation item onclick
-function mainnavInit() {
-    $('ul#main-navigation li a').on("click touch", function(e){
-        e.preventDefault();
-        $('ul#main-navigation li a').removeClass("active");
-        $(this).addClass("active");
-    });
+$("ul#main-navigation li a, .u-nav-search a").on("click touch", function(
+  e
+) {
+  e.preventDefault();
 
-    pushPanels();
-}
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    $("ul#main-navigation li a, .u-nav-search a").removeClass("active");
+    $(this).addClass("active");
+  }
+});
 
 function videoModals() {
     $('.video-modal').magnificPopup({
@@ -54,7 +55,8 @@ function mobileCarousel(slideOption) {
             speed: 500,
             cssEase: 'linear',
             prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-ctrl"></span></button>',
-            nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-ctrl"></span></button>'
+            nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-ctrl"></span></button>',
+            dots: true
         });
     }
 }
@@ -70,6 +72,25 @@ function imageCarousel() {
           prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-cta"></span></button>',
           nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-cta"></span></button>',
           fade: true
+        });
+      }
+    });
+}
+
+function galleryCarousel() {
+    var galleryCarousels = $('.gallery-carousel');
+    $(galleryCarousels).each(function(){
+      // make sure not to turn these into carousels with only 1 image
+      if($(this).children().length > 1) {
+        $(this).slick({
+          //cssEase: 'linear',
+          prevArrow: '<button type="button" class="slick-prev"><span class="visuallyhidden">Previous</span><span class="icon-cta"></span></button>',
+          nextArrow: '<button type="button" class="slick-next"><span class="visuallyhidden">Next</span><span class="icon-cta"></span></button>',
+          dots: true,
+          speed: 1000,
+          infinite: true,
+          autoplay: false,
+          autoplaySpeed: 3000
         });
       }
     });
@@ -187,163 +208,6 @@ function initFeatureCarouselTile() {
   }
 }
 
-//  ** Note **
-//  The following functions are test of combo video/image jumbotron carousel.
-//  It has examples of images, youtube, vimeo and html5 video.
-//
-//  If we do not use, delete these and the main init function: jumbotronCarouselVideo()
-//  - postMessageToPlayer()
-//  - playPauseVideo()
-//  - resizePlayer()
-//  - jumbotronCarouselVideo()
-//
-
-var slideWrapper = $(".jumbotron-carousel"),
-    iframes = slideWrapper.find('.embed-player'),
-    lazyImages = slideWrapper.find('.slide-image'),
-    lazyCounter = 0;
-
-// POST commands to YouTube or Vimeo API
-function postMessageToPlayer(player, command){
-    if (player == null || command == null) return;
-    player.contentWindow.postMessage(JSON.stringify(command), "*");
-}
-
-// When the slide is changing
-function playPauseVideo(slick, control){
-    var currentSlide, slideType, startTime, player, video;
-    currentSlide = slick.find(".slick-current");
-    slideType = currentSlide.attr("class").split(" ")[1];
-    player = currentSlide.find("iframe").get(0);
-    startTime = currentSlide.data("video-start");
-
-    if (slideType === "vimeo") {
-        switch (control) {
-            case "play":
-            if ((startTime != null && startTime > 0 ) && !currentSlide.hasClass('started')) {
-                currentSlide.addClass('started');
-                postMessageToPlayer(player, {
-                    "method": "setCurrentTime",
-                    "value" : startTime
-                });
-            }
-            postMessageToPlayer(player, {
-                "method": "play",
-                "value" : 1
-            });
-            break;
-            case "pause":
-            postMessageToPlayer(player, {
-                "method": "pause",
-                "value": 1
-            });
-            break;
-        }
-    } else if (slideType === "youtube") {
-        switch (control) {
-            case "play":
-            postMessageToPlayer(player, {
-                "event": "command",
-                "func": "mute"
-            });
-            postMessageToPlayer(player, {
-                "event": "command",
-                "func": "playVideo"
-            });
-            break;
-            case "pause":
-            postMessageToPlayer(player, {
-                "event": "command",
-                "func": "pauseVideo"
-            });
-            break;
-        }
-    } else if (slideType === "video") {
-        video = currentSlide.children("video").get(0);
-        if (video != null) {
-            if (control === "play"){
-                video.play();
-            } else {
-                video.pause();
-            }
-        }
-    }
-}
-
-// Resize player
-function resizePlayer(iframes, ratio) {
-    if (!iframes[0]) return;
-    var win = $(".jumbotron-carousel"),
-        width = win.width(),
-        playerWidth,
-        height = win.height(),
-        playerHeight,
-        ratio = ratio || 16/9;
-
-    iframes.each(function(){
-        var current = $(this);
-        if (width / ratio < height) {
-            playerWidth = Math.ceil(height * ratio);
-            current.width(playerWidth).height(height).css({
-                left: (width - playerWidth) / 2,
-                top: 0
-            });
-        } else {
-            playerHeight = Math.ceil(width / ratio);
-            current.width(width).height(playerHeight).css({
-                left: 0,
-                top: (height - playerHeight) / 2
-            });
-        }
-    });
-}
-
-function jumbotronCarouselVideo() {
-
-    // Initialize
-    slideWrapper.on("init", function(slick){
-        slick = $(slick.currentTarget);
-        setTimeout(function(){
-            playPauseVideo(slick,"play");
-        }, 1000);
-        resizePlayer(iframes, 16/9);
-    });
-
-    slideWrapper.on("beforeChange", function(event, slick) {
-        slick = $(slick.$slider);
-        playPauseVideo(slick,"pause");
-    });
-
-    slideWrapper.on("afterChange", function(event, slick) {
-        slick = $(slick.$slider);
-        playPauseVideo(slick,"play");
-    });
-
-    slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
-        lazyCounter++;
-        if (lazyCounter === lazyImages.length){
-            lazyImages.addClass('show');
-            // slideWrapper.slick("slickPlay");
-        }
-    });
-
-    // Start the slider
-    slideWrapper.slick({
-        // fade:true,
-        autoplaySpeed:4000,
-        lazyLoad:"progressive",
-        speed:600,
-        arrows:false,
-        dots:true,
-        cssEase:"cubic-bezier(0.87, 0.03, 0.41, 0.9)"
-    });
-
-    // Resize event
-    $(window).on("resize.slickVideoPlayer", function(){
-        resizePlayer(iframes, 16/9);
-    });
-}
-
 function jumbotronCarousel() {
     $('.jumbotron-carousel').slick({
         //fade: true,
@@ -357,14 +221,96 @@ function jumbotronCarousel() {
     });
 }
 
+function autoComplete() {
+  $(function() {
+    $.widget("custom.catcomplete", $.ui.autocomplete, { _create: function() {
+        this._super();
+        this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+      }, _renderMenu: function(ul, items) {
+        var that = this,
+          currentCategory = "";
+        $.each(items, function(index, item) {
+          var li;
+          if (item.category != currentCategory) {
+            ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
+            currentCategory = item.category;
+          }
+          li = that._renderItemData(ul, item);
+          if (item.category) {
+            li.attr("aria-label", item.category + " : " + item.label);
+          }
+        });
+      } });
+    var data = [{
+      "label": "anders",
+      "category": "Montreal"
+    },
+    {
+      "label": "andreas",
+      "category": ""
+    },
+    {
+      "label": "antal",
+      "category": ""
+    },
+    {
+      "label": "annhhx10",
+      "category": "Calgary"
+    },
+    {
+      "label": "annk K12",
+      "category": "Calgary"
+    },
+    {
+      "label": "annttop C13",
+      "category": "Calgary"
+    },
+    {
+      "label": "anders andersson",
+      "category": "People"
+    },
+    {
+      "label": "andreas andersson",
+      "category": "People"
+    },
+    {
+      "label": "andreas johnson",
+      "category": "People"
+    }];
+
+    // $.getJSON("/theme/vendor/placeholder-data/autocomplete.json")
+    //   .done(function(data) {
+    //     console.log("Data loaded:" + data);
+    //     return data.terms;
+    //   })
+    //   .fail(function(jqxhr, textStatus, error) {
+    //     var err = textStatus + ", " + error;
+    //     console.log("Request Failed: " + err);
+    //   });
+
+    $(".autocomplete").catcomplete({ delay: 0, source: data });
+  });
+}
+
+function initMap() {
+  var startingLocation = { lat: -25.363, lng: 131.044 };
+  var map = new google.maps.Map(document.getElementById("map-frame"), {
+    zoom: 4,
+    center: startingLocation
+  });
+  var marker = new google.maps.Marker({
+    position: startingLocation,
+    map: map
+  });
+}
 
 // dom ready
 $(function() {
     // Adding functions here for now, clean up later
 
     mobileNavToggle()
-    // Init Main navigation + push panel navigation
-    mainnavInit();
+    // // Init Main navigation + push panel navigation
+    // mainnavInit();
 
     // video popup modals
     videoModals();
@@ -377,6 +323,8 @@ $(function() {
     }
 
     imageCarousel();
+
+    galleryCarousel();
 
     openPropertyDetailAccordions();
 
@@ -392,4 +340,7 @@ $(function() {
 
     //jumbotronCarouselVideo();
     jumbotronCarousel();
+
+    // Auto Complete
+    autoComplete();
 });

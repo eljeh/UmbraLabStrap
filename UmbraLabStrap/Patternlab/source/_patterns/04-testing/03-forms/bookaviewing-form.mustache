@@ -1,0 +1,127 @@
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<style>
+.bav-form form {
+    background-color: white;
+}
+</style>
+<section class="bav-form p-2">
+    <div class="container-fluid">
+        <form class="p-3">
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-12">
+                    <h2 class="secondary-heading">Book A Viewing</h2>
+                    <hr/>
+                </div>
+                <div class="col"></div>
+            </div>
+
+<div class="row">
+
+
+ <div class="col-sm-12 col-lg-3">
+
+                    <h3>APPOINTMENT</h3>
+                <!-- Date & Time -->
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="bav-date">Date</label>
+                            {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"dd/mm/yy")}}
+                        </div>
+                        <div class="col-12">
+                            <label for="bav-time">Time</label>
+                            {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"hh:mm")}}
+                        </div>
+                    </div> <!--/.row -->
+                    <p>Don't See a time that works? CALL or EMAIL US</p>
+                    <p>Available Starting <strong>2/1/2018</strong>
+
+</div>
+<div class="col-sm-12 col-lg-5">
+
+                    <h3>CONTACT INFORMATION</h3>
+                <!-- first & Last Name -->
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="bav-firstname">First Name</label>
+                            {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"bav-firstname",form-field-text-placeholder:"First name")}}
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="bav-lastname">Last Name</label>
+                            {{> atoms-input-text:form-control|form-control-lg(form-field-text-id:"bav-lastname",form-field-text-placeholder:"Lastname")}}
+                        </div>
+                    </div> <!--/.row -->
+
+                <!-- Email & Phone -->
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="bav-phone">Phone</label>
+                            {{> atoms-input-tel:form-control|form-control-lg(form-field-tel-id:"bav-phone",maxlength:"13")}}
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="bav-email">Email</label>
+                            {{> atoms-input-email:form-control|form-control-lg(form-field-email-id:"bav-email",form-field-email-placeholder:"eg. jsmith@bwalk.ca")}}
+                        </div>
+                    </div> <!--/.row -->
+
+                <!-- Movie-in Date -->
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="bav-date">Preferred Move-in Date</label>
+                            {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"dd/mm/yy")}}
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="bav-date">Preferred Pet Information</label>
+                            {{> atoms-select:form-control|form-control-lg(form-field-select-placeholder:"No Pet")}}
+                        </div>
+                    </div><!--/.row -->
+
+
+</div>
+<div class="col-sm-12 col-lg-4">
+
+                <!-- Message -->
+
+                    <div class="row">
+                        <div class="col-12 mt-5">
+                            <label for="bav-comment">Comment</label>
+                            {{> atoms-textarea:form-control|form-control-lg(form-field-textarea-id:"bav-comment",form-field-textarea-placeholder:"")}}
+                        </div>
+                    </div> <!--/.row -->
+
+                 
+
+                    <div class="row">
+                        <div class="col-12 mt-4 text-right">
+                            {{> atoms-primary-button:white(primary-button-text:"Cancel")}}
+                            {{> atoms-primary-button(primary-button-text:"Submit Request")}}
+                        </div>
+                    </div>
+                </div> <!--/.col -->
+                <div class="col"></div>
+            </div> <!--/.row -->
+        </form>
+    </div> <!--/.container -->
+</section> <!--/.contact-form-->
+
+<script>
+
+ $( function() {
+    $(".bav-form").hide();
+    $(".goto-bav").on('click', function () {
+        $(".offer-card").hide();
+        $(".right-half").hide();
+        $(".left-half").css({"width": "100%","display":"block"});
+        $(".bav-form").show();
+    })
+    
+  } );
+  </script>
+
+</script>

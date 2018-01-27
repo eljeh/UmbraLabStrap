@@ -6,6 +6,36 @@
   padding: 4rem 2rem;
   flex-wrap: wrap;
 
+  &.slick-slider {
+    margin-bottom: 3rem;
+  }
+
+  .slick-arrow {
+    font-size: 2rem;
+    color: #fff;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    left: .5rem;
+    transform: rotate(-90deg) translateX(50%);
+  }
+
+  .slick-next {
+    right: .5rem;
+    transform: rotate(90deg) translateX(-50%);
+  }
+
+  [class^="icon-"] {
+    display: block;
+  }
+
+
 
   @include if-min-width($XXL){
     flex-wrap: nowrap;
@@ -58,5 +88,15 @@
   p {
     margin-bottom: 0;
     font-size: 1.25rem;
+  }
+}
+
+// slickslider update
+
+.slick-slider {
+  .property-card {
+    width: 100%;
+    max-width: none;
+    margin: 0 1rem;
   }
 }

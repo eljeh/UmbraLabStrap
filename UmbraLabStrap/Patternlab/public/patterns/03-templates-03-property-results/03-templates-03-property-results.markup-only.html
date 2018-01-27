@@ -1,14 +1,12 @@
 <!-- Panels for push down navigation from main nav -->
 <div id="m-nav-panel-find" class="container-fluid">
-  <a class="close"><i class="icon-close"></i></a>
-
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <form>
           <div class="input-search-container ">
             <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
-            <button type="submit" class="icon-search"></button>
+            <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
 
@@ -44,14 +42,14 @@
     <!--/.row-->
   </div>
   <!--/.container-->
+  <a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
+
 </div>
 <!--/#m-nav-panel-find-->
 
 <div id="m-nav-panel-investors" class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <a class="close"><i class="icon-close"></i></a>
-
       <ul class="icon-navigation  d-flex flex-row justify-content-between align-items-start flex-wrap">
         <li class="p2">
           <a href="#" class="">
@@ -104,6 +102,9 @@
         </li>
       </ul>
 
+
+      <a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
+
     </div>
   </div>
   <!--/.row-->
@@ -116,7 +117,7 @@
       <form>
         <div class="input-search-container no-border">
           <input type="search" id="find-home" class="form-control" placeholder="Search for..." aria-label="Search for...">
-          <button type="submit" class="icon-search"></button>
+          <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
 
@@ -128,8 +129,9 @@
 
 <div id="mobile-nav-container">
   <header class="mobile-header d-flex justify-content-between">
-    <div class="d-flex align-items-center mobile-header__logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></div>
-    <div class="d-flex align-items-center"><a class="close"><i class="icon-close"></i></a>
+    <div class="d-flex align-items-center mobile-header__logo"><a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+    </div>
+    <div class="d-flex align-items-center"><a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
     </div>
   </header>
   <!--/.mobile-header-->
@@ -140,7 +142,7 @@
       <form>
         <div class="input-search-container ">
           <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
-          <button type="submit" class="icon-search"></button>
+          <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
     </li>
@@ -149,7 +151,7 @@
         <form>
           <div class="input-search-container ">
             <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
-            <button type="submit" class="icon-search"></button>
+            <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
 
@@ -256,7 +258,8 @@
   <header id="header" class="container-fluid ">
     <div class="d-flex flex-row justify-content-between align-items-end">
       <div class="p-2 logo">
-        <img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" />
+        <a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+
       </div>
       <div class="p-2">
         <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
@@ -273,7 +276,7 @@
           <li class="p-2 u-nav-login"><a class="login-link " href="#"><span>Resident Member</span> Login</a>
           </li>
           <li class="p-2 u-nav-lang"><a href="#">FR</a></li>
-          <li class="p-2 u-nav-search"><a href="#"><i class="icon-search"></i></a></li>
+          <li class="p-2 u-nav-search"><a href="#" aria-label="Open Search"><i class="icon-search"></i></a></li>
         </ul>
       </div>
       <div class="p2 align-items-center mobile-nav-toggle">
@@ -336,7 +339,7 @@
                   </div>
                   <div class="col-6 col-md-3 col-lg-2">
                     <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Quadrant" >
         <option>Quadrant</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -347,7 +350,7 @@
                   </div>
                   <div class="col-6 col-md-3 col-lg-3">
                     <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Suite Type" >
         <option>Suite Type</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -358,7 +361,7 @@
                   </div>
                   <div class="col-6 col-md-3 col-lg-3">
                     <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Your Budget" >
         <option>Your Budget</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -615,18 +618,21 @@
   </div>
 
   <section class="map-holder grey-bg">
-    <iframe src="https://snazzymaps.com/embed/41923" width="100%" height="600px" style="border:none;"></iframe>
+    <div id="map-frame"></div>
+    <!-- /#map-frame -->
     <ul class="map-legend">
-      <li>Boardwalk Lifestyle</li>
-      <li>Boardwalk Community</li>
-      <li>Boardwalk Living</li>
+      <li class="lifestyle-marker">Boardwalk Lifestyle</li>
+      <li class="communities-marker">Boardwalk Community</li>
+      <li class="living-marker">Boardwalk Living</li>
     </ul>
     <!-- /.map-legend -->
   </section>
   <!-- /.map-holder -->
 
+
   <div class="property-listings">
     <div class="container">
+      <h2 class="heading small-heading">Live with Us</h2>
       <div class="row">
         <div class="col-12">
 
@@ -1072,8 +1078,13 @@
     </div>
   </div>
 
+
   <footer class="container-fluid">
     <div class="container footer-container">
+      <a href="#" class="chat-now-bubble d-none d-md-flex">
+    <span>Chat<br/>Now</span>
+</a>
+
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h4 class="footer_heading">About Us</h4>

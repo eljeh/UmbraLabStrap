@@ -1,0 +1,88 @@
+.property-details-gallery {
+    background-color: #e5e5e5;
+    padding-top: 100px;
+
+    &.half-and-half-block {
+
+        .half-and-half-content {
+            padding: 0;
+            max-width: 100%;
+        }
+    }
+
+    .property-details-card {
+        margin: 0 auto;
+        width: 100%;
+
+        // Brand Bar
+        .brand-bar {
+
+            @media only screen and (max-width: $S) {
+                .brand-bar-logo {
+                    background: transparent !important;
+                    text-align: center;
+                    margin-top: 10px;
+
+                    svg {
+                        fill: $black;
+                    }
+                }
+
+                &.brand-bar-details .back-btn {
+                    width: 100%;
+                }
+            }
+
+            .back-btn {
+                justify-content: left;
+                text-align: left;
+
+                &::before {
+                    @include icomoon("\ea50");
+                    font-size: 30px;
+                    color: #fff;
+                    transform: rotate(-90deg);
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 25px;
+                    line-height: 30px;
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .offer-card {
+            margin-top: 10px;
+            max-width: 100%;
+            padding-bottom: 0;
+
+            .offer-card-content {
+                padding: 1rem;
+                margin: 10px;
+
+                @include if-min-width(360px) {
+                    padding: 2rem 3rem;
+                }
+            }
+
+            .offer-card-quick-features .dots::after {
+                content: '......................................................................................................................................................................................';
+            }
+
+            &.details-card {
+
+                .btn {
+                    display: inline-block;
+
+                    @include if-min-width($S) {
+                        display: inline-table;
+                    }
+                }
+            }
+        }
+    }
+}

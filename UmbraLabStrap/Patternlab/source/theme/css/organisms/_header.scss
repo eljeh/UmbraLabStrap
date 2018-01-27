@@ -69,7 +69,6 @@
         &.m-nav-investors {
 
             a {
-
                 &:after {
                     @include icomoon("\ea50");
                     font-size: 20px;
@@ -90,6 +89,28 @@
             }
         }
     }
+}
+
+.m-nav-find,
+.m-nav-investors,
+.u-nav-search {
+  position: relative;
+
+  & .active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #fff;
+    pointer-events: none;
+  }
+
 }
 
 #utility-navigation {
@@ -156,10 +177,14 @@
 
         // Search
         &.u-nav-search {
-          transform: translateY(.2em);
 
             a {
                 font-size: 20px;
+
+                i {
+                  position: relative;
+                  top: .2em;
+                }
             }
         }
     }
@@ -197,6 +222,10 @@
 
 #m-nav-panel-find {
 
+    .btn-group {
+        display: block;
+    }
+    
     p {
         margin-bottom: 15px;
 

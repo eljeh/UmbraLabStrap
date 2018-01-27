@@ -12,5 +12,8 @@
     "first-color": "blue",
     "third-color": "",
     "view-map-button": false
+  },
+  "relatedItems": {
+    "fullScreenWidth": true
   }
 }

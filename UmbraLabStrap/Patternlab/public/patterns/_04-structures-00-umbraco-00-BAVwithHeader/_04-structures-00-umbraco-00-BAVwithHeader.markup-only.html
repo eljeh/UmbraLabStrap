@@ -1,0 +1,357 @@
+<div class="Microsite-Header BookAViewing-State-Step1">
+  <div class="caption">
+    <span class="cursive">
+        Welcome<span>Home</span>
+    </span>
+    <hr>
+    <span class="subheading">
+        Auburn Landing
+    </span>
+  </div>
+  <link href="/bundles/bookaviewing/css?v=5UeKJyXI-5nZ6ujNgBVufXAJNlG7D5HXa64DeqcRkPE1" rel="stylesheet">
+  <script src="/bundles/bookaviewing/js?v=9S8r4iU6aoW3P0T6KC7xP3M3iZR8ekF5r3stfjj4a1c1"></script>
+  <script type="text/javascript">
+    var BookAViewingProjectNo = 393;
+  </script>
+  <form id="BookAViewingForm" class="BookAViewing-Form">
+
+    <input type="hidden" name="ProjectNo" value="@Model.MacroParameters[" projectNo "].ToString()"/>
+
+    <input type="hidden" name="Culture" value="en-US" />
+
+    <button type="button" class="BookAViewing-Action-Form-open BookAViewing-Form-open btn btn-default" style="margin-left: auto;margin-right: auto;">
+        Book Your Viewing Now!
+    </button>
+
+    <h3 id="BookAViewing-Confirm-Posting" class="text-center" style="display: none">
+      <span class="fa fa-spinner fa-pulse fa-2x fa-fw center-block"></span> Reserving your apartment viewing now.
+    </h3>
+
+    <h3 id="BookAViewing-Confirm-Automatic" class="text-center" style="display: none">
+      <span class="fa fa-check-square-o fa-2x center-block"></span> We've booked an appointment for you. You will recieve a confirmation email shortly.
+    </h3>
+
+    <h3 id="BookAViewing-Confirm-Manual" class="text-center" style="display: none">
+      <span class="fa fa-envelope-o fa-2x center-block"></span> We got the message and will confirm your booking shortly.
+    </h3>
+
+    <h3 id="BookAViewing-Confirm-Failure" class="text-center" style="display: none">
+      <span class="fa fa-close fa-2x center-block"></span> Something went wrong. Please call customer support.
+    </h3>
+
+    <div class="BookAViewing-Form-Collapse">
+
+      <fieldset>
+
+        <a class="btn BookAViewing-Action-Form-close BookAViewing-Form-close-btn pull-right" href="#" aria-label="close">
+    
+                <i class="fa fa-window-close fa-2x " aria-hidden="true" title="Close Book A Viewing Form"></i>
+
+            </a>
+
+        <div id="BookAViewing-ProgressTracker" class="row progress-tracker">
+
+          <h2 class="step-name text-center">Book A Viewing</h2>
+
+          <div class="col-xs-12">
+
+            <ol class="list-inline form-steps">
+
+              <li class="active-step started-step">
+
+                <div class="step-num">1</div>
+
+              </li>
+
+              <li>
+
+                <div class="step-num">2</div>
+
+              </li>
+
+              <li>
+
+                <div class="step-num">3</div>
+
+              </li>
+
+            </ol>
+
+          </div>
+
+        </div>
+
+        <div id="step-1" class="step" data-name="Appointment Details">
+
+          <div class="form-group">
+
+            <label class="pull-left" for="SuiteType">What type of suite are you interested in?</label>
+
+            <select id="BookAViewing-SuiteSelector" name="SuiteDescTypeNo" class="form-control" required>
+
+                        <option value="">Please Select</option>
+
+                    </select>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="AppointmentDate" class="pull-left">Select a Date<em>*</em></label>
+
+                <input id="BookAViewing-AppointmentDate" name="AppointmentDate" type="text" class="form-control" required readonly />
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="AppointmentTime" class="pull-left">Select a Time<em>*</em></label>
+
+                <select id="BookAViewing-TimeSelector" name="AppointmentTime" class="form-control" required></select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <p class="text-center" style="line-height: 0.9;">
+            Don't see a time that works for you?<br/><a href="https://www.bwalk.com/en-CA/About/CustomerService" target="_blank">Contact Us!</a>
+          </p>
+
+          <div class="form-field-wrapper submit center-text">
+
+            <input id="BookAViewing-Validate-Step-1" type="submit" value="Next" class="btn btn-default center-block">
+
+
+          </div>
+
+        </div>
+
+        <div id="step-2" class="step" data-name="Contact Information">
+
+          <div class="row">
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="Firstname" class="pull-left">First Name<em>*</em></label>
+
+                <input id="BookAViewing-Firstname" name="Firstname" class="form-control" required>
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="Lastname">Last Name<em>*</em></label>
+
+                <input id="BookAViewing-Lastname" name="Lastname" class="form-control" required>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="Telephone" class="pull-left">Phone<em>*</em></label>
+
+                <input id="BookAViewing-Telephone" type="tel" pattern="^\(\d{3}\) \d{3}-\d{4}$" name="Telephone" class="form-control" required placeholder="(###) ###-####">
+
+              </div>
+
+            </div>
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="Email">Email<em>*</em></label>
+
+                <input id="BookAViewing-Email" name="Email" class="form-control" type="email" required>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label for="MoveInDate">When would you like to move in?<em>*</em></label>
+
+                <input id="BookAViewing-MoveInDate" name="MoveInDate" class="form-control" required readonly />
+
+                <span id="BookAViewing-LongWait" style="color: red; margin-left: 15px; display: none;">Available: <span></span></span>
+
+              </div>
+
+            </div>
+            <div class="col-xs-6">
+
+              <div class="form-group">
+
+                <label class="col-xs-12" style="margin-left: -15px;">Do you have any pets?</label>
+
+                <input id="BookAViewing-Pets" type="checkbox" name="Pets">
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form-group BookAViewing-Action-Confirm-ShowPetTypes">
+
+            <label for="PetTypes" class="pull-left">What type/breed?<em>*</em></label>
+
+            <input id="BookAViewing-PetTypes" name="PetTypes" class="form-control">
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="Comments" class="pull-left">Comments</label>
+
+            <textarea id="BookAViewing-Comment" name="Comment" class="form-control" rows="2"></textarea>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+
+              <div class="g-recaptcha" data-sitekey="6LdhGx0TAAAAAFRjxc_Ch7cchdJIf50CJPmyeHhH"></div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+              <div class="row">
+
+                <div class="col-xs-6">
+                  <input type="button" value="Back" class="back-action-button btn btn-default " data-section="1" style="position: relative; bottom: -25px;">
+
+                </div>
+
+                <div class="col-xs-6">
+                  <input id="BookAViewing-Validate-Step-2" type="submit" value="Next" class="btn btn-default pull-right" style="position: relative; bottom: -25px;">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="step-3" class="step" data-name="Confirmation" <div id="BookAViewing-Confirm-Section">
+
+          <h4 class="text-center">
+            Appointment Details
+
+            <input class="BookAViewing-Action-EditButton edit btn btn-default" data-section="1" type="button" value="Edit">
+
+          </h4>
+
+          <dl class="dl-horizontal">
+
+            <dt>Building Address: </dt>
+
+            <dd>20 &amp; 30 Auburn Bay Street SE</dd>
+
+            <dt>Suite Type: </dt>
+
+            <dd id="BookAViewing-Confirm-SuiteSelector"></dd>
+
+            <dt>Date:</dt>
+
+            <dd id="BookAViewing-Confirm-AppointmentDate"></dd>
+
+            <dt>Time:</dt>
+
+            <dd id="BookAViewing-Confirm-AppointmentTime"></dd>
+
+          </dl>
+
+          <h4 class="text-center">
+
+            Contact Information
+
+            <input class="BookAViewing-Action-EditButton edit btn btn-default" data-section="2" type="button" value="Edit">
+
+          </h4>
+
+          <dl class="dl-horizontal">
+
+            <dt>First Name: </dt>
+
+            <dd id="BookAViewing-Confirm-Firstname"></dd>
+
+            <dt>Last Name: </dt>
+
+            <dd id="BookAViewing-Confirm-Lastname"></dd>
+
+            <dt>Email: </dt>
+
+            <dd id="BookAViewing-Confirm-Email"></dd>
+
+            <dt>Telephone: </dt>
+
+            <dd id="BookAViewing-Confirm-Telephone"></dd>
+
+            <dt>Preferred Move in Date: </dt>
+
+            <dd id="BookAViewing-Confirm-MoveInDate"></dd>
+
+            <dt>Pets: </dt>
+
+            <dd id="BookAViewing-Confirm-Pets"></dd>
+
+            <dt class="BookAViewing-Action-Confirm-ShowPetTypes">Type/Breed: </dt>
+
+            <dd class="BookAViewing-Action-Confirm-ShowPetTypes" id="BookAViewing-Confirm-PetTypes"></dd>
+
+            <dt>Comment: </dt>
+
+            <dd id="BookAViewing-Confirm-Comment"></dd>
+
+          </dl>
+
+          <input id="BookYourViewing-Submit" type="button" value="Book Your Viewing Now!" class="btn btn-default center-block">
+
+        </div>
+
+    </div>
+
+    </fieldset>
+
+</div>
+
+</form>
+
+</div>

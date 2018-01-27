@@ -1,0 +1,4 @@
+---
+title: property-details-gallery
+---
+

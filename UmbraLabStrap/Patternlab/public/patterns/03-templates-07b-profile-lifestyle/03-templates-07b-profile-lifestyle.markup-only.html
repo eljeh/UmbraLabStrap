@@ -6,7 +6,8 @@
   <header id="header" class="container-fluid ">
     <div class="d-flex flex-row justify-content-between align-items-end">
       <div class="p-2 logo">
-        <img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" />
+        <a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+
       </div>
       <div class="p-2">
         <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
@@ -23,7 +24,7 @@
           <li class="p-2 u-nav-login"><a class="login-link " href="#"><span>Resident Member</span> Login</a>
           </li>
           <li class="p-2 u-nav-lang"><a href="#">FR</a></li>
-          <li class="p-2 u-nav-search"><a href="#"><i class="icon-search"></i></a></li>
+          <li class="p-2 u-nav-search"><a href="#" aria-label="Open Search"><i class="icon-search"></i></a></li>
         </ul>
       </div>
       <div class="p2 align-items-center mobile-nav-toggle">
@@ -284,14 +285,14 @@
 
   <div class="feature-carousel-tiles">
     <div class="feature-carousel-tile">
-      <div class="feature-carousel-tile-text text-center bg-red">
-        <h3 class="secondary-heading">Hotel Suite</h3>
-        <p>Each suite has a fridge, stove, dishwasher, window coverings, a large balcony or patio, and in-suite storage.</p>
+      <div class="feature-carousel-tile-text text-center bg-black">
+        <h3 class="secondary-heading">Fitness</h3>
+        <p>Take advantage of our bright, exclusive, fully-equipped fitness centre just a few steps out your door.</p>
       </div>
-      <div class="feature-carousel-tile-carousel" id="featureCarousel3">
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;dddddd" alt="Alt text 1" width="640" height="640" />
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;cccccc" alt="Alt text 2" width="640" height="640" />
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;e5e5e5" alt="Alt text 3" width="640" height="640" />
+      <div class="feature-carousel-tile-carousel" id="featureCarousel1">
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;e5e5e5" alt="Alt text 1" width="640" height="640" />
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;dddddd" alt="Alt text 2" width="640" height="640" />
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;cccccc" alt="Alt text 3" width="640" height="640" />
       </div>
     </div>
     <div class="feature-carousel-tile">
@@ -306,14 +307,14 @@
       </div>
     </div>
     <div class="feature-carousel-tile">
-      <div class="feature-carousel-tile-text text-center bg-black">
-        <h3 class="secondary-heading">Fitness</h3>
-        <p>Take advantage of our bright, exclusive, fully-equipped fitness centre just a few steps out your door.</p>
+      <div class="feature-carousel-tile-text text-center bg-red">
+        <h3 class="secondary-heading">Hotel Suite</h3>
+        <p>Each suite has a fridge, stove, dishwasher, window coverings, a large balcony or patio, and in-suite storage.</p>
       </div>
-      <div class="feature-carousel-tile-carousel" id="featureCarousel1">
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;e5e5e5" alt="Alt text 1" width="640" height="640" />
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;dddddd" alt="Alt text 2" width="640" height="640" />
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;cccccc" alt="Alt text 3" width="640" height="640" />
+      <div class="feature-carousel-tile-carousel" id="featureCarousel3">
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;dddddd" alt="Alt text 1" width="640" height="640" />
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;cccccc" alt="Alt text 2" width="640" height="640" />
+        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;640&#x2F;e5e5e5" alt="Alt text 3" width="640" height="640" />
       </div>
     </div>
   </div>
@@ -335,9 +336,6 @@
         <div class="image-carousel carousel " style="max-width:1170px">
           <div>
             <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
-          </div>
-          <div>
-            <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
             <div class="image-caption">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -347,6 +345,9 @@
             <div class="image-caption">
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+          </div>
+          <div>
+            <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
           </div>
         </div>
         <!-- /.content-carousel -->
@@ -366,9 +367,9 @@
 
         <div class="item-content">
 
-          <h5 class="related-subtitle">Living</h5>
-
-          <h4 class="related-title">Boardwalk Living</h4>
+          <h4 class="secondary-heading">
+            <span class="sub-heading">Living</span> Boardwalk Living
+          </h4>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
 
@@ -387,9 +388,9 @@
 
         <div class="item-content">
 
-          <h5 class="related-subtitle">Communities</h5>
-
-          <h4 class="related-title">Boardwalk Communities</h4>
+          <h4 class="secondary-heading">
+            <span class="sub-heading">Communities</span> Boardwalk Communities
+          </h4>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
 
@@ -455,7 +456,7 @@
             <label class="white" for="cf-message">Message</label>
             <div class="row">
               <div class="col-12">
-                <textarea rows="10" id="cf-message" class="form-control form-control-lg" placeholder="" aria-label="
+                <textarea rows="5" id="cf-message" class="form-control form-control-lg" placeholder="" aria-label="
     ">
 </textarea>
 
@@ -528,6 +529,10 @@
 
   <footer class="container-fluid">
     <div class="container footer-container">
+      <a href="#" class="chat-now-bubble d-none d-md-flex">
+    <span>Chat<br/>Now</span>
+</a>
+
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h4 class="footer_heading">About Us</h4>

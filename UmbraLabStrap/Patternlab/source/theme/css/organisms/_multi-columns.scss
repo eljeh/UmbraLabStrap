@@ -12,16 +12,22 @@
 
   .column-wrapper {
     text-align: left;
+    display: inline-block;
+    padding: 0 27px
   }
 
   .btn {
     margin-top: 3rem;
   }
 
+  .secondary-heading {
+      margin-bottom: 4.5rem;
+  }
+
   @include if-min-width($XM) {
 
     .container{
-      padding: 4rem 0 8rem;
+      padding: 4rem 0 1rem;
     }
 
     .column-wrapper {

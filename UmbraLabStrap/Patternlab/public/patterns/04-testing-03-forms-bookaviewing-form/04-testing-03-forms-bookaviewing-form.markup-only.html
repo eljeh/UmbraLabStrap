@@ -1,0 +1,180 @@
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script>
+
+<style>
+  .bav-form form {
+    background-color: white;
+  }
+</style>
+<section class="bav-form p-2">
+  <div class="container-fluid">
+    <form class="p-3">
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-sm-12">
+          <h2 class="secondary-heading">Book A Viewing</h2>
+          <hr/>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-sm-12 col-lg-3">
+
+          <h3>APPOINTMENT</h3>
+          <!-- Date & Time -->
+          <div class="row">
+            <div class="col-12">
+              <label for="bav-date">Date</label>
+              <label class="dropdown__label" for="select">
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="dd&#x2F;mm&#x2F;yy" >
+        <option>dd&#x2F;mm&#x2F;yy</option>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </select>
+</label>
+
+            </div>
+            <div class="col-12">
+              <label for="bav-time">Time</label>
+              <label class="dropdown__label" for="select">
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="hh:mm" >
+        <option>hh:mm</option>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </select>
+</label>
+
+            </div>
+          </div>
+          <!--/.row -->
+          <p>Don't See a time that works? CALL or EMAIL US</p>
+          <p>Available Starting <strong>2/1/2018</strong>
+
+        </div>
+        <div class="col-sm-12 col-lg-5">
+
+          <h3>CONTACT INFORMATION</h3>
+          <!-- first & Last Name -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="bav-firstname">First Name</label>
+              <input type="text" id="bav-firstname" class="form-control form-control-lg" placeholder="First name" aria-label="First name" />
+
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="bav-lastname">Last Name</label>
+              <input type="text" id="bav-lastname" class="form-control form-control-lg" placeholder="Lastname" aria-label="Lastname" />
+
+            </div>
+          </div>
+          <!--/.row -->
+
+          <!-- Email & Phone -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="bav-phone">Phone</label>
+              <input type="tel" maxlength=13 id="bav-phone" class="form-control form-control-lg" placeholder="(555) 123-4567" aria-label="(555) 123-4567" />
+
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="bav-email">Email</label>
+              <input type="email" id="bav-email" class="form-control form-control-lg" placeholder="eg. jsmith@bwalk.ca" aria-label="eg. jsmith@bwalk.ca" />
+
+            </div>
+          </div>
+          <!--/.row -->
+
+          <!-- Movie-in Date -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="bav-date">Preferred Move-in Date</label>
+              <label class="dropdown__label" for="select">
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="dd&#x2F;mm&#x2F;yy" >
+        <option>dd&#x2F;mm&#x2F;yy</option>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </select>
+</label>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="bav-date">Preferred Pet Information</label>
+              <label class="dropdown__label" for="select">
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="No Pet" >
+        <option>No Pet</option>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </select>
+</label>
+
+            </div>
+          </div>
+          <!--/.row -->
+
+
+        </div>
+        <div class="col-sm-12 col-lg-4">
+
+          <!-- Message -->
+
+          <div class="row">
+            <div class="col-12 mt-5">
+              <label for="bav-comment">Comment</label>
+              <textarea rows="5" id="bav-comment" class="form-control form-control-lg" placeholder="" aria-label="
+    ">
+</textarea>
+
+            </div>
+          </div>
+          <!--/.row -->
+
+
+
+          <div class="row">
+            <div class="col-12 mt-4 text-right">
+              <a href="#" class="btn btn-primary white">
+    Cancel
+</a>
+
+              <a href="#" class="btn btn-primary ">
+    Submit Request
+</a>
+
+            </div>
+          </div>
+        </div>
+        <!--/.col -->
+        <div class="col"></div>
+      </div>
+      <!--/.row -->
+    </form>
+  </div>
+  <!--/.container -->
+</section>
+<!--/.contact-form-->
+
+<script>
+  $(function() {
+    $(".bav-form").hide();
+    $(".goto-bav").on('click', function() {
+      $(".offer-card").hide();
+      $(".right-half").hide();
+      $(".left-half").css({
+        "width": "100%",
+        "display": "block"
+      });
+      $(".bav-form").show();
+    })
+
+  });
+</script>
+
+</script>

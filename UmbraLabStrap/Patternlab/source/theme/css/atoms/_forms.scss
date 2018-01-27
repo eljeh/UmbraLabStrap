@@ -156,6 +156,11 @@ select {
         margin-bottom: 0;
     }
 
+    &::-ms-expand {
+        display: none;
+    }
+
+
     &:-moz-focusing {
         outline: none !important;
     }
@@ -207,9 +212,35 @@ select {
   background-image: url('/theme/images/ui-icons_444444_256x240.png');
 }
 
+// Auto Complete dropdown
+
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+
+
 
 // Form Control overrides
 
 .form-control {
   border-color: currentColor;
 }
+
+.form-control-lg,
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
+  padding: 1.05rem 1.5rem;
+}
+
+
+.input-group-lg>.input-group-btn>select.btn:not([size]):not([multiple]),
+.input-group-lg>select.form-control:not([size]):not([multiple]),
+.input-group-lg>select.input-group-addon:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]) {
+  height: 3.75rem;
+}
+

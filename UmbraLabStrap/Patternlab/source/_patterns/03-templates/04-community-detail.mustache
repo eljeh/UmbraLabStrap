@@ -6,23 +6,13 @@
 
 <div class="wrapper">
 
-    {{> organisms-header}}
+    {{> organisms-header(background-color:"blue")}}
 
-    <div class="jumbotron-wrapper {{ styleModifier }} details-card-container">
-        <div class="jumbotron-offer-card">
-            {{> molecules-brand-bar-details}}
-            {{> molecules-offer-card(offerNotice: true, detailsCard: true) }}
-        </div>
-        <div class="jumbotron-carousel">
-            {{# listItems.three}}
-                {{> atoms-jumbotron-slide}}
-            {{/ listItems.three}}
-        </div>
-    </div>
+    {{> organisms-property-details-gallery}}
 
     {{> molecules-brand-bar}}
 
-    {{> organisms-multiple-key-features}}
+    {{> organisms-multiple-key-features:bg-white(heading: "Key Features")}}
 
     {{> molecules-promotion-block}}
 

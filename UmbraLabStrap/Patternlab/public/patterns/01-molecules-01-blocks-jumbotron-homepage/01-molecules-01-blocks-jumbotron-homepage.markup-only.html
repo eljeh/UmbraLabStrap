@@ -11,12 +11,12 @@
     <form method="post" action="http://www.google.ca">
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-5">
-          <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
+          <input type="text" id="text" class="form-control form-control-lg autocomplete" placeholder="Choose Your City" aria-label="Choose Your City" />
 
         </div>
         <div class="col-sm-6 col-md-3">
           <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Suite Type" >
         <option>Suite Type</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -27,7 +27,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Your Budget" >
         <option>Your Budget</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -37,12 +37,12 @@
 
         </div>
         <div class="col-sm-12 col-md-2 col-lg-1">
-          <a href="#" class="btn btn-primary d-none d-md-block">
+          <a href="#" class="btn btn-primary icon-btn d-none d-md-block">
     <i class="icon-search"></i>
 </a>
 
-          <button class="btn btn-primary d-sm-block d-md-none" type="submit" value="Foo">
-    Foo
+          <button class="btn btn-primary d-sm-block d-md-none" type="submit" value="Search">
+    Search
 </button>
 
         </div>

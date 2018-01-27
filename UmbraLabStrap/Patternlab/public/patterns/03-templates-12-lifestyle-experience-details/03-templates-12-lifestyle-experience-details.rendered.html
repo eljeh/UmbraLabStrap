@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="">
+<html class="" lang="">
 
 <head>
   <title>Boardwalk Pattern Lab</title>
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
   <link rel="stylesheet" href="/theme/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="/theme/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="/theme/css/style.css?1516540515262" media="all" />
+  <link rel="stylesheet" href="/theme/css/style.css?1516985662257" media="all" />
 
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1516540515262" media="all" />
+  <link rel="stylesheet" href="/theme/css/pattern-scaffolding.css?1516985662257" media="all" />
   <!-- never cache patterns -->
   <meta http-equiv="cache-control" content="max-age=0" />
   <meta http-equiv="cache-control" content="no-cache" />
@@ -26,8 +26,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1516540515262" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1516540515262" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1516985662257" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1516985662257" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -36,15 +36,13 @@
 <body class="">
   <!-- Panels for push down navigation from main nav -->
   <div id="m-nav-panel-find" class="container-fluid">
-    <a class="close"><i class="icon-close"></i></a>
-
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
           <form>
             <div class="input-search-container ">
               <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
-              <button type="submit" class="icon-search"></button>
+              <button type="submit" class="icon-search" aria-label="Search"></button>
             </div>
           </form>
 
@@ -80,14 +78,14 @@
       <!--/.row-->
     </div>
     <!--/.container-->
+    <a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
+
   </div>
   <!--/#m-nav-panel-find-->
 
   <div id="m-nav-panel-investors" class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <a class="close"><i class="icon-close"></i></a>
-
         <ul class="icon-navigation  d-flex flex-row justify-content-between align-items-start flex-wrap">
           <li class="p2">
             <a href="#" class="">
@@ -140,6 +138,9 @@
           </li>
         </ul>
 
+
+        <a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
+
       </div>
     </div>
     <!--/.row-->
@@ -152,7 +153,7 @@
         <form>
           <div class="input-search-container no-border">
             <input type="search" id="find-home" class="form-control" placeholder="Search for..." aria-label="Search for...">
-            <button type="submit" class="icon-search"></button>
+            <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
 
@@ -164,8 +165,9 @@
 
   <div id="mobile-nav-container">
     <header class="mobile-header d-flex justify-content-between">
-      <div class="d-flex align-items-center mobile-header__logo"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></div>
-      <div class="d-flex align-items-center"><a class="close"><i class="icon-close"></i></a>
+      <div class="d-flex align-items-center mobile-header__logo"><a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+      </div>
+      <div class="d-flex align-items-center"><a class="close" tabindex="0"><i class="icon-close"></i><span class="visuallyhidden">Close</span></a>
       </div>
     </header>
     <!--/.mobile-header-->
@@ -176,7 +178,7 @@
         <form>
           <div class="input-search-container ">
             <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
-            <button type="submit" class="icon-search"></button>
+            <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
       </li>
@@ -185,7 +187,7 @@
           <form>
             <div class="input-search-container ">
               <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
-              <button type="submit" class="icon-search"></button>
+              <button type="submit" class="icon-search" aria-label="Search"></button>
             </div>
           </form>
 
@@ -292,7 +294,8 @@
     <header id="header" class="container-fluid ">
       <div class="d-flex flex-row justify-content-between align-items-end">
         <div class="p-2 logo">
-          <img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" />
+          <a href="#"><img src="&#x2F;theme&#x2F;images&#x2F;logo-boardwalk.png" class="img-fluid " alt="Boardwalk Logo" /></a>
+
         </div>
         <div class="p-2">
           <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
@@ -309,7 +312,7 @@
             <li class="p-2 u-nav-login"><a class="login-link " href="#"><span>Resident Member</span> Login</a>
             </li>
             <li class="p-2 u-nav-lang"><a href="#">FR</a></li>
-            <li class="p-2 u-nav-search"><a href="#"><i class="icon-search"></i></a></li>
+            <li class="p-2 u-nav-search"><a href="#" aria-label="Open Search"><i class="icon-search"></i></a></li>
           </ul>
         </div>
         <div class="p2 align-items-center mobile-nav-toggle">
@@ -346,32 +349,8 @@
     <!-- /.brand-bar -->
 
 
-    <div class="bg-black" style="padding-bottom: 8rem; margin-bottom: 8rem;">
-      <div class="property-cards">
-        <div class="property-card">
-          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;1) center no-repeat; background-size: cover">
-            <div class="property-card-img-flag">
-              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
-            </div>
-          </div>
-          <div class="property-card-text">
-            <h4>Centre Pointe West</h4>
-            <p>1313 13 Ave. SW</p>
-            <p>Calgary, Alberta</p>
-          </div>
-        </div>
-        <div class="property-card">
-          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;3) center no-repeat; background-size: cover">
-            <div class="property-card-img-flag">
-              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
-            </div>
-          </div>
-          <div class="property-card-text">
-            <h4>Axxess</h4>
-            <p>8015 13 Ave. SW</p>
-            <p>Calgary, Alberta</p>
-          </div>
-        </div>
+    <div class="content-wrapper black-bg" style="padding-bottom: 8rem; margin-bottom: 8rem;">
+      <div class="property-cards mobile-carousel">
         <div class="property-card">
           <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;2) center no-repeat; background-size: cover">
             <div class="property-card-img-flag">
@@ -408,19 +387,44 @@
             <p>Calgary, Alberta</p>
           </div>
         </div>
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;1) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Centre Pointe West</h4>
+            <p>1313 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;3) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Axxess</h4>
+            <p>8015 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
+          </div>
+        </div>
       </div>
+
 
       <div class="container property-search-block">
         <h2 class="secondary-heading white text-center">Explore Lifestyle</h2>
         <form method="post" action="http://www.google.ca">
           <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-2 mb-md-0">
               <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
 
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <label class="dropdown__label" for="select">
-    <select id="select" name="select" class="form-control form-control-lg" >
+    <select id="select" name="select" class="form-control form-control-lg" aria-label="Type of Suite" >
         <option>Type of Suite</option>
         <option>Option One</option>
         <option>Option Two</option>
@@ -430,7 +434,7 @@
 
             </div>
             <div class="col-sm-12 col-md-2 col-lg-1">
-              <a href="#" class="btn btn-primary d-none d-md-block transparent">
+              <a href="#" class="btn btn-primary icon-btn d-none d-md-block">
     <i class="icon-search"></i>
 </a>
 
@@ -444,12 +448,20 @@
         </form>
       </div>
       <!--/.container-->
+
     </div>
 
 
     <div class="container-fluid brand-cards">
       <h2 class="secondary-heading text-center">Why Lifestyle</h2>
       <div class="row justify-content-center">
+        <div class="brand-card">
+          <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;1" alt="" />
+          <div class="brand-card-text bg-black">
+            <h4>Brand Point 1</h4>
+            <p>The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
+          </div>
+        </div>
         <div class="brand-card">
           <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;3" alt="" />
           <div class="brand-card-text bg-black">
@@ -464,24 +476,14 @@
             <p>That Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="brand-card">
-          <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;1" alt="" />
-          <div class="brand-card-text bg-black">
-            <h4>Brand Point 1</h4>
-            <p>The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
-          </div>
-        </div>
       </div>
     </div>
 
     <h1 class="secondary-heading text-center">
       Lifestyle Finishings
     </h1>
-    <div class="container">
-      <div class="image-carousel carousel mb-5" style="max-width:1170px">
-        <div>
-          <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
-        </div>
+    <div class="container no-padding">
+      <div class="image-carousel carousel mb-10" style="max-width:1170px">
         <div>
           <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
           <div class="image-caption">
@@ -494,22 +496,25 @@
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
+        <div>
+          <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
+        </div>
       </div>
       <!-- /.content-carousel -->
 
     </div>
 
     <section class="related-items">
-      <div class="container">
+      <div class="container-fluid-full">
 
 
         <div class="related-item bg-darkblue">
 
           <div class="item-content">
 
-            <h5 class="related-subtitle">Living</h5>
-
-            <h4 class="related-title">Boardwalk Living</h4>
+            <h4 class="secondary-heading">
+              <span class="sub-heading">Living</span> Boardwalk Living
+            </h4>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
 
@@ -528,9 +533,9 @@
 
           <div class="item-content">
 
-            <h5 class="related-subtitle">Communities</h5>
-
-            <h4 class="related-title">Boardwalk Communities</h4>
+            <h4 class="secondary-heading">
+              <span class="sub-heading">Communities</span> Boardwalk Communities
+            </h4>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
 
@@ -553,6 +558,10 @@
 
     <footer class="container-fluid">
       <div class="container footer-container">
+        <a href="#" class="chat-now-bubble d-none d-md-flex">
+    <span>Chat<br/>Now</span>
+</a>
+
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-3">
             <h4 class="footer_heading">About Us</h4>
@@ -784,10 +793,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1516540515262">
+  <script id="pl-js-polyfill-insert-1516985662257">
     (function() {
       if (self != top) {
-        var cb = '1516540515262';
+        var cb = '1516985662257';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -797,10 +806,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1516540515262">
+  <script id="pl-js-insert-1516985662257">
     (function() {
       if (self != top) {
-        var cb = '1516540515262';
+        var cb = '1516985662257';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']
@@ -812,6 +821,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBntC0Lhs3eQ5K9qnkvCqLzOU3YKv4QS4s&callback=initMap"></script>
   <script src="/theme/js/jquery-ui.min.js"></script>
   <script src="/theme/js/bootstrap.min.js"></script>
   <script src="/theme/js/bootstrap-select.min.js"></script>

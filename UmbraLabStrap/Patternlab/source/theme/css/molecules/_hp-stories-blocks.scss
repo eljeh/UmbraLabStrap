@@ -15,7 +15,7 @@
       top:50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      
+
       speak: none;
       font-style: normal;
       font-weight: normal;
@@ -75,6 +75,7 @@
 
   @include if-min-width($L) {
     margin-left: 6rem;
+    margin-bottom: 6rem;
 
     .stories-block:last-child {
       display: block;

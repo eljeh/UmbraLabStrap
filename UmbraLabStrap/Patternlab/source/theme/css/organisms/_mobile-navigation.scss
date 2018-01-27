@@ -158,6 +158,44 @@
     }
 }
 
+.ul-mobile-nav li #ul-mobile-nav__find .btn-group {
+    display: block;
+}
+
+.ul-mobile-nav li #ul-mobile-nav__investors ul {
+
+    &.icon-navigation {
+        padding-top: 15px;
+
+        &.flex-row {
+            flex-direction: column !important;
+        }
+    }
+
+    li {
+        padding-left: 45px;
+        margin-left: 3px;
+
+        a {
+            padding-left: 30px;
+
+            i {
+                left: 0;
+                right: auto;
+                top: -5px;
+                transform: rotate(0deg);
+
+                &::before {
+                    font-size: 35px;
+                    display:inline-block;
+                    margin:auto;
+                }
+            }
+        }
+    }
+}
+
+
 @include if-between(0px,1023px) {
 
     // Hide main and utility

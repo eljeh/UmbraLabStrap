@@ -1,10 +1,10 @@
 .brand-bar {
   //background: #000;
-  min-height: 3.75rem;
+  min-height: 2rem;
 
   .brand-bar-logo {
     border-right: 1.5rem solid $red;
-    min-height: 1.5rem;
+    min-height: 2rem;
     flex-grow: 3;
     @include if-min-width($S) {
       margin-right: 20%;

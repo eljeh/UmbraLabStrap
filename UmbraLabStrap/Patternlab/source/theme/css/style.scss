@@ -68,9 +68,13 @@
 @import 'molecules/tabbed-content';
 @import 'molecules/community-block-card';
 @import 'molecules/jumbotron-carousel';
+@import 'molecules/form-success';
+@import 'molecules/map';
+@import 'molecules/gallery-carousels';
 
 // organisms
 @import 'organisms/header';
+@import 'molecules/browser-not-supported';
 @import 'organisms/footer';
 @import 'organisms/hp-promos';
 @import 'organisms/multi-columns';
@@ -81,6 +85,7 @@
 @import 'organisms/property-listings';
 @import 'organisms/featured-community';
 @import 'organisms/social-grid';
+@import 'organisms/property-details-gallery';
 
 // templates
 
