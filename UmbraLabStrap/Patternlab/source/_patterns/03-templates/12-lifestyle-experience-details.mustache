@@ -12,23 +12,24 @@
 
     {{> molecules-brand-bar}}
 
-    <div class="content-wrapper black-bg" style="padding-bottom: 8rem; margin-bottom: 8rem;">
-        {{> organisms-multiple-property-cards}}
+    <main>
+      <div class="content-wrapper black-bg mb-10" style="padding-bottom: 6rem;">
+          {{> organisms-multiple-property-cards}}
 
-        {{> organisms-property-search-block}}
-    </div>
+          {{> organisms-property-search-block}}
+      </div>
 
+      {{> organisms-multiple-brand-cards}}
 
-    {{> organisms-multiple-brand-cards}}
+      <h1 class="secondary-heading text-center">
+          Lifestyle Finishings
+      </h1>
+      <div class="container no-padding">
+          {{> molecules-image-carousel:mb-10}}
+      </div>
 
-    <h1 class="secondary-heading text-center">
-        Lifestyle Finishings
-    </h1>
-    <div class="container no-padding">
-        {{> molecules-image-carousel:mb-10}}
-    </div>
-
-    {{> molecules-related-items }}
+      {{> molecules-related-items }}
+    </main>
 
     {{> organisms-footer}}
 

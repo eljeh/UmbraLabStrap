@@ -1,15 +1,25 @@
 .feature-icon {
-  text-align: center;
-   padding: 0 18px 3rem;
-  display: inline-block;
-  margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 18px 3rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    width: 48%;
 
-  .icon {
-    font-size: 400%;
-  }
+    @include if-min-width(463px) {
+        width: 32%;
+    }
+    @include if-min-width($M) {
+        width: 24%;
+    }
+    @include if-min-width($XM) {
+        width: 13%;
+    }
+    .icon {
+        font-size: 400%;
+    }
 
-  .feature-text {
-    display: block;
-    margin-top: 1rem;
-  }
+    .feature-text {
+        display: block;
+        margin-top: 1rem;
+    }
 }

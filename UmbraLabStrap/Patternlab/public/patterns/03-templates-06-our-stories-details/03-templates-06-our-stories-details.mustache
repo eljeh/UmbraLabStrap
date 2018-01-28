@@ -3,17 +3,21 @@
 
 <div class="wrapper">
 
-  {{> organisms-header}} {{> molecules-jumbotron:vertical-center|jumbotron-small}} {{> molecules-promo:blue}} {{> molecules-content-w-aside}}
+  {{> organisms-header}} {{> molecules-jumbotron:vertical-center|jumbotron-small}}
 
-  <div class="container no-padding">
-    {{> atoms-secondary-heading(heading:"Related Stories") }}
-  </div>
+  <main>
+    {{> molecules-promo:blue}} {{> molecules-content-w-aside}}
 
-  {{> molecules-related-items}}
+    <div class="container no-padding">
+      {{> atoms-secondary-heading(heading:"Related Stories") }}
+    </div>
 
-  <div class="text-center mt-5 mb-10">
-    {{> atoms-primary-button(primary-button-text:"View All Our Stories")}}
-  </div>
+    {{> molecules-related-items}}
+
+    <div class="text-center mt-5 mb-10">
+      {{> atoms-primary-button(primary-button-text:"View All Our Stories")}}
+    </div>
+  </main>
 
   {{> organisms-footer}}
 

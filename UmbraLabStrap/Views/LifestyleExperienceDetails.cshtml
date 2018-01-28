@@ -1,7 +1,24 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Layout.cshtml";
+    Layout = "Layout.cshtml";
 }
 
-@* the fun starts here *@
+@Html.Partial("~/views/partials/Widgets/brand-bar.cshtml")
+
+<div class="bg-black" style="padding-bottom: 8rem; margin-bottom: 8rem;">
+    @Html.Partial("~/views/partials/Structures/multiple-property-cards.cshtml")
+    @Html.Partial("~/views/partials/Structures/property-search-block.cshtml")
+</div>
+
+@Html.Partial("~/views/partials/Structures/multiple-brand-cards.cshtml")
+
+<h1 class="secondary-heading text-center">
+    Lifestyle Finishings
+</h1>
+<div class="container no-padding">
+    @Html.Partial("~/views/partials/Widgets/image-carousel.cshtml")
+</div>
+
+@Html.Partial("~/views/partials/Structures/related-items.cshtml")
+
 

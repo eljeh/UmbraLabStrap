@@ -194,5 +194,6 @@
         "text": "New Limited Time Promotions",
         "linkText": "Learn More",
         "linkUrl": "/learn-more"
-    }
+    },
+    "button-label": "Search"
 }

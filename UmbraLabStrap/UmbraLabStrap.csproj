@@ -511,6 +511,33 @@
     <Content Include="theme\vendor\icomoon\fonts\icomoon.svg" />
     <Content Include="theme\vendor\icomoon\Read Me.txt" />
     <Content Include="theme\vendor\icomoon\style.css" />
+    <Content Include="Views\LifestyleExperience.cshtml" />
+    <None Include="Views\Partials\Widgets\brand-card.cshtml" />
+    <None Include="Views\Partials\Widgets\browser-not-supported.cshtml" />
+    <None Include="Views\Partials\Widgets\columned-content.cshtml" />
+    <None Include="Views\Partials\Structures\form-success.cshtml" />
+    <None Include="Views\Partials\Structures\jumbotron-carousel-video.cshtml" />
+    <None Include="Views\Partials\Widgets\content-w-aside.cshtml" />
+    <None Include="Views\Partials\Widgets\feature-carousel-tile.cshtml" />
+    <None Include="Views\Partials\Widgets\gallery-carousel.cshtml" />
+    <None Include="Views\Partials\Widgets\map.cshtml" />
+    <None Include="Views\Partials\Structures\promotion-block.cshtml" />
+    <None Include="Views\Partials\Structures\search-container.cshtml" />
+    <None Include="Views\Partials\Structures\cta-card-column-content.cshtml" />
+    <None Include="Views\Partials\Structures\excerpt-cards-column-content.cshtml" />
+    <None Include="Views\Partials\Structures\feature-community.cshtml" />
+    <None Include="Views\Partials\Structures\icon-navigation.cshtml" />
+    <None Include="Views\Partials\Structures\investor-market-block.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-brand-cards.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-community-blocks.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-feature-carousel-tiles.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-key-features.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-offer-cards.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-property-cards.cshtml" />
+    <None Include="Views\Partials\Structures\multiple-search-blocks.cshtml" />
+    <None Include="Views\Partials\Structures\property-details-gallery.cshtml" />
+    <None Include="Views\Partials\Structures\property-search-block.cshtml" />
+    <None Include="Views\Partials\Structures\social-grid.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -650,8 +677,8 @@
     <Content Include="Views\Partials\Structures\half-half.cshtml" />
     <Content Include="Views\MacroPartials\LatestStories.cshtml" />
     <Content Include="Views\ContentPage.cshtml" />
-    <Content Include="Views\OurStories.cshtml" />
-    <Content Include="Views\StoriesDetails.cshtml" />
+    <Content Include="Views\OurStoriesLanding.cshtml" />
+    <Content Include="Views\OurStoriesDetails.cshtml" />
     <Content Include="Views\PropertyResults.cshtml" />
     <Content Include="Views\Partials\Structures\related-items.cshtml" />
     <Content Include="Views\Partials\Widgets\cta-card.cshtml" />
@@ -677,6 +704,7 @@
     <Content Include="Views\Partials\Structures\promotion.cshtml" />
     <Content Include="Views\Partials\Structures\citation-list.cshtml" />
     <Content Include="Views\LiveWithUs.cshtml" />
+    <Content Include="Views\Partials\Widgets\brand-bar-details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -718,9 +746,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Partials\Components\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

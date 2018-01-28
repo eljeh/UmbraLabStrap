@@ -10,7 +10,6 @@
             color: $white;
         }
     }
-
 }
 
 #mobile-nav-container {
@@ -22,7 +21,7 @@
     right: -100%;
     background-color: $blue;
     overflow: auto;
-    padding: 12px 30px 0 20px;
+    padding: 12px 20px 0;
     transition: right 0.3s ease-in-out 0s;
     -webkit-transition: right 0.3s ease-in-out 0s;
 
@@ -30,23 +29,28 @@
         right: 0;
     }
 
+    hr {
+        border-top: 1px solid #4d9dd0;
+    }
+
     .input-search-container {
         border: 0;
         padding: 5px 0;
         margin: 0 0 15px;
-        width: 95%;
+        width: 100%;
+        display: flex;
 
         input[type=search] {
             border: 1px solid $black;
-            padding: 15px;
+            padding: 15px 48px 15px 15px;
             font-size: 18px;
             width: 100%;
         }
 
         button {
             font-size: 25px;
-            right: -20px;
-            top: 16px;
+            right: 5px;
+            top: 17px;
         }
     }
 
@@ -68,7 +72,8 @@
     .mobile-header__logo {
 
         img {
-            width: 140px;
+            width: 179px;
+            margin-top: 10px;
         }
     }
 
@@ -102,7 +107,7 @@
 
             i {
                 position: absolute;
-                top: 5px;
+                top: 10px;
                 right: 10px;
                 font-size: 25px;
                 font-weight: 700;
@@ -125,8 +130,8 @@
         }
 
         &.border-top {
-            border-top: 1px solid $lightblue;
-            margin-top: 10px;
+            border-top: 1px solid #4d9dd0;
+            //margin-top: 10px;
 
             a {
                 padding: 18px 0 24px;
@@ -158,6 +163,18 @@
     }
 }
 
+.ul-mobile-nav li #ul-mobile-nav__investors,
+.ul-mobile-nav li #ul-mobile-nav__find {
+    background-color: #0068ac;
+    padding: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+
+    p {
+        font-size: 14px;
+    }
+}
+
 .ul-mobile-nav li #ul-mobile-nav__find .btn-group {
     display: block;
 }
@@ -177,18 +194,22 @@
         margin-left: 3px;
 
         a {
-            padding-left: 30px;
+            padding-left: 18px;
 
             i {
                 left: 0;
                 right: auto;
-                top: -5px;
+                top: 7px;
                 transform: rotate(0deg);
+                display: block;
+                margin: auto;
+                width: 43px;
 
                 &::before {
-                    font-size: 35px;
-                    display:inline-block;
-                    margin:auto;
+                    font-size: 25px;
+                    display: block;
+                    margin: 0 auto;
+                    font-weight: normal;
                 }
             }
         }

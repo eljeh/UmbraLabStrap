@@ -1,7 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Layout.cshtml";
+    Layout = "Layout.cshtml";
 }
 
-@* the fun starts here *@
+@Html.Partial("~/views/partials/Structures/property-filters.cshtml")
+
+@Html.Partial("~/views/partials/Structures/multiple-search-blocks.cshtml")
+
 

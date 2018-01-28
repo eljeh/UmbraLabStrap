@@ -5,7 +5,7 @@
       <div class="col-12 col-md-8">
         <form>
           <div class="input-search-container ">
-            <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
+            <input type="search" id="find-your-city" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
             <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
@@ -116,7 +116,7 @@
     <div class="col-md-12">
       <form>
         <div class="input-search-container no-border">
-          <input type="search" id="find-home" class="form-control" placeholder="Search for..." aria-label="Search for...">
+          <input type="search" id="panel-search" class="form-control" placeholder="Search for..." aria-label="Search for...">
           <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
@@ -135,18 +135,18 @@
     </div>
   </header>
   <!--/.mobile-header-->
-  <hr class="lightblue" />
+  <hr class="" />
 
   <ul class="ul-mobile-nav" id="accordion" role="tablist" aria-multiselectable="true">
-    <li>
+    <li role="tab">
       <form>
         <div class="input-search-container ">
-          <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
+          <input type="search" id="mnav-search" class="form-control" placeholder="Search" aria-label="Search">
           <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
     </li>
-    <li class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
+    <li role="tab" class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__find" class="collapse" role="tabpanel">
         <form>
           <div class="input-search-container ">
@@ -178,14 +178,13 @@
 </a>
 
         </div>
-
       </div>
     </li>
     <!--/.panel-->
-    <li><a href="#">Experience Boardwalk</a></li>
-    <li><a href="#">Our Stories</a></li>
-    <li><a href="#">Careers</a></li>
-    <li class="">
+    <li role="tab"><a href="#">Experience Boardwalk</a></li>
+    <li role="tab"><a href="#">Our Stories</a></li>
+    <li role="tab"><a href="#">Careers</a></li>
+    <li role="tab" class="">
       <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__investors" aria-expanded="false" aria-controls="ul-mobile-nav__investors">Investors <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__investors" class="collapse" role="tabpanel">
         <ul class="icon-navigation  d-flex flex-row justify-content-between align-items-start flex-wrap">
@@ -242,12 +241,12 @@
 
       </div>
     </li>
-    <li class="border-top"><a href="#">Contact</a></li>
-    <li><a href="#" class="btn btn-primary white">
+    <li role="tab" class="border-top"><a href="#">Contact</a></li>
+    <li role="tab"><a href="#" class="btn btn-primary white">
     Resident Member Login
 </a>
     </li>
-    <li class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
+    <li role="tab" class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
   </ul>
   <!--/.ul-mobile-nav-->
 </div>
@@ -263,12 +262,12 @@
       </div>
       <div class="p-2">
         <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
-          <li class="p-2 m-nav-find"><a href="#">Find Your Home</a></li>
-          <li class="p-2 m-nav-experience"><a href="">Experience Boardwalk</a></li>
-          <li class="p-2 m-nav-stories"><a href="">Our Stories</a></li>
-          <li class="p-2 m-nav-careers"><a href="">Careers</a></li>
-          <li class="p-2 m-nav-investors"><a href="#">Investors</a></li>
-          <li class="p-2 m-nav-contact"><a href="#">Contact</a></li>
+          <li class="p-2 m-nav-find"><a href="#" tabindex="1">Find Your Home</a></li>
+          <li class="p-2 m-nav-experience" tabindex="3"><a href="">Experience Boardwalk</a></li>
+          <li class="p-2 m-nav-stories" tabindex="4"><a href="">Our Stories</a></li>
+          <li class="p-2 m-nav-careers" tabindex="5"><a href="">Careers</a></li>
+          <li class="p-2 m-nav-investors" tabindex="6"><a href="#">Investors</a></li>
+          <li class="p-2 m-nav-contact" tabindex="8"><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="p-2">
@@ -313,81 +312,83 @@
   <!-- /.brand-bar -->
 
 
-  <div class="content-wrapper black-bg" style="padding-bottom: 8rem; margin-bottom: 8rem;">
-    <div class="property-cards mobile-carousel">
-      <div class="property-card">
-        <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;2) center no-repeat; background-size: cover">
-          <div class="property-card-img-flag">
-            <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+  <main>
+    <div class="content-wrapper black-bg mb-10" style="padding-bottom: 6rem;">
+      <div class="property-cards mobile-carousel">
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;5) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Beltline Tower</h4>
+            <p>1883 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
           </div>
         </div>
-        <div class="property-card-text">
-          <h4>Chateau Apartments</h4>
-          <p>2013 13 Ave. SW</p>
-          <p>Calgary, Alberta</p>
-        </div>
-      </div>
-      <div class="property-card">
-        <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;5) center no-repeat; background-size: cover">
-          <div class="property-card-img-flag">
-            <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;3) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Axxess</h4>
+            <p>8015 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
           </div>
         </div>
-        <div class="property-card-text">
-          <h4>Beltline Tower</h4>
-          <p>1883 13 Ave. SW</p>
-          <p>Calgary, Alberta</p>
-        </div>
-      </div>
-      <div class="property-card">
-        <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;4) center no-repeat; background-size: cover">
-          <div class="property-card-img-flag">
-            <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;4) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Centre Pointe East</h4>
+            <p>1553 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
           </div>
         </div>
-        <div class="property-card-text">
-          <h4>Centre Pointe East</h4>
-          <p>1553 13 Ave. SW</p>
-          <p>Calgary, Alberta</p>
-        </div>
-      </div>
-      <div class="property-card">
-        <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;1) center no-repeat; background-size: cover">
-          <div class="property-card-img-flag">
-            <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;2) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Chateau Apartments</h4>
+            <p>2013 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
           </div>
         </div>
-        <div class="property-card-text">
-          <h4>Centre Pointe West</h4>
-          <p>1313 13 Ave. SW</p>
-          <p>Calgary, Alberta</p>
-        </div>
-      </div>
-      <div class="property-card">
-        <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;3) center no-repeat; background-size: cover">
-          <div class="property-card-img-flag">
-            <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+        <div class="property-card">
+          <div class="property-card-img" style="background: url(https:&#x2F;&#x2F;lorempixel.com&#x2F;300&#x2F;300&#x2F;city&#x2F;1) center no-repeat; background-size: cover">
+            <div class="property-card-img-flag">
+              <img src="&#x2F;theme&#x2F;images&#x2F;logos-mini&#x2F;lifestyle-mini.jpg" alt="" />
+            </div>
+          </div>
+          <div class="property-card-text">
+            <h4>Centre Pointe West</h4>
+            <p>1313 13 Ave. SW</p>
+            <p>Calgary, Alberta</p>
           </div>
         </div>
-        <div class="property-card-text">
-          <h4>Axxess</h4>
-          <p>8015 13 Ave. SW</p>
-          <p>Calgary, Alberta</p>
-        </div>
       </div>
-    </div>
 
 
-    <div class="container property-search-block">
-      <h2 class="secondary-heading white text-center">Explore Lifestyle</h2>
-      <form method="post" action="http://www.google.ca">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-2 mb-md-0">
-            <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
+      <div class="container property-search-block">
+        <h2 class="secondary-heading white text-center">Explore Lifestyle</h2>
+        <form method="post" action="http://www.google.ca">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-2 mb-md-0">
+              <input type="text" id="text" class="form-control form-control-lg" placeholder="Choose Your City" aria-label="Choose Your City" />
 
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <label class="dropdown__label" for="select">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <label class="dropdown__label" for="select">
+<span class="visuallyhidden">Type of Suite</span>
     <select id="select" name="select" class="form-control form-control-lg" aria-label="Type of Suite" >
         <option>Type of Suite</option>
         <option>Option One</option>
@@ -396,136 +397,133 @@
     </select>
 </label>
 
-          </div>
-          <div class="col-sm-12 col-md-2 col-lg-1">
-            <a href="#" class="btn btn-primary icon-btn d-none d-md-block">
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-1">
+              <a href="#" class="btn btn-primary icon-btn d-none d-md-block white" aria-label="Search">
     <i class="icon-search"></i>
 </a>
 
-            <button class="btn btn-primary d-sm-block d-md-none" type="submit" value="Search">
+              <button class="btn btn-primary d-sm-block d-md-none white" type="submit" value="Search">
     Search
 </button>
 
+            </div>
+          </div>
+          <!--/.row-->
+        </form>
+      </div>
+      <!--/.container-->
+
+    </div>
+
+    <div class="container-fluid brand-cards">
+      <h2 class="secondary-heading text-center">Why Lifestyle</h2>
+      <div class="row justify-content-center flex-md-nowrap">
+        <div class="brand-card">
+          <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;2" alt="" />
+          <div class="brand-card-text bg-black">
+            <h4>Brand Point 2</h4>
+            <p>That Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <!--/.row-->
-      </form>
-    </div>
-    <!--/.container-->
-
-  </div>
-
-
-  <div class="container-fluid brand-cards">
-    <h2 class="secondary-heading text-center">Why Lifestyle</h2>
-    <div class="row justify-content-center">
-      <div class="brand-card">
-        <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;1" alt="" />
-        <div class="brand-card-text bg-black">
-          <h4>Brand Point 1</h4>
-          <p>The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="brand-card">
-        <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;3" alt="" />
-        <div class="brand-card-text bg-black">
-          <h4>Brand Point 3</h4>
-          <p>Their Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="brand-card">
-        <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;2" alt="" />
-        <div class="brand-card-text bg-black">
-          <h4>Brand Point 2</h4>
-          <p>That Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <h1 class="secondary-heading text-center">
-    Lifestyle Finishings
-  </h1>
-  <div class="container no-padding">
-    <div class="image-carousel carousel mb-10" style="max-width:1170px">
-      <div>
-        <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
-        <div class="image-caption">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div>
-        <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
-        <div class="image-caption">
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div>
-        <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
-      </div>
-    </div>
-    <!-- /.content-carousel -->
-
-  </div>
-
-  <section class="related-items">
-    <div class="container-fluid-full">
-
-
-      <div class="related-item bg-darkblue">
-
-        <div class="item-content">
-
-          <h4 class="secondary-heading">
-            <span class="sub-heading">Living</span> Boardwalk Living
-          </h4>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
-
-
-          <div>
-            <a class="btn btn-primary white" href="&#x2F;living">Experience Living</a>
+        <div class="brand-card">
+          <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;3" alt="" />
+          <div class="brand-card-text bg-black">
+            <h4>Brand Point 3</h4>
+            <p>Their Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
           </div>
-
         </div>
-        <!-- /.item-content -->
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;480x480" alt="" title="" />
-
-      </div>
-      <!-- /.related-item -->
-      <div class="related-item bg-blue">
-
-        <div class="item-content">
-
-          <h4 class="secondary-heading">
-            <span class="sub-heading">Communities</span> Boardwalk Communities
-          </h4>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
-
-
-          <div>
-            <a class="btn btn-primary white" href="&#x2F;communities">Experience Communities</a>
+        <div class="brand-card">
+          <img src="https:&#x2F;&#x2F;lorempixel.com&#x2F;395&#x2F;395&#x2F;sports&#x2F;1" alt="" />
+          <div class="brand-card-text bg-black">
+            <h4>Brand Point 1</h4>
+            <p>The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
           </div>
-
         </div>
-        <!-- /.item-content -->
-        <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;480x480" alt="" title="" />
-
       </div>
-      <!-- /.related-item -->
+    </div>
+
+
+    <h1 class="secondary-heading text-center">
+      Lifestyle Finishings
+    </h1>
+    <div class="container no-padding">
+      <div class="image-carousel carousel mb-10" style="max-width:1170px">
+        <div>
+          <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
+          <div class="image-caption">
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div>
+          <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
+        </div>
+        <div>
+          <img src="http://via.placeholder.com/1170x600" width="1170" height="600" alt="" title="" />
+          <div class="image-caption">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.content-carousel -->
 
     </div>
-  </section>
-  <!-- /.related-items -->
 
+    <section class="related-items">
+      <div class="container-fluid-full">
+
+
+        <div class="related-item bg-darkblue">
+
+          <div class="item-content">
+
+            <h4 class="secondary-heading">
+              <span class="sub-heading">Living</span> Boardwalk Living
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
+
+
+            <div>
+              <a class="btn btn-primary white" href="&#x2F;living">Experience Living</a>
+            </div>
+
+          </div>
+          <!-- /.item-content -->
+          <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;480x480" alt="" title="" />
+
+        </div>
+        <!-- /.related-item -->
+        <div class="related-item bg-blue">
+
+          <div class="item-content">
+
+            <h4 class="secondary-heading">
+              <span class="sub-heading">Communities</span> Boardwalk Communities
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate erat eget magna auctor feugiat.</p>
+
+
+            <div>
+              <a class="btn btn-primary white" href="&#x2F;communities">Experience Communities</a>
+            </div>
+
+          </div>
+          <!-- /.item-content -->
+          <img src="http:&#x2F;&#x2F;via.placeholder.com&#x2F;480x480" alt="" title="" />
+
+        </div>
+        <!-- /.related-item -->
+
+      </div>
+    </section>
+    <!-- /.related-items -->
+
+  </main>
 
   <footer class="container-fluid">
     <div class="container footer-container">
-      <a href="#" class="chat-now-bubble d-none d-md-flex">
-    <span>Chat<br/>Now</span>
-</a>
-
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h4 class="footer_heading">About Us</h4>
@@ -564,11 +562,11 @@
         </div>
         <div class="col-sm-12 col-md-6 pull-md-6 col-lg-6 pull-lg-3">
           <ul class="social-feeds">
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-youtube"></i></a></li>
-            <li><a href="#"><i class="icon-google-plus"></i></a></li>
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#" aria-label="YouTube"><i class="icon-youtube"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a></li>
+            <li><a href="#" aria-label="Google Plus"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="icon-instagram2"></i></a></li>
           </ul>
         </div>
       </div>
@@ -617,6 +615,11 @@
     </div>
     <!--/.footer-container-->
   </footer>
+
+  <a href="#" class="chat-now-bubble d-none d-md-flex">
+    <span>Chat<br/>Now</span>
+</a>
+
 
 
 </div>

@@ -5,7 +5,7 @@
       <div class="col-12 col-md-8">
         <form>
           <div class="input-search-container ">
-            <input type="search" id="find-home" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
+            <input type="search" id="find-your-city" class="form-control" placeholder="Choose Your City" aria-label="Choose Your City">
             <button type="submit" class="icon-search" aria-label="Search"></button>
           </div>
         </form>
@@ -116,7 +116,7 @@
     <div class="col-md-12">
       <form>
         <div class="input-search-container no-border">
-          <input type="search" id="find-home" class="form-control" placeholder="Search for..." aria-label="Search for...">
+          <input type="search" id="panel-search" class="form-control" placeholder="Search for..." aria-label="Search for...">
           <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
@@ -135,18 +135,18 @@
     </div>
   </header>
   <!--/.mobile-header-->
-  <hr class="lightblue" />
+  <hr class="" />
 
   <ul class="ul-mobile-nav" id="accordion" role="tablist" aria-multiselectable="true">
-    <li>
+    <li role="tab">
       <form>
         <div class="input-search-container ">
-          <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
+          <input type="search" id="mnav-search" class="form-control" placeholder="Search" aria-label="Search">
           <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
     </li>
-    <li class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
+    <li role="tab" class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__find" class="collapse" role="tabpanel">
         <form>
           <div class="input-search-container ">
@@ -178,14 +178,13 @@
 </a>
 
         </div>
-
       </div>
     </li>
     <!--/.panel-->
-    <li><a href="#">Experience Boardwalk</a></li>
-    <li><a href="#">Our Stories</a></li>
-    <li><a href="#">Careers</a></li>
-    <li class="">
+    <li role="tab"><a href="#">Experience Boardwalk</a></li>
+    <li role="tab"><a href="#">Our Stories</a></li>
+    <li role="tab"><a href="#">Careers</a></li>
+    <li role="tab" class="">
       <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__investors" aria-expanded="false" aria-controls="ul-mobile-nav__investors">Investors <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__investors" class="collapse" role="tabpanel">
         <ul class="icon-navigation  d-flex flex-row justify-content-between align-items-start flex-wrap">
@@ -242,12 +241,12 @@
 
       </div>
     </li>
-    <li class="border-top"><a href="#">Contact</a></li>
-    <li><a href="#" class="btn btn-primary white">
+    <li role="tab" class="border-top"><a href="#">Contact</a></li>
+    <li role="tab"><a href="#" class="btn btn-primary white">
     Resident Member Login
 </a>
     </li>
-    <li class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
+    <li role="tab" class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
   </ul>
   <!--/.ul-mobile-nav-->
 </div>
@@ -263,12 +262,12 @@
       </div>
       <div class="p-2">
         <ul id="main-navigation" class="d-flex flex-row justify-content-center align-items-baseline">
-          <li class="p-2 m-nav-find"><a href="#">Find Your Home</a></li>
-          <li class="p-2 m-nav-experience"><a href="">Experience Boardwalk</a></li>
-          <li class="p-2 m-nav-stories"><a href="">Our Stories</a></li>
-          <li class="p-2 m-nav-careers"><a href="">Careers</a></li>
-          <li class="p-2 m-nav-investors"><a href="#">Investors</a></li>
-          <li class="p-2 m-nav-contact"><a href="#">Contact</a></li>
+          <li class="p-2 m-nav-find"><a href="#" tabindex="1">Find Your Home</a></li>
+          <li class="p-2 m-nav-experience" tabindex="3"><a href="">Experience Boardwalk</a></li>
+          <li class="p-2 m-nav-stories" tabindex="4"><a href="">Our Stories</a></li>
+          <li class="p-2 m-nav-careers" tabindex="5"><a href="">Careers</a></li>
+          <li class="p-2 m-nav-investors" tabindex="6"><a href="#">Investors</a></li>
+          <li class="p-2 m-nav-contact" tabindex="8"><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="p-2">
@@ -734,10 +733,6 @@
 
   <footer class="container-fluid">
     <div class="container footer-container">
-      <a href="#" class="chat-now-bubble d-none d-md-flex">
-    <span>Chat<br/>Now</span>
-</a>
-
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h4 class="footer_heading">About Us</h4>
@@ -776,11 +771,11 @@
         </div>
         <div class="col-sm-12 col-md-6 pull-md-6 col-lg-6 pull-lg-3">
           <ul class="social-feeds">
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-youtube"></i></a></li>
-            <li><a href="#"><i class="icon-google-plus"></i></a></li>
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#" aria-label="YouTube"><i class="icon-youtube"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a></li>
+            <li><a href="#" aria-label="Google Plus"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="icon-instagram2"></i></a></li>
           </ul>
         </div>
       </div>
@@ -829,6 +824,11 @@
     </div>
     <!--/.footer-container-->
   </footer>
+
+  <a href="#" class="chat-now-bubble d-none d-md-flex">
+    <span>Chat<br/>Now</span>
+</a>
+
 
 
 </div>

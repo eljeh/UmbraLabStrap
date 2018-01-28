@@ -11,8 +11,14 @@
     </div>
   </div>
 
-  {{> molecules-brand-bar}} {{> organisms-multiple-offer-cards}} {{> organisms-multiple-key-features:bg-white}} {{> molecules-promotion-block}} {{> organisms-multiple-feature-carousel-tiles}} {{> molecules-half-and-half:white|bg-black|text-center}} {{>
-  molecules-related-items}} {{> molecules-contact-form}} {{> organisms-footer}}
+  {{> molecules-brand-bar}}
+
+  <main>
+    {{> organisms-multiple-offer-cards}} {{> organisms-multiple-key-features:bg-white}} {{> molecules-promotion-block}} {{> organisms-multiple-feature-carousel-tiles}} {{> molecules-half-and-half:white|bg-black|text-center}} {{> molecules-related-items}}
+    {{> molecules-contact-form}}
+  </main>
+
+  {{> organisms-footer}}
 
 </div>
 <!--/.wrapper-->

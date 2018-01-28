@@ -1,0 +1,245 @@
+<style>
+  .slick-slide,
+  .slick-slide::before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .slick-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .jumbotron-carousel {
+    position: relative;
+    width: 100%;
+    height: 38vw;
+    min-height: 8vw;
+    margin-bottom: 50px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+  }
+
+  .jumbotron-carousel.slick-initialized {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .slick-slide {
+    position: relative;
+    height: 38vw;
+  }
+
+  .slick-slide::before {
+    background-color: #000;
+    opacity: .3;
+    z-index: 1;
+  }
+
+  .slick-slide video {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .slick-slide iframe {
+    position: relative;
+    pointer-events: none;
+  }
+
+  .slick-slide div {
+    position: relative;
+    height: 100%;
+    margin: 0 !important;
+  }
+
+  .slick-slide .slide-image {
+    opacity: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+  .slick-slide .slide-image.show {
+    opacity: 1;
+    margin-top: -15px !important;
+  }
+
+  .slick-slide .image-entity {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .slick-slide .loading {
+    position: absolute;
+    top: 44%;
+    left: 0;
+    width: 100%;
+  }
+
+  .slick-slide .slide-media {
+    -webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+    animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+  }
+
+  .slick-slide.slick-active {
+    z-index: 1;
+  }
+
+  .slick-slide.slick-active .slide-media {
+    -webkit-animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+    animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+  }
+
+  .slick-slide.slick-active .caption {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+    transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+  }
+
+  .slick-dots {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+  }
+
+  .slick-dots li button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #000;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: .4;
+  }
+
+  .slick-dots li button:focus {
+    outline: none;
+  }
+
+  .slick-dots li button:hover {
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button {
+    border-color: #2d3042;
+    -webkit-box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #fff;
+    opacity: 1;
+  }
+
+  @-webkit-keyframes slideIn {
+    from {
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+    }
+    to {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+    }
+    to {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  }
+
+  @-webkit-keyframes slideOut {
+    from {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+    to {
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+    to {
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+    }
+  }
+</style>
+<div class="jumbotron-carousel ">
+
+  <div class="item image">
+    <span class="loading">Loading...</span>
+    <div>
+      <div class="slide-image slide-media" style="background-image:url('http://placeimg.com/1920/775/arch');">
+        <img data-lazy="http://placeimg.com/1920/775/arch" class="image-entity" />
+      </div>
+    </div>
+  </div>
+  <div class="item vimeo" data-video-start="4">
+    <iframe class="embed-player slide-media" src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864" width="980" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen
+      allowfullscreen></iframe>
+  </div>
+  <div class="item image">
+    <div>
+      <div class="slide-image slide-media" style="background-image:url('http://placeimg.com/1920/775/arch');">
+        <img data-lazy="http://placeimg.com/1920/775/arch" class="image-entity" />
+      </div>
+    </div>
+  </div>
+  <div class="item youtube">
+    <iframe class="embed-player slide-media" width="980" height="520" src="https://www.youtube.com/embed/tdwbYGe8pv8?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=tdwbYGe8pv8&start=102" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="item image">
+    <div>
+      <div class="slide-image slide-media" style="background-image:url('https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ');">
+        <img data-lazy="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ" class="image-entity" />
+      </div>
+    </div>
+  </div>
+  <div class="item video">
+    <video class="slide-video slide-media" loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+            <source src="https://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112" type="video/mp4" />
+        </video>
+  </div>
+
+
+
+</div>
+<!--/.jumbotron-carousel-->

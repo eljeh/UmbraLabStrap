@@ -7,6 +7,11 @@
   border-right: 1px solid $lightgrey;
   max-width: 390px;
   background: $black;
+  margin: 0 1rem;
+
+  & + .brand-card {
+    margin-top: 1rem;
+  }
 
   &:last-of-type {
     border-right: 0;
@@ -25,5 +30,14 @@
   h4 {
     text-transform: uppercase;
     margin-bottom: 15px;
+  }
+
+  @include if-min-width($M) {
+    margin: 0;
+
+    &+.brand-card {
+      margin-top: 0;
+    }
+
   }
 }

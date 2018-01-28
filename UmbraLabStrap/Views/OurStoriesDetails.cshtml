@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Blogpost>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Layout.cshtml";
+}
+
+@Html.Partial("~/views/partials/Structures/jumbotron.cshtml")
+
+@Html.Partial("~/views/partials/Structures/promo.cshtml")
+
+@Html.Partial("~/views/partials/Widgets/content-w-aside.cshtml")
+
+<div class="container no-padding">
+    <h1 class="heading white mb-0">
+        Related Stories
+    </h1>
+</div>
+
+@Html.Partial("~/views/partials/Structures/related-items.cshtml")

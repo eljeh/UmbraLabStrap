@@ -9,36 +9,37 @@
     {{> organisms-header}}
 
     {{> molecules-jumbotron:vertical-center|jumbotron-large|mb-5}}
-
-    <section class="content-wrapper">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-10">
-                <div class="mb-10">
-                    {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+      <main>
+      <section class="content-wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                  <div class="mb-10">
+                      {{> atoms-back-link:blue(back-link-text:"Back To Careers",back-link-href:"/careers")}}
+                  </div>
+                    {{> molecules-columned-content:no-top-padding}}
                 </div>
-                  {{> molecules-columned-content:no-top-padding}}
-              </div>
-          </div>
-      </div>
-    </section><!-- /.content-wrapper -->
-
-    <section class="content-wrapper grey-bg with-padding">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-10">
-                  {{> atoms-heading:text-left|mt-3(heading-text:"Heading")}}
-                  {{> atoms-paragraph:mb-5(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")}}
-              </div>
-
-              <div class="container">
-                {{> molecules-image-carousel}}
             </div>
-          </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.content-wrapper -->
+        </div>
+      </section><!-- /.content-wrapper -->
 
-    {{> molecules-tabbed-content }}
+      <section class="content-wrapper grey-bg with-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    {{> atoms-heading:text-left|mt-3(heading-text:"Heading")}}
+                    {{> atoms-paragraph:mb-5(paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")}}
+                </div>
+
+                <div class="container">
+                  {{> molecules-image-carousel}}
+              </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /.content-wrapper -->
+
+      {{> molecules-tabbed-content }}
+    </main>
 
     {{> organisms-footer}}
 

@@ -1,7 +1,7 @@
 {
   "1": {
     "gallery-carousel": {
-      "img-src": "https://placeimg.com/1170/600/people",
+      "img-src": "/theme/images/gallery/arch1.jpg",
       "img-width": "1170",
       "img-height": "600",
       "max-width": "1170px",
@@ -9,7 +9,7 @@
   },
   "2": {
     "gallery-carousel": {
-      "img-src": "https://placeimg.com/1170/600/tech",
+      "img-src": "/theme/images/gallery/mountain.jpg",
       "img-width": "1170",
       "img-height": "600",
       "max-width": "1170px",
@@ -17,7 +17,7 @@
   },
   "3": {
     "gallery-carousel": {
-      "img-src": "https://placeimg.com/1170/600/animals",    
+      "img-src": "/theme/images/gallery/people1.jpg",    
       "img-width": "1170",
       "img-height": "600",
       "max-width": "1170px",

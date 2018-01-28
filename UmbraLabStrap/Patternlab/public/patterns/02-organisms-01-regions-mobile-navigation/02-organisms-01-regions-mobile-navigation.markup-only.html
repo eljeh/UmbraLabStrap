@@ -6,18 +6,18 @@
     </div>
   </header>
   <!--/.mobile-header-->
-  <hr class="lightblue" />
+  <hr class="" />
 
   <ul class="ul-mobile-nav" id="accordion" role="tablist" aria-multiselectable="true">
-    <li>
+    <li role="tab">
       <form>
         <div class="input-search-container ">
-          <input type="search" id="find-home" class="form-control" placeholder="Search" aria-label="Search">
+          <input type="search" id="mnav-search" class="form-control" placeholder="Search" aria-label="Search">
           <button type="submit" class="icon-search" aria-label="Search"></button>
         </div>
       </form>
     </li>
-    <li class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
+    <li role="tab" class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__find" class="collapse" role="tabpanel">
         <form>
           <div class="input-search-container ">
@@ -49,14 +49,13 @@
 </a>
 
         </div>
-
       </div>
     </li>
     <!--/.panel-->
-    <li><a href="#">Experience Boardwalk</a></li>
-    <li><a href="#">Our Stories</a></li>
-    <li><a href="#">Careers</a></li>
-    <li class="">
+    <li role="tab"><a href="#">Experience Boardwalk</a></li>
+    <li role="tab"><a href="#">Our Stories</a></li>
+    <li role="tab"><a href="#">Careers</a></li>
+    <li role="tab" class="">
       <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__investors" aria-expanded="false" aria-controls="ul-mobile-nav__investors">Investors <i class="icon-ctrl"></i></a>
       <div id="ul-mobile-nav__investors" class="collapse" role="tabpanel">
         <ul class="icon-navigation  icon-navigation__stacked">
@@ -113,12 +112,12 @@
 
       </div>
     </li>
-    <li class="border-top"><a href="#">Contact</a></li>
-    <li><a href="#" class="btn btn-primary white">
+    <li role="tab" class="border-top"><a href="#">Contact</a></li>
+    <li role="tab"><a href="#" class="btn btn-primary white">
     Resident Member Login
 </a>
     </li>
-    <li class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
+    <li role="tab" class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
   </ul>
   <!--/.ul-mobile-nav-->
 </div>

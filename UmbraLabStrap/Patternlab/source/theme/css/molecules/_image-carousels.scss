@@ -1,5 +1,6 @@
 .image-carousel {
   //max-width: 500px;
+  background: #000;
 
   img {
     width: 100%;
@@ -48,9 +49,6 @@
   }
 
   .image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background: #000;
     color: #fff;
@@ -64,6 +62,12 @@
       line-height: 1.5;
 
       &:only-child { margin: 0; }
+    }
+
+    @include if-min-width($M) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }

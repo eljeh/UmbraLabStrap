@@ -99,6 +99,7 @@ function galleryCarousel() {
 function mobileNavToggle() {
     $(".mobile-nav-toggle a, #mobile-nav-container .close").on("click touch", function(e){
         $("#mobile-nav-container").toggleClass("open");
+        $('div.wrapper').toggle();
     });
 }
 
@@ -241,54 +242,7 @@ function autoComplete() {
           }
         });
       } });
-    var data = [{
-      "label": "anders",
-      "category": "Montreal"
-    },
-    {
-      "label": "andreas",
-      "category": ""
-    },
-    {
-      "label": "antal",
-      "category": ""
-    },
-    {
-      "label": "annhhx10",
-      "category": "Calgary"
-    },
-    {
-      "label": "annk K12",
-      "category": "Calgary"
-    },
-    {
-      "label": "annttop C13",
-      "category": "Calgary"
-    },
-    {
-      "label": "anders andersson",
-      "category": "People"
-    },
-    {
-      "label": "andreas andersson",
-      "category": "People"
-    },
-    {
-      "label": "andreas johnson",
-      "category": "People"
-    }];
-
-    // $.getJSON("/theme/vendor/placeholder-data/autocomplete.json")
-    //   .done(function(data) {
-    //     console.log("Data loaded:" + data);
-    //     return data.terms;
-    //   })
-    //   .fail(function(jqxhr, textStatus, error) {
-    //     var err = textStatus + ", " + error;
-    //     console.log("Request Failed: " + err);
-    //   });
-
-    $(".autocomplete").catcomplete({ delay: 0, source: data });
+    $(".autocomplete").catcomplete({ delay: 0, source: searchData });
   });
 }
 
@@ -304,9 +258,16 @@ function initMap() {
   });
 }
 
+function initUserAgent() {
+    var doc = document.documentElement;
+    doc.setAttribute("data-useragent", navigator.userAgent), doc.setAttribute("data-platform", navigator.platform)
+}
+
 // dom ready
 $(function() {
-    // Adding functions here for now, clean up later
+
+    // ie10 use only - add attribute to html tag for browser not supported functionality
+    initUserAgent();
 
     mobileNavToggle()
     // // Init Main navigation + push panel navigation

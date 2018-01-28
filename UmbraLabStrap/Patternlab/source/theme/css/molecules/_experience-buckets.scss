@@ -9,9 +9,23 @@
       display: none;
     }
 
+    &.red-border .bucket-content {
+      border-top: 7px solid $red;
+    }
+
+    &.orange-border .bucket-content {
+      border-top: 7px solid $orange;
+    }
+
+    &.yellow-border .bucket-content {
+      border-top: 7px solid $yellow;
+    }
+
+
     .bucket-content {
       width: 100%;
       margin-top: 0;
+
     }
 
     & + .experience-bucket {
@@ -39,6 +53,7 @@
       }
 
       .bucket-content {
+        border-top: 0 !important;
         padding: 3rem;
         position: absolute;
         width: 90%;
@@ -108,6 +123,10 @@
 
     &.darkblue-bg {
       background: #01426a;
+    }
+
+    svg {
+      fill: currentColor !important;
     }
 
 

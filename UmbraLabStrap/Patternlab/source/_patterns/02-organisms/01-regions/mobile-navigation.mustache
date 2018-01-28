@@ -3,10 +3,10 @@
         <div class="d-flex align-items-center mobile-header__logo">{{>atoms-logo}}</div>
         <div class="d-flex align-items-center">{{>atoms-close-button}}</div>
     </header> <!--/.mobile-header-->
-    {{>atoms-hr:lightblue}}
+    {{>atoms-hr}}
     <ul class="ul-mobile-nav" id="accordion" role="tablist" aria-multiselectable="true">
-        <li>{{>molecules-search-container(form-field-search-placeholder:"Search")}}</li>
-        <li class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
+        <li role="tab">{{>molecules-search-container(form-field-search-placeholder:"Search",form-field-search-id:"mnav-search")}}</li>
+        <li role="tab" class=""> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__find" aria-expanded="false" aria-controls="ul-mobile-nav__find">Find Your Home <i class="icon-ctrl"></i></a>
             <div id="ul-mobile-nav__find" class="collapse" role="tabpanel">
                 {{>molecules-search-container(form-field-search-placeholder:"Choose Your City")}}
                 <p>{{> atoms-arrow-link:white|white(arrow-link-text:"Advanced Search")}}</p>
@@ -19,20 +19,19 @@
                     {{> atoms-primary-button:blue(primary-button-text: "Quebec") }}
                     {{> atoms-primary-button:blue(primary-button-text: "Saskatchewan") }}
                 </div>
-
             </div>
         </li> <!--/.panel-->
-        <li><a href="#">Experience Boardwalk</a></li>
-        <li><a href="#">Our Stories</a></li>
-        <li><a href="#">Careers</a></li>
-        <li class="">
+        <li role="tab"><a href="#">Experience Boardwalk</a></li>
+        <li role="tab"><a href="#">Our Stories</a></li>
+        <li role="tab"><a href="#">Careers</a></li>
+        <li role="tab" class="">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ul-mobile-nav__investors" aria-expanded="false" aria-controls="ul-mobile-nav__investors">Investors <i class="icon-ctrl"></i></a>
             <div id="ul-mobile-nav__investors" class="collapse" role="tabpanel">
                 {{>organisms-icon-navigation}}
             </div>
         </li>
-        <li class="border-top"><a href="#">Contact</a></li>
-        <li>{{>atoms-primary-button:white(primary-button-text:"Resident Member Login")}}</li>
-        <li class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
+        <li role="tab" class="border-top"><a href="#">Contact</a></li>
+        <li role="tab">{{>atoms-primary-button:white(primary-button-text:"Resident Member Login")}}</li>
+        <li role="tab" class="border-top lang"><a href="#">Fran&ccedil;ais</a></li>
     </ul> <!--/.ul-mobile-nav-->
 </div>

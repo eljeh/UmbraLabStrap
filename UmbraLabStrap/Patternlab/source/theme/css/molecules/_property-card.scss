@@ -1,7 +1,7 @@
 .property-cards {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
   background: $black;
   padding: 4rem 2rem;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@
 
 
 
-  @include if-min-width($XXL){
+  @include if-min-width($XL){
     flex-wrap: nowrap;
   }
 
@@ -52,7 +52,7 @@
   width:  100%;
   color: $white;
   font-family: $futura;
-  margin-bottom: 1.75rem;
+  margin: 0 1rem 1.75rem;
 
   @include if-min-width($S){
     width: 50%;

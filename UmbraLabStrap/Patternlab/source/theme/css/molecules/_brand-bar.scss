@@ -57,6 +57,7 @@
   }
 
   &.brand-bar-details {
+
       .back-btn {
           width: 75%;
           border-right: 1.5rem solid $red;
@@ -83,6 +84,19 @@
           padding-left: 10px;
           padding-right: 10px;
         border-right: 0;
+      }
+  }
+
+  &.brand-bar-strip {
+
+      @media only screen and (max-width: $S) {
+          .view-map-btn {
+              display: none;
+          }
+         .brand-bar-logo {
+              width: 96%;
+              box-shadow: 25px 0 $blue;
+          }
       }
   }
 }

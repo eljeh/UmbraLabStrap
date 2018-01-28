@@ -1,12 +1,12 @@
 #browser-unsupported {
-    border-top: 2px solid #ddd;
+    border-bottom: 1px solid #000;
     padding-top: 2em;
     padding-bottom: 2em;
     width: 100%;
-    background: white;
+    background: #fff;
 
     &.ie-10 {
-        //display: none;
+        display: none;
     }
 
     .wrapper {

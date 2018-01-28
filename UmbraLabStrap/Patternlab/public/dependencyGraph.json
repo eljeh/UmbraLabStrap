@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1516985677783,
+  "timestamp": 1517111988081,
   "graph": {
     "options": {
       "directed": true,
@@ -240,7 +240,7 @@
         "v": "00-atoms\\04-buttons\\arrow-link.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-offer-card\\04-testing-00-details-offer-card.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-offer-card\\04-testing-04-details-offer-card.rendered.html",
           "lineagePattern": "testing-offer-card"
         }
       },
@@ -302,8 +302,8 @@
         "v": "00-atoms\\04-buttons\\primary-button.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-03-forms-bookaviewing-form\\04-testing-03-forms-bookaviewing-form.rendered.html",
-          "lineagePattern": "testing-bookaviewing-form"
+          "lineagePath": "../../patterns/04-testing-04-details-offer-card\\04-testing-04-details-offer-card.rendered.html",
+          "lineagePattern": "testing-offer-card"
         }
       },
       {
@@ -392,8 +392,8 @@
         "v": "00-atoms\\05-form-fields\\select.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-01-investors-financial-reports\\04-testing-01-investors-financial-reports.rendered.html",
-          "lineagePattern": "testing-financial-reports"
+          "lineagePath": "../../patterns/04-testing-03-forms-bookaviewing-form\\04-testing-03-forms-bookaviewing-form.rendered.html",
+          "lineagePattern": "testing-bookaviewing-form"
         }
       },
       {
@@ -464,7 +464,7 @@
         "v": "01-molecules\\01-blocks\\brand-bar-details.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-property-details-gallery\\04-testing-00-details-property-details-gallery.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-property-details-gallery\\04-testing-04-details-property-details-gallery.rendered.html",
           "lineagePattern": "testing-property-details-gallery"
         }
       },
@@ -472,7 +472,7 @@
         "v": "01-molecules\\01-blocks\\brand-bar.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-community-detail\\04-testing-00-details-community-detail.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
           "lineagePattern": "testing-community-detail"
         }
       },
@@ -582,7 +582,7 @@
         "v": "01-molecules\\01-blocks\\gallery-carousel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-property-details-gallery\\04-testing-00-details-property-details-gallery.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-property-details-gallery\\04-testing-04-details-property-details-gallery.rendered.html",
           "lineagePattern": "testing-property-details-gallery"
         }
       },
@@ -666,7 +666,7 @@
         "v": "01-molecules\\01-blocks\\promotion-block.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-community-detail\\04-testing-00-details-community-detail.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
           "lineagePattern": "testing-community-detail"
         }
       },
@@ -730,48 +730,48 @@
         "v": "02-organisms\\01-regions\\footer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
         "v": "02-organisms\\01-regions\\header.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
         "v": "02-organisms\\01-regions\\mobile-navigation.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
         "v": "02-organisms\\01-regions\\panel-find-your-home.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
         "v": "02-organisms\\01-regions\\panel-investors.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
         "v": "02-organisms\\01-regions\\panel-search.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-02-events-Upcoming-Events\\04-testing-02-events-Upcoming-Events.rendered.html",
-          "lineagePattern": "testing-Upcoming-Events"
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
@@ -866,7 +866,7 @@
         "v": "02-organisms\\02-components\\multiple-key-features.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-community-detail\\04-testing-00-details-community-detail.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
           "lineagePattern": "testing-community-detail"
         }
       },
@@ -1023,28 +1023,6 @@
         }
       },
       {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-testing\\00-details\\offer-card.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-property-details-gallery\\04-testing-00-details-property-details-gallery.rendered.html",
-          "lineagePattern": "testing-property-details-gallery"
-        }
-      },
-      {
-        "v": "04-testing\\00-details\\property-details-gallery.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-community-detail\\04-testing-00-details-community-detail.rendered.html",
-          "lineagePattern": "testing-community-detail"
-        }
-      },
-      {
         "v": "04-testing\\01-investors\\Income-Tax-Info.mustache",
         "value": {
           "compileState": "clean"
@@ -1108,8 +1086,30 @@
         "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-testing-00-details-property-details-gallery\\04-testing-00-details-property-details-gallery.rendered.html",
+          "lineagePath": "../../patterns/04-testing-04-details-property-details-gallery\\04-testing-04-details-property-details-gallery.rendered.html",
           "lineagePattern": "testing-property-details-gallery"
+        }
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-testing\\04-details\\offer-card.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-testing-04-details-property-details-gallery\\04-testing-04-details-property-details-gallery.rendered.html",
+          "lineagePattern": "testing-property-details-gallery"
+        }
+      },
+      {
+        "v": "04-testing\\04-details\\property-details-gallery.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-testing-04-details-community-detail\\04-testing-04-details-community-detail.rendered.html",
+          "lineagePattern": "testing-community-detail"
         }
       },
       {
@@ -1791,13 +1791,13 @@
         }
       },
       {
-        "v": "C:\\SourceFiles\\UmbraLabStrap\\UmbraLabStrap\\Patternlab\\source\\_meta\\_00-head.mustache",
+        "v": "D:\\WebProjects\\UmbraLabStrap\\UmbraLabStrap\\Patternlab\\source\\_meta\\_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "C:\\SourceFiles\\UmbraLabStrap\\UmbraLabStrap\\Patternlab\\source\\_meta\\_01-foot.mustache",
+        "v": "D:\\WebProjects\\UmbraLabStrap\\UmbraLabStrap\\Patternlab\\source\\_meta\\_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -1946,7 +1946,17 @@
       },
       {
         "v": "01-molecules\\01-blocks\\experience-bucket.mustache",
-        "w": "00-atoms\\02-text\\secondary-heading.mustache",
+        "w": "00-atoms\\03-images\\property-logo-communities.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\experience-bucket.mustache",
+        "w": "00-atoms\\03-images\\property-logo-lifestyle.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules\\01-blocks\\experience-bucket.mustache",
+        "w": "00-atoms\\03-images\\property-logo-living.mustache",
         "value": {}
       },
       {
@@ -2066,11 +2076,6 @@
       },
       {
         "v": "02-organisms\\01-regions\\footer.mustache",
-        "w": "00-atoms\\02-text\\chat-now.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms\\01-regions\\footer.mustache",
         "w": "00-atoms\\02-text\\hr.mustache",
         "value": {}
       },
@@ -2092,6 +2097,11 @@
       {
         "v": "02-organisms\\01-regions\\footer.mustache",
         "w": "00-atoms\\02-text\\copyright.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms\\01-regions\\footer.mustache",
+        "w": "00-atoms\\02-text\\chat-now.mustache",
         "value": {}
       },
       {
@@ -2366,6 +2376,11 @@
       },
       {
         "v": "03-templates\\01-home-page.mustache",
+        "w": "01-molecules\\01-blocks\\browser-not-supported.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates\\01-home-page.mustache",
         "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
         "value": {}
       },
@@ -2382,11 +2397,6 @@
       {
         "v": "03-templates\\01-home-page.mustache",
         "w": "02-organisms\\01-regions\\mobile-navigation.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates\\01-home-page.mustache",
-        "w": "01-molecules\\01-blocks\\browser-not-supported.mustache",
         "value": {}
       },
       {
@@ -2617,11 +2627,6 @@
       {
         "v": "03-templates\\04-community-detail.mustache",
         "w": "02-organisms\\02-components\\property-details-gallery.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates\\04-community-detail.mustache",
-        "w": "01-molecules\\01-blocks\\brand-bar.mustache",
         "value": {}
       },
       {
@@ -3245,116 +3250,6 @@
         "value": {}
       },
       {
-        "v": "04-testing\\00-details\\offer-card.mustache",
-        "w": "00-atoms\\04-buttons\\primary-button.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\offer-card.mustache",
-        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\05-form-fields\\select.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\05-form-fields\\input-text.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\05-form-fields\\input-tel.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\05-form-fields\\input-email.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\05-form-fields\\textarea.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "w": "00-atoms\\04-buttons\\primary-button.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\property-details-gallery.mustache",
-        "w": "01-molecules\\01-blocks\\brand-bar-details.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\property-details-gallery.mustache",
-        "w": "04-testing\\00-details\\offer-card.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\property-details-gallery.mustache",
-        "w": "04-testing\\03-forms\\bookaviewing-form.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\property-details-gallery.mustache",
-        "w": "01-molecules\\01-blocks\\gallery-carousel.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\panel-investors.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\panel-search.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\mobile-navigation.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\header.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "04-testing\\00-details\\property-details-gallery.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "01-molecules\\01-blocks\\brand-bar.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\02-components\\multiple-key-features.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "01-molecules\\01-blocks\\promotion-block.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-testing\\00-details\\community-detail.mustache",
-        "w": "02-organisms\\01-regions\\footer.mustache",
-        "value": {}
-      },
-      {
         "v": "04-testing\\01-investors\\Income-Tax-Info.mustache",
         "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
         "value": {}
@@ -3776,6 +3671,116 @@
       },
       {
         "v": "04-testing\\02-events\\Upcoming-Events.mustache",
+        "w": "02-organisms\\01-regions\\footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\05-form-fields\\select.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\05-form-fields\\input-text.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\05-form-fields\\input-tel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\05-form-fields\\input-email.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\05-form-fields\\textarea.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "w": "00-atoms\\04-buttons\\primary-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\offer-card.mustache",
+        "w": "00-atoms\\04-buttons\\primary-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\offer-card.mustache",
+        "w": "00-atoms\\04-buttons\\arrow-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\property-details-gallery.mustache",
+        "w": "01-molecules\\01-blocks\\brand-bar-details.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\property-details-gallery.mustache",
+        "w": "04-testing\\04-details\\offer-card.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\property-details-gallery.mustache",
+        "w": "04-testing\\03-forms\\bookaviewing-form.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\property-details-gallery.mustache",
+        "w": "01-molecules\\01-blocks\\gallery-carousel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\01-regions\\panel-find-your-home.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\01-regions\\panel-investors.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\01-regions\\panel-search.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\01-regions\\mobile-navigation.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\01-regions\\header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "04-testing\\04-details\\property-details-gallery.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "01-molecules\\01-blocks\\brand-bar.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "02-organisms\\02-components\\multiple-key-features.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
+        "w": "01-molecules\\01-blocks\\promotion-block.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-testing\\04-details\\community-detail.mustache",
         "w": "02-organisms\\01-regions\\footer.mustache",
         "value": {}
       },

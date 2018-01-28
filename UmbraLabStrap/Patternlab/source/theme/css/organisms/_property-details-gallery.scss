@@ -11,25 +11,25 @@
     }
 
     .property-details-card {
-        margin: 0 auto;
-        width: 100%;
+        margin-top: 10px;
 
         // Brand Bar
         .brand-bar {
+            margin-right: 10px;
 
             @media only screen and (max-width: $S) {
                 .brand-bar-logo {
-                    background: transparent !important;
                     text-align: center;
                     margin-top: 10px;
-
+                    background: transparent !important;
                     svg {
                         fill: $black;
                     }
                 }
 
                 &.brand-bar-details .back-btn {
-                    width: 100%;
+                    width: 97%;
+                    box-shadow: 20px 0 $blue;
                 }
             }
 
@@ -42,7 +42,9 @@
                     font-size: 30px;
                     color: #fff;
                     transform: rotate(-90deg);
+                    vertical-align: middle;
                 }
+
                 p {
                     font-weight: normal;
                     font-size: 25px;
@@ -56,13 +58,12 @@
         }
 
         .offer-card {
-            margin-top: 10px;
+            margin: 10px 10px 0 0;
             max-width: 100%;
             padding-bottom: 0;
 
             .offer-card-content {
                 padding: 1rem;
-                margin: 10px;
 
                 @include if-min-width(360px) {
                     padding: 2rem 3rem;

@@ -1,7 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Layout.cshtml";
+    Layout = "Layout.cshtml";
 }
 
-@* the fun starts here *@
+<div class="bg-blue investor-icon-navigation">
+    @Html.Partial("~/Views/Partials/Structures/icon-navigation.cshtml")
+</div>
+
+@Html.Partial("~/Views/Partials/Structures/investor-market-block.cshtml")
+@Html.Partial("~/Views/Partials/Structures/excerpt-cards-column-content.cshtml")
 
